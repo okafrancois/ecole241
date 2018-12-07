@@ -1,0 +1,62 @@
+@font-face{
+    font-family: Motion;
+    src: url(..font/MotionPicture.ttf); 
+}
+#body{
+    width: 900px;
+    margin: auto;
+    margin-top: 60px;
+}
+.fixed{
+    border: 1px solid;
+    max-height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+div.fixed nav ul,div.fixed nav address{
+    border: 1px solid;
+    display: inline-block;
+}
+/*#banner{
+    font-family: ranga;
+    text-align: center;
+}
+#banner span{
+    color: seagreen;
+}
+#section1{
+    padding: 200px 250px 30px 250px;
+    background: url(../img/fond-top.jpg) no-repeat;
+}
+article{border: 1px solid}
+
+.list{
+    overflow: hidden;
+    display: inline-block;
+    max-width: 180px;
+    max-height: 80px;
+    background: url(../img/vignette.png) no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    
+        
+}
+
+.navlist{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+.right{
+    position: relative;
+}
+.fixed{
+    display: inline-block;
+}
+.fixed-content{
+    border: 1px solid; 
+    display: inline-block;
+    max-width: 500px
+}
+*/
