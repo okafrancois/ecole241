@@ -1,62 +1,116 @@
-@font-face{
-    font-family: Motion;
-    src: url(..font/MotionPicture.ttf); 
+@font-face {
+    font-family: motion;
+    src: url(../font/motionpicture.ttf);
 }
-#body{
-    width: 900px;
-    margin: auto;
-    margin-top: 60px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
 }
-.fixed{
-    border: 1px solid;
-    max-height: 50px;
+
+.center{
+       width: 800px;
+       margin-left: auto;
+    margin-right: auto;
+}
+div.fixed{
+    background-color: darkcyan;
+    height: 35px;
     width: 100%;
     position: absolute;
-    top: 0;
+    top:0;
 }
-div.fixed nav ul,div.fixed nav address{
-    border: 1px solid;
-    display: inline-block;
+div.fixed nav{
+    border: 1px dashed;
+    height: 35px;
 }
-/*#banner{
-    font-family: ranga;
-    text-align: center;
+.navfix{
+    display:inline-block;
+    width: 400px;
+    height: 35px;
 }
-#banner span{
-    color: seagreen;
+.font-large{
+    font-size: xx-large;
 }
-#section1{
-    padding: 200px 250px 30px 250px;
-    background: url(../img/fond-top.jpg) no-repeat;
-}
-article{border: 1px solid}
-
-.list{
-    overflow: hidden;
-    display: inline-block;
-    max-width: 180px;
-    max-height: 80px;
-    background: url(../img/vignette.png) no-repeat;
-    background-size: cover;
-    padding-top: 50px;
-    
-        
-}
-
-.navlist{
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-.right{
-    position: relative;
+.inline-list{
+    display: inline-block;   
 }
 .fixed{
-    display: inline-block;
+    position: relative;
 }
-.fixed-content{
-    border: 1px solid; 
-    display: inline-block;
-    max-width: 500px
+.relative{
+position: relative;
 }
-*/
+.right-absolute{
+    position:absolute;
+right:0px;}
+address.navfix{
+    line-height:35px;
+}
+ul.navfix{
+    position: absolute;
+    line-height:35px;
+    margin: 0;
+    }
+address.navfix i:last-child{
+    margin-left: 50px;
+}
+.color-white{
+    color: white;
+}
+div#body{
+    margin-top: 30px;
+}
+#banner{
+    font-family: 'motion';
+    text-align: center;
+    height:70px;
+    line-height: 70px;
+}
+#banner span{
+    color: darkcyan;
+    font: inherit;
+}
+.bord-top{
+    border-top: 1px solid;
+    padding: 13px;
+}
+#section1{
+    background: url(../img/fond-top.jpg) no-repeat;
+    background-size: 100%;
+    padding-bottom: 80px;
+    padding-top: 125px;
+    padding-bottom: 20px;
+    height: 600px;
+}
+.list-menu{
+    width: 170px;
+    height: 100px;
+    margin-right: 20px;
+    background: url(../img/vignette.png) no-repeat;
+    background-size: cover;
+    padding: 70px 10px;
+    font-size: 50%;
+}
+.list-menu:last-child{
+    margin-right: 0
+}
+.marg-b{
+margin-bottom: 100px;
+}
+.buton{
+    padding: 5px;
+    margin-bottom: 15px;
+    max-height:150px ;
+    max-width: 60px;
+    text-align: center;
+  background-color: darkcyan;
+    font-size: 10px;
+    border-radius: 15px;    
+}
+article{
+    font-family: 'MMerriweather';
+}
+.small{
+font-size: xx-small;
+}
