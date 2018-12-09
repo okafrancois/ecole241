@@ -52,7 +52,7 @@
 
 /*background color*/
 .bg-green{background-color: limegreen;}
-.bg-gray{background-color: gray;}
+
 .bg-red{background-color: red;}
 .bg-pink{background-color: pink;}
 .bg-blue{background-color: blue;}
@@ -126,7 +126,7 @@ pad-l-30{padding-left: 30px}
 .pad-50{padding: 50px}
 .pad-y-50{padding-top: 50px; padding-bottom: 50px;}
 .pad-x-50{padding-right: 50px; padding-left: 50px; }
-.pad-t-50{padding-top: 50px;}
+
 .pad-r-50{padding-right: 50px;}
 .pad-b-50{padding-bottom: 50px}
 .pad-l-50{padding-left: 50px}
@@ -141,7 +141,7 @@ pad-l-30{padding-left: 30px}
 .marg-t-0{margin-top: 0;}
 .marg-r-0{margin-right: 0;}
 .marg-b-0{margin-bottom: 0}
-.marg-l-0{margin-left: 0}
+
 /*margin 5*/
 .marg-5{margin: 5px;}
 .marg-y-5{margin-top: 5px; margin-bottom: 5px;}
@@ -181,7 +181,7 @@ pad-l-30{padding-left: 30px}
 .marg-t-30{margin-top: 30px;}
 .marg-r-30{margin-right: 30px;}
 .marg-b-30{margin-bottom: 30px;}
-.marg-l-30{margin-left: 30px;}
+.marg-l-50{margin-left: 50px;}
 /*margin 40*/
 .marg-40{margin: 40px;}
 .marg-y-40{margin-top: 40px; margin-bottom: 40px;}

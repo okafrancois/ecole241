@@ -1,116 +1,183 @@
-@font-face {
-    font-family: motion;
+@font-face{
+    font-family: Motionpic;
     src: url(../font/motionpicture.ttf);
+    font-weight: bold;
 }
+/*reglade de mesures*/
 *{
-    box-sizing: border-box;
+    padding: 0;
     margin: 0;
-    font-family: sans-serif;
 }
-
+.marg-l-10{
+    margin-left: 10px;
+}.marg-l-30{
+    margin-left: 30px;
+}
+header a, footer a{
+    text-decoration: none;
+}
+/*positionnement*/
 .center{
-       width: 800px;
-       margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
-}
-div.fixed{
-    background-color: darkcyan;
-    height: 35px;
-    width: 100%;
-    position: absolute;
-    top:0;
-}
-div.fixed nav{
-    border: 1px dashed;
-    height: 35px;
-}
-.navfix{
-    display:inline-block;
-    width: 400px;
-    height: 35px;
-}
-.font-large{
-    font-size: xx-large;
-}
-.inline-list{
-    display: inline-block;   
-}
-.fixed{
+    width: 1000px;
     position: relative;
 }
-.relative{
-position: relative;
+.inline-link{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: small;
+    font-family: Montserrat;
+    font-weight: bold;
 }
-.right-absolute{
-    position:absolute;
-right:0px;}
-address.navfix{
-    line-height:35px;
+
+.banners{
+    width: 49.8%;
+    display: inline-block;
+    padding: 12px 0;
 }
-ul.navfix{
-    position: absolute;
-    line-height:35px;
-    margin: 0;
-    }
-address.navfix i:last-child{
-    margin-left: 50px;
+
+/*formatage*/
+.bord-t-gray{
+    border-top: 1px solid gray;
 }
 .color-white{
     color: white;
 }
-div#body{
-    margin-top: 30px;
+.color-gray{
+    color: gray;
 }
-#banner{
-    font-family: 'motion';
+.color-cyan{
+    color: #00bf9a; 
+}
+.theme{
+    display: inline-block;
+    width: 65px; 
+    height: 25px;
+    background-color: #00bf9a;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    line-height: 25px;
+    font-size: small;
     text-align: center;
-    height:70px;
-    line-height: 70px;
 }
-#banner span{
-    color: darkcyan;
-    font: inherit;
+.article-info{
+    font-size: 0.7em;
+    font-weight: bold;
 }
-.bord-top{
-    border-top: 1px solid;
-    padding: 13px;
+.section1-list{
+    margin-left: 15px;
+    padding: 90px 6px 12px;
+    display: inline-block;
+    background: url(../img/vignette.png) no-repeat;
+    background-size: contain;
 }
-#section1{
+
+
+.section-part{
+    height: 50%;
+}
+
+.border {
+    border: 1px solid;
+}
+
+.bg-cyan {
+    background-color: #00bf9a;
+}
+.banner-fix {
+    height: 40px;
+    line-height: 20px;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.height-40 {
+    height: 40px;
+    line-height: 40px
+}
+
+.height-50 {
+    height: 60px;
+    line-height: 60px;
+}
+
+.marg-l-0 {
+    margin-left: 0;
+}
+
+.section1 {
+    height: 580px;
     background: url(../img/fond-top.jpg) no-repeat;
     background-size: 100%;
-    padding-bottom: 80px;
-    padding-top: 125px;
-    padding-bottom: 20px;
-    height: 600px;
 }
-.list-menu{
-    width: 170px;
-    height: 100px;
-    margin-right: 20px;
-    background: url(../img/vignette.png) no-repeat;
-    background-size: cover;
-    padding: 70px 10px;
-    font-size: 50%;
+
+.pad-t-50{
+padding-top: 50px;
 }
-.list-menu:last-child{
-    margin-right: 0
+
+.relative {
+    position: relative;
 }
-.marg-b{
-margin-bottom: 100px;
+
+.absolute-b {
+    position: absolute;
+    bottom: 50px;
 }
-.buton{
-    padding: 5px;
-    margin-bottom: 15px;
-    max-height:150px ;
-    max-width: 60px;
-    text-align: center;
-  background-color: darkcyan;
-    font-size: 10px;
-    border-radius: 15px;    
+
+.titre {
+    font-size: 3em;
 }
-article{
-    font-family: 'MMerriweather';
+
+.right {
+    text-align: right;
 }
-.small{
-font-size: xx-small;
+
+.bg-black {
+    background-color: #231e1f;
+}
+
+.foot-part {
+    display: inline-block;
+    width: 49%;
+    max-width: 500px;
+}
+
+.foot-h {
+    height:auto;
+    line-height:40px;
+    position: 
+}
+
+.font-motion {
+    font-family: motionpic, cursive;
+}
+.font-montserrat{
+    font-family: Montserrat;
+}
+.bg-cyan * a{
+    color: white;
+}
+
+nav#nav2 *,.bg-black * a  {
+    color: gray;
+}
+
+.copyright {
+    font-weight: initial;
+    font-size: 0.6em
+}
+
+
+
+.absolute-foot {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%
 }
