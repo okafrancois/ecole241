@@ -1,1 +1,1 @@
-Exercice d'integration du image en html5
+Exercice d'integration d'une image en html5
