@@ -3,7 +3,12 @@
     src: url(../font/motionpicture.ttf);
     font-weight: bold;
 }
-/*reglade de mesures*/
+/*reglage de mesures*/
+body{
+    max-width: 1400px; 
+    margin: auto;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -148,11 +153,7 @@ padding-top: 50px;
     max-width: 500px;
 }
 
-.foot-h {
-    height:auto;
-    line-height:40px;
-    position: 
-}
+
 
 .font-motion {
     font-family: motionpic, cursive;
@@ -175,9 +176,10 @@ nav#nav2 *,.bg-black * a  {
 
 
 
-.absolute-foot {
+.fixed-foot {
     position: absolute;
     bottom: 0;
     height: 40px;
-    width: 100%
+    line-height: 40px;
+    width: 100%;
 }
