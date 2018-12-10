@@ -5,13 +5,17 @@
 }
 /*reglage de mesures*/
 body{
-    max-width: 1405px; 
+    max-width: 1400px; 
     margin: auto;
 }
 
 *{
     padding: 0;
     margin: 0;
+}
+.fix-top{
+    position: sticky;
+    top: 0px;
 }
 .marg-l-10{
     margin-left: 10px;
@@ -22,6 +26,10 @@ header a, footer a{
     text-decoration: none;
 }
 /*positionnement*/
+.fixed-foot {
+    height: 40px;
+    line-height: 40px;
+}
 .center{
     margin-left: auto;
     margin-right: auto;
@@ -176,10 +184,4 @@ nav#nav2 *,.bg-black * a  {
 
 
 
-.fixed-foot {
-    position: absolute;
-    bottom: 0;
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-}
+
