@@ -17,13 +17,17 @@
 .color-yellow{color: yellow;}
 /*fin text color*/
 /*taille de texte*/
-.size-xxsmall{font-size: xx-small}
-.size-xsmall{font-size: x-small}
-.size-small{font-size: small}
-.size-medium{font-size: medium}
-.size-large{font-size: large}
-.size-xlarge{font-size: x-large}
-.size-xxlarge{font-size: xx-large}
+.size-1.5{font-size: 1.5em;}
+.size-2{font-size: 2em;}
+.size-2.5{font-size: 2.5em;}
+.size-3{font-size: 3em;}
+.size-3.5{font-size: 3.5em;}
+.size-4{font-size: 4em;}
+.size-4.5{font-size: 4.5em;}
+.size5{font-size: 5em;}
+/*fin de talle de texte*/
+
+
 /*fin de taille de texte*/
 /*border*/
 
@@ -71,6 +75,7 @@
 .bg-black{background-color: black;}
 .bg-chocolate{background-color: chocolate;}
 .bg-darkgreen{background-color: darkgreen;}
+.bg-white{background-color: white;}
 /*fin de background*/
 
 /*paddind*/
@@ -142,7 +147,7 @@
 /*fin de padding*/
 
 /*margin*/
-
+.marg-auto{margin: auto;}
 /*margin 0*/
 .marg-0{margin: 0}
 .marg-y-0{margin-top: 0; margin-bottom: 0;}
@@ -214,3 +219,9 @@
 .sticky{position: sticky;}
 .static{position: static}
 /*fin de posiitionnement*/
+
+/*dispaly*/
+.block{display: block;}
+.inline{display: inline;}
+.inline-block{display: inline-block}
+/*fon de display*/
