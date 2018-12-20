@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: 'spartan';
+    src:url('assets/font/spartan-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+*{padding: 0;margin: 0;}
+a{
+  text-decoration: none;
+}
+.color-green{color: #00A14C;}
+.color-yellow{color: yellow;}
+.bg-green{background-color:#00A14C;}
+.relative{position: relative;}
+.inline-block{display: inline-block;}
+body{
+  color: white;
+  height: 600px;
+}
+.center{width: 1000px; margin-left: auto;margin-right: auto;}
+.clearfix{
+  overflow: auto;
+}
+/*fin de reglages basiques*/
+/* tete de page */
+header{
+  height: 70px;
+  line-height: 70px;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+.logo{
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  font-family: 'spartan';
+  font-size: 2em;
+  line-height:50px;
+  text-align: center;
+  float: left;
+}
+nav{
+  float: right;
+}
+header nav li{
+  display: inline-block;
+}
+
+header nav li+li{margin-left: 10px;}
+li *{
+  color: white;
+}
+/* fin de tete de page */
+/* corps de la page */
+section{
+  height: 500px;
+  background: url('assets/img/gabforet.jpg') no-repeat;
+  background-size: 100%;
+}
+.fondnoir{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 500px;
+}
+/* fin de corps de la page */
+footer{
+  background-color:#00A14C;
+  border: 2px solid green;
+  height: 50px;
+}
+footer li a{
+  color: white;
+}
+footer li+li{
+  margin-left: 10px;
+  border-left: 2px solid yellow;
+  padding-left: 5px;
+}
+footer div > div{
+  width: 48%;
+  display: inline-block;
+}
+.pied-r{
+  text-align: right;
+}
