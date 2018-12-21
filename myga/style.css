@@ -5,9 +5,9 @@
     font-weight: bold;
     font-style: normal;
 }
-*{padding: 0;margin: 0;}
 a{
   text-decoration: none;
+  color: white;
 }
 .color-green{color: #00A14C;}
 .color-yellow{color: yellow;}
@@ -16,66 +16,54 @@ a{
 .inline-block{display: inline-block;}
 body{
   color: white;
-  height: 600px;
+  margin: 0;
+  padding: 0;
 }
-.center{width: 1000px; margin-left: auto;margin-right: auto;}
 .clearfix{
   overflow: auto;
+}
+li+li{
+  margin-left: 10px;
+  border-left: 2px solid yellow;
+  padding-left: 5px;
 }
 /*fin de reglages basiques*/
 /* tete de page */
 header{
+  background-color:#00A14C ;
+}
+header nav{
+  text-align: right;
+}
+.bloclogo{
+  position: absolute;
+  width: 90px;
   height: 70px;
+  border-radius: 0 55px 55px 0;
+  background-color: white;
+  padding-left: 5px;
   line-height: 70px;
-  padding-top: 5px;
-  box-sizing: border-box;
 }
 .logo{
-  background-color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  font-family: 'spartan';
-  font-size: 2em;
-  line-height:50px;
-  text-align: center;
-  float: left;
-}
-nav{
-  float: right;
-}
-header nav li{
-  display: inline-block;
-}
-
-header nav li+li{margin-left: 10px;}
-li *{
-  color: white;
+  font-size: 3em;
+  font-family: 'spartan'
 }
 /* fin de tete de page */
 /* corps de la page */
 section{
-  height: 500px;
+  height: 600px;
   background: url('assets/img/gabforet.jpg') no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .fondnoir{
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 500px;
+  background-color: rgba(0, 0, 0,0.1);
+  height:100%;
 }
 /* fin de corps de la page */
 footer{
   background-color:#00A14C;
-  border: 2px solid green;
-  height: 50px;
-}
-footer li a{
-  color: white;
-}
-footer li+li{
-  margin-left: 10px;
-  border-left: 2px solid yellow;
-  padding-left: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 footer div > div{
   width: 48%;
