@@ -46,6 +46,14 @@ header div:hover{
   font-family: 'spartan'
   color:white;
 }
+header  nav form select{
+  border-radius: 5px;
+  background: rgba(73,155,234,1);
+  border: none;
+  height: 25px;
+  width: 40px;
+  color: white;
+}
 /* fin de tete de page */
 /* corps de la page */
 section{
@@ -86,9 +94,13 @@ section form span{color: #00a14c;font-size: 1.5em;}
 section form input[type="submit"]{
   width:80px;
   height:30px;
-  background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+  background: rgba(73,155,234,1);
   border-radius: 5px;
   border-style: double;
+  margin-left: 5px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 /* fin de corps de la page */
 /* pied de page */
