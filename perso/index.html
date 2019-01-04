@@ -1,146 +1,453 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>OkaWeb</title>
-    <meta name="keywords" content="okacode">
-    <meta name="description" content="Le side de la cohorte des Dev de l'ecole241">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
-  </head>
-  <body>
-    <header><!-- Debut de la tete de page  -->
-      <nav class="navleft"><!-- nav gauche -->
-        <ul>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Who We Are</a></li>
-          <li><a href="#">How It Works</a></li>
-        </ul>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Applify App Development</title>
+   <meta name="keywords" content="Applify">
+   <meta name="description" content="Apps development agency">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+   <!-- Debut de la tete de page  -->
+   <header>
+      <!-- nav gauche -->
+      <nav class="navleft">
+         <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">How It Works</a></li>
+         </ul>
       </nav>
-      <div class="logo"><!-- log -->
-        <img src="logookacode.svg" alt="Logo de la page" title="Ressent la force du code!">
-        <p>Imagine it, <strong>Code It!</strong></p>
+      <!-- logo -->
+      <div class="logo">
+         <img src="assets/img/logo2.png" alt="Logo de la page">
       </div>
-      <nav class="navright"><!-- nav droite -->
-        <ul>
-          <li><a href="#">Success Stories</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="hidenlinks"><!--liens masqués-->
-          <i class="fas fa-sign-im-alt"></i>
-          <ul>
-            <li><a href="#">Applify on Facebook</a></li>
-            <li><a href="#">Applify on Twitter</a></li>
-            <li><a href="#">Applify on Linkedin</a></li>
-            <li><a href="#">Applify on Instagram</a></li>
-          </ul>
-        </div>
+      <!-- nav droite -->
+      <nav class="navright">
+         <ul>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+         <!--liens masqués-->
+         <div>
+            <i class="fas fa-sign-im-alt"></i>
+            <ul>
+               <li><a href="#">Applify on Facebook</a></li>
+               <li><a href="#">Applify on Twitter</a></li>
+               <li><a href="#">Applify on Linkedin</a></li>
+               <li><a href="#">Applify on Instagram</a></li>
+            </ul>
+         </div>
       </nav>
-      <div class="banner"><!--banniere-->
-        <h1>We are <strong>OkaCode.</strong></h1>
-        <p>We design & develop <strong>Web App</strong></p>
-        <form class="contact_us" action="/" method="post">
-          <input type="button" name="send_us" value="GET IN TOUCH">
-        </form>
-        <a href="#"><i class="fas fa-arrow-down"></i></a>
+      <!--banniere-->
+      <div class="banner">
+         <h1>We are <strong>Applify.</strong></h1>
+         <p>We design & develop <strong>Mobile App</strong></p>
+         <div class="button">
+            <a href="#">GET IN TOUCH</a>
+         </div>
+         <a href="#"><i class="fas fa-arrow-down"></i></a>
       </div>
-    </header><!--fin de la tete de page-->
-    <section class="presentation">
-      <h2>Award Winning Apps, powered by technology of Web by OKACODE, nurtured by our global expertise in Web App development</h2>
-      <p>OkaCode in the future leading Web development Agency with a zeal of perfection and innovation. To create Web Apps  that redefine user  Web experience has been our vision since inception. With our hability to offer tailor-made solutions by understanding client requierements, our reputation in the market has increased ten-fold, worldwide!</p>
-      <form class="contact" action="/" method="post">
-        <input type="button" name="request_quote" value="REQUEST A QUOTE">
-      </form>
-      <h2>Tailor Web Apps solutions</h2>
-      <p>We make custom solutions that deliver your objectives. Your ideas and our expertise; designed to fit your business as you like it-perfectly!</p>
-      <form class="share" action="/" method="get">
-        <input type="button" name="share_us" value="SHARE YOUR IDEA">
-      </form>
-    </section>
-    <section class="statistique">
-      <h2>Snapshot</h2>
-      <form class="connect" action="index.html" method="post">
-        <input type="button" name="contact_us" value="LET'S CONNECT!">
-      </form>
-      <p>We keep our stats up-to-date, counting as you read this</p>
-      <h3>200+</h3>
-      <p>Clients till date</p>
-      <h3>50+</h3>
-      <p>Porjects launched last year</p>
-      <h3>5</h3>
-      <p>Offices</p>
-      <h3>99%</h3>
-      <p>Milestones completion</p>
-      <h3>94%</h3>
-      <p>Customer satisfaction</p>
-    </section>
-    <section class="sponsord">
-      <h2>Media highlights</h2>
-      <form class="connect" action="index.html" method="post">
-        <input type="button" name="contact_us_now" value="CONTACT US NOW">
-      </form>
-      <p>We put our heart into work, and so got recognised by some leading media channels</p>
-      <div class="logochaines">
-        <a href="#"><img src="assets/img/echannel.png" alt="Logo de E-channal"></a>
-        <a href="#"><img src="assets/img/hchannel.png" alt="Logo de H-channnel"></a>
-        <a href="#"><img src="assets/img/buzz.png" alt="Logo de Buzz Feed"></a>
-        <a href="#"><img src="assets/omg/inc.png" alt="Logo de Inc."></a>
-        <a href="#"><img src="assets/img/clutch.png" alt="Logo de Clutch"></a>
-        <a href="#"><img src="assets/img/futura.png" alt="LOgo de Fututra"></a>
+   </header>
+   <!--chatbot-->
+   <div class="chatbot">
+      <div class="chatbot_content">
+         <header>
+            <p>Hi there <br>Our support team is here to help you.<br> Over the last 100 customers we helped,<br> 96% said our service was awesome!</p>
+         </header>
+         <section>
+            <h2>Start a conversation</h2>
+            <p>tipically replies in a few minutes</p>
+            <img src="assets/img/bullepp.jpg" alt="">
+         </section>
+         <a href="#">
+            <section>
+               <h2>FAQs - Applify</h2>
+               <p>Commonly asked questions. Find the answers<br>to your queries related to cost & other<br>technical aspects.</p>
+            </section>
+         </a>
+         <a href="#">
+            <section>
+               <h2>App or Website - Make the Right Decision for<br>Your Business</h2>
+               <p>What should you build - App or<br>Website? Use this simple tool and find out<br>easily.</p>
+            </section>
+         </a>
+         <footer>
+           <p><a href="#">we run on intercom</a></p>
+         </footer>
       </div>
-    </section>
-    <section class="services">
-      <h2><a href="#">Services</a></h2>
-      <hr>
-      <p><a href="#">Apart from all the chit-chat and ping pong tips, here's little bit about the services we deliver best.</a></p>
-      <div class="design">
-        <p><a href="#">Ever wondered how an award-Winning designer could change the of your product? Our designers have a heavy hand in creativity with a deep love for user experience.</a></p>
-        <h3><a href="#">Design</a></h3>
+      <div class="button">
+        <i class="fas fa-facebook"></i>
       </div>
-      <div class="development">
-        <h3><a href="#">Development</a></h3>
-        <p><a href="#">We think fast and code even faster. WE build on any language and customization you wan.</a></p>
+   </div>
+   <!--fin de la tete de page-->
+   <!--contenu principal-->
+   <main>
+      <section class="presentation">
+         <h2>Award Winning Apps, powered by technology of Mobile by Applify, nurtured by our global expertise in Mobile App development</h2>
+         <p>Applify in the future leading Mobile development Agency with a zeal of perfection and innovation. To create Mobile Apps that redefine user Mobile experience has been our vision since inception. With our hability to offer tailor-made
+            solutions
+            by understanding client requierements, our reputation in the market has increased ten-fold, worldwide!</p>
+         <div class="button">
+            <a href="#">REQUEST A QUOTE</a>
+         </div>
+         <h2>Tailor Mobile Apps solutions</h2>
+         <p>We make custom solutions that deliver your objectives. Your ideas and our expertise; designed to fit your business as you like it-perfectly!</p>
+         <div class="button">
+            <a href="#">SHARE YOUR IDEA</a>
+         </div>
+      </section>
+      <section class="statistique">
+         <h2>Snapshot</h2>
+         <div class="button">
+            <a href="#">LET'S CONNECT!</a>
+         </div>
+         <p>We keep our stats up-to-date, counting as you read this</p>
+         <h3>200+</h3>
+         <p>Clients till date</p>
+         <h3>50+</h3>
+         <p>Porjects launched last year</p>
+         <h3>5</h3>
+         <p>Offices</p>
+         <h3>99%</h3>
+         <p>Milestones completion</p>
+         <h3>94%</h3>
+         <p>Customer satisfaction</p>
+      </section>
+      <section class="sponsord">
+         <h2>Media highlights</h2>
+         <div class="button">
+            <a href="#">CONTACT US NOW</a>
+         </div>
+         <p>We put our heart into work, and so got recognised by some leading media channels</p>
+         <div class="logochaines">
+            <a href="#"><img src="assets/img/echannel.png" alt="Logo de E-channal"></a>
+            <a href="#"><img src="assets/img/hchannel.png" alt="Logo de H-channnel"></a>
+            <a href="#"><img src="assets/img/buzz.png" alt="Logo de Buzz Feed"></a>
+            <a href="#"><img src="assets/img/inc.png" alt="Logo de Inc."></a>
+            <a href="#"><img src="assets/img/clutch.png" alt="Logo de Clutch"></a>
+            <a href="#"><img src="assets/img/futura.png" alt="LOgo de Fututra"></a>
+         </div>
+      </section>
+      <section class="services">
+         <h2><a href="#">Services</a></h2>
+         <hr>
+         <p><a href="#">Apart from all the chit-chat and ping pong tips, here's little bit about the services we deliver best.</a></p>
+         <div class="design">
+            <p><a href="#">Ever wondered how an award-Winning designer could change the of your product? Our designers have a heavy hand in creativity with a deep love for user experience.</a></p>
+            <h3><a href="#">Design</a></h3>
+         </div>
+         <div class="development">
+            <h3><a href="#">Development</a></h3>
+            <p><a href="#">We think fast and code even faster. WE build on any language and customization you wan.</a></p>
+         </div>
+         <div class="strategy">
+            <p><a href="#">We slove business problems, identify opportunities, refine product ideas and devise global strategies.</a></p>
+            <h3><a href="#">Strategy</a></h3>
+         </div>
+         <div class="serviceslist">
+            <h2><a href="#">Services</a></h2>
+            <ul>
+               <li><a href="#">Design</a></li>
+               <li><a href="#">strategy</a></li>
+               <li><a href="#">Marketing</a></li>
+               <li><a href="#">Development</a></li>
+               <li><a href="#">Maintenance</a></li>
+               <li><a href="#">Clickable Prototype</a></li>
+            </ul>
+            <div class="button">
+               <a href="#">GET IN TOUCH</a>
+            </div>
+         </div>
+         <div class="maintenance">
+            <p><a href="#">We believe in creating products that can be easily managed and grown. We nurture products without putting you through any hassle.</a></p>
+            <h3><a href="#">Maintenance</a></h3>
+         </div>
+         <div class="prototype">
+            <p><a href="#">To ensure that the product to be finalized suits client requirements, we offer clickable prototyping.</a></p>
+            <h3><a href="#">Clickable prototype</a></h3>
+         </div>
+         <div class="marketing">
+            <h3><a href="#">Marketing</a></h3>
+            <p><a href="#">We help clients with making their products reach the right market and provide intensive outcome, without drilling holes in their pockets!</a></p>
+         </div>
+      </section>
+      <section class="the_choice">
+         <h2>Reasons to choose us</h2>
+         <p>We are masters at our craft, resulting in 10x more productivity. We believe clients come first, employees second and shareholders third. But there’s more to us, more than you can imagine.</p>
+         <hr>
+         <div class="artist">
+            <img src="assets/img/artist.png" alt="tableau blanc">
+            <h3>Artists</h3>
+            <p>Claiming to be 'Artists' in our line of work is more than just designing apps. Our top notch designers are digitally advanced but still have their roots dug up the old school style.</p>
+            <p>We believe the best results for anything comes out of a piece of paper, colored pencil and an outrageously uber cool pair of headphones.</p>
+         </div>
+         <div class="artist1">
+            <img src="assets/img/artist1.png" alt="boulles de billard">
+            <h3>Organized</h3>
+            <p>Amidst all the confusion and chaos, from design to project kick off, we make sure that we take all the troubles from you and deliver the app that you wished for just how you imagined. We assign a dedicated team for each project with
+               different roles, responsibilities and objectives towards achieving a common goal: finishing a project together without chaos.</p>
+         </div>
+         <div class="artist2">
+            <img src="assets/img/artist2.png" alt="Deux peronnes à moto">
+            <h3>Your best buddies(Almost)</h3>
+            <p>We treat our clients as 'partners'. There is no shortage of guidance that you may need for your projects or pouty hi-fives as we love giving them. Be it catching up for a video session or a full fledged project conference, we are
+               right there with you, all along your startup journey. Connecting with us is just a matter of one call or a message if you're up for it.</p>
+         </div>
+         <div class="artist3">
+            <img src="assets/img/artist3.png" alt="Un developpeur assit devant son PC">
+            <h3>Serious apps, fun people!</h3>
+            <p>We treat our clients as 'partners'. There is no shortage of guidance that you may need for your projects or pouty hi-fives as we love giving them. Be it catching up for a video session or a full fledged project conference, we are
+               right there with you, all along your startup journey. Connecting with us is just a matter of one call or a message if you're up for it.</p>
+            <p>Our wittiness will indulge you in all of the interesting brainstorming sessions while enjoying our fair share of pizzas and playing ping pong at the same time</p>
+         </div>
+         <div class="artist4">
+            <img src="assets/img/artist4.png" alt="Une roue méchanique">
+            <h3>Your ideas are bullet-proof</h3>
+            <p>We understand that your ideas are fragile. They are a dose of creativity induced genius ideas that came to you and need to be kept secret.</p>
+            <p>We make sure that your ideas are kept shielded with full privacy so that no one can kill it (unless you allow.)</p>
+         </div>
+         <div class="artist5">
+            <img src="assets/img/artist5.png" alt="">
+            <h3>Organized</h3>
+            <p>Amidst all the coWe make sure that your ideas are kept shielded with full privacy so that no one can kill it (unless We make sure that your ideas are kept shielded with full privacy so that no one can kill it (unless you allow.)you
+               allow.)nfusion and chaos, from design to project kick off, we make sure that we take all the troubles from you and deliver the app that you wished for just how you imagined. We assign a dedicated team for each project with different
+               roles, responsibilities and objectives towards achieving a common goal: finishing a project together without chaos.</p>
+         </div>
+         <div class="artist6">
+            <img src="assets/img/artist6.png" alt="Des smartphones de modeles différents">
+            <h3>Mobile first</h3>
+            <p>App development is the soul of our company and we broaden our skills in the digital trade we know best. A lot of companies claim to do a little bit of everything when it comes to the digital world. Well, it’s a trap! We have our full
+               focus and energy on one thing and one thing only: Apps.</p>
+         </div>
+         <div class="button">
+            <a href="#">GIVE ME ANOTHER</a>
+         </div>
+         <div class="button">
+            <a href="#">CONNECT NOW</a>
+         </div>
+      </section>
+      <section class="how_work">
+         <h2>How it works</h2>
+         <p>Creating custom apps hard.Working with us isn't.</p>
+         <hr>
+         <img src="assets/img/defult-animation.jpg" alt="Un processus">
+         <div class="content">
+            <p>Imagine any app or or whatever you can dream up with Applify</p>
+            <div class="button">
+               <a href="#">LEARN MORE</a>
+            </div>
+            <div class="button">
+               <a href="#">LET'S TALK</a>
+            </div>
+         </div>
+      </section>
+      <section class="success">
+         <h2>Success stories</h2>
+         <p>We couldn’t be prouder of the work we’ve done and luckily, our clients feel the same way</p>
+         <hr>
+         <div class="success_content">
+            <h3>Success stories</h3>
+            <p>We’ve successfully delivered hundreds of projects with scads of happy clients backing us up. From ideas to finished products, we let our work speak for us.</p>
+            <div class="button">
+               <a href="#">LEARN MORE</a>
+            </div>
+            <div class="button">
+               <a href="#">GET AN ESTIMATE</a>
+            </div>
+            <div class="sstories_img">
+               <div class="cercle1">
+                  <img src="assets/img/circle1.png" alt="un trait violet">
+                  <img src="assets/img/icon1.png" alt="Deux drapeaux">
+                  <div class="cercle2">
+                     <img src="assets/img/circle2.png" alt="un trait bleu">
+                     <img src="assets/img/icon2.png" alt="Une main">
+                     <div class="cercle3">
+                        <img src="assets/img/circle3.png" alt="un trait orange">
+                        <img src="assets/img/icon3.png" alt="une étoile">
+                        <div class="dercle4">
+                           <img src="assets/img/icon4.png" alt="une plume">
+                           <img src="assets/img/heart.png" alt="un coeur">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="contact_section">
+         <div class="envellop">
+            <img src="assets/img/envelop_back.png" alt="enveloppe">
+            <div class="letter">
+               <form class="letter_form" action="/" method="post">
+                  <h2>Dear Applify...</h2>
+                  <p>My name is <input type="text" name="name">,you can mail me <br>at <input type="email" name="email">I would like to:<textarea maxlength="250" name="message"></textarea></p>
+                  <input type="button" name="send" value="SEND">
+               </form>
+            </div>
+            <img src="assets/img/envelop_front.png" alt="enveloppe">
+         </div>
+         <p>if you'd like to brainstorm about your idea or comme in<br>for a sip of coffee.</p>
+         <div class="button">
+            <a href="#">GET FREE CONSULTATION</a>
+         </div>
+      </section>
+      <section>
+         <h2>Offices</h2>
+         <ul>
+            <li>
+               <a href="#"><img src="assets/img/location-london.png" alt="illustration d'un paysage anglais"></a>
+               <div class="uk_info">
+                  <div class="horloge">
+                     <img src="assets/img/secondes.png" alt="/">
+                     <img src="assets/img/minutes.png" alt="/">
+                     <img src="assets/img/heures.png" alt="/">
+                  </div>
+                  <div class="content">
+                     <h3>United Kingdom</h3>
+                     <address>
+                        <a href="https://www.google.co.in/maps/place/86+Paul+St,+London+EC2A,+UK/@51.5255776,-0.0847595,18z/data=!3m1!4b1!4m5!3m4!1s0x48761ca56197ac1f:0xa7582d89b3f6cf65!8m2!3d51.5255776!4d-0.0838393">86-90 Paul Street, London, EC2A
+                           4NE, UK</a>
+                        <i class="fas fa-envelope"></i> <a href="mailto:contact@applify.co">contact@applify.co</a><br>
+                        <i class="fas fa-phone"></i> <a href="tel:+442033221046">+442033221046</a>
+                     </address>
+                     <div class="button">
+                        <a href="#">GET IN TOUCH</a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <a href="#"><img src="assets/img/location-india.png" alt="illustration d'un paysage indien"></a>
+               <div class="inde_info">
+                  <div class="horloge">
+                     <img src="assets/img/secondes.png" alt="/">
+                     <img src="assets/img/minutes.png" alt="/">
+                     <img src="assets/img/heures.png" alt="/">
+                  </div>
+                  <div class="content">
+                     <h3>India</h3>
+                     <address>
+                        <a href="https://www.google.co.in/maps/place/Applify+-+Mobile+App+Design+%26+Development+Company/@30.6579061,76.7304161,17z/data=!3m1!4b1!4m5!3m4!1s0x390febe056292d03:0x1ddaa0abec615eba!8m2!3d30.6579061!4d76.7326048">698, 1st
+                           and 2nd Floor, Sector 82, JLPL, Mohali, 160055</a>
+                        <i class="fas fa-envelope"></i> <a href="mailto:contact@applify.co">contact@applify.co</a>
+                     </address>
+                     <div class="button">
+                        <a href="#">GET IN TOUCH</a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <a href="#"><img src="assets/img/location-dubai.png" alt="illustration de monuments de Dubai"></a>
+               <div class="dubai_info">
+                  <div class="horloge">
+                     <img src="assets/img/secondes.png" alt="/">
+                     <img src="assets/img/minutes.png" alt="/">
+                     <img src="assets/img/heures.png" alt="/">
+                  </div>
+                  <div class="content">
+                     <h3>United Arab Emirates</h3>
+                     <address>
+                        <a href="https://www.google.co.in/maps/search/HDS+Business+Centre+Tower,+Cluster+M1,+33rd+Floor,+Jumeirah+Lake+Towers.+Dubai,+United+Arab+Emirates/@25.0769179,55.1297214,14z/data=!3m1!4b1">HDS Business Centre Tower, Cluster
+                           M1, 33rd Floor,Jumeirah Lake Towers. Dubai, United Arab Emirates</a>
+                        <i class="fas fa-envelope"></i> <a href="mailto:contact@applify.co">contact@applify.co</a><br>
+                        <i class="fas fa-phone"></i> <a href="tel:8000320306">8000 3203 06</a>
+                     </address>
+                     <div class="button">
+                        <a href="#">GET IN TOUCH</a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <a href="#"><img src="assets/img/location-us.jpg" alt=""></a>
+               <div class="usa_info">
+                  <div class="horloge">
+                     <img src="assets/img/secondes.png" alt="/">
+                     <img src="assets/img/minutes.png" alt="/">
+                     <img src="assets/img/heures.png" alt="/">
+                  </div>
+                  <div class="content">
+                     <h3>United States</h3>
+                     <address>
+                        <a href="https://www.google.co.in/maps/place/Regus+-+California,+San+Francisco+-+315+Montgomery/@37.7921154,-122.4051932,17z/data=!3m1!4b1!4m5!3m4!1s0x80858063ae3761c1:0xda35e94bc08c71fa!8m2!3d37.7921154!4d-122.4030045">315
+                           Montgomery Street, 8th Floor, San Francisco, CA<br> 94104, United States</a>
+                        <i class="fas fa-envelope"></i> <a href="mailto:contact@applify.co">contact@applify.co</a><br>
+                        <i class="fas fa-phone"></i> <a href="tel:+12136744887">+1 213 674 4887</a>
+                     </address>
+                     <div class="button">
+                        <a href="#">GET IN TOUCH</a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li><a href="#"><img src="assets/img/location-singapore.jpg" alt=""></a>
+               <div class="singapore_info">
+                  <div class="horloge">
+                     <img src="assets/img/secondes.png" alt="/">
+                     <img src="assets/img/minutes.png" alt="/">
+                     <img src="assets/img/heures.png" alt="/">
+                  </div>
+                  <div class="content">
+                     <h3>Singapore</h3>
+                     <address>
+                        <a href="https://www.google.co.in/maps/place/One+Raffles+Place/@1.284368,103.8497011,18z/data=!3m1!5s0x31da190eab7a8011:0xf05e6f12b5c95e10!4m8!1m2!2m1!1s%2344-01A,+One+Raffles+Place,+Tower+One,+Singapore+048616!3m4!1s0x31da190eac69d42b:0xa515f37e85e7e5e9!8m2!3d1.2841873!4d103.8510578">#44-01A,
+                           One Raffles Place, Tower One, Singapore 048616</a>
+                        <i class="fas fa-envelope"></i> <a href="mailto:contact@applify.co">contact@applify.co</a><br>
+                        <i class="fas fa-phone"></i> <a href="tel:800-130-1649">800-130-1649</a>
+                     </address>
+                     <div class="button">
+                        <a href="#">GET IN TOUCH</a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </section>
+   </main>
+   <!--fin du contenu principal-->
+   <!--pied de page-->
+   <footer>
+      <div class="footer_logo">
+         <img src="assets/img/footer-logo.png" alt="logo de Applify">
+         <i class="fas fa-caret-right"></i>
       </div>
-      <div class="strategy">
-        <p><a href="#">We slove business problems, identify opportunities, refine product ideas and devise global strategies.<a></p>
-        <h3><a>Strategy<a></h3>
-      </div>
-      <div class="serviceslist">
-        <h2><a href="#">Services</a></h2>
-        <ul>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">strategy</a></li>
-          <li><a href="#">Marketing</a></li>
-          <li><a href="#">Development</a></li>
-          <li><a href="#">Maintenance</a></li>
-          <li><a href="#">Clickable Prototype</a></li>
-        </ul>
-        <form class="button" action="/" method="post">
-          <input type="button" name="contact_us" value="GET IN TOUCH">
-        </form>
-      </div>
-        <div class="maintenance">
-        <p><a href="#">We believe in creating products that can be easily managed and grown. We nurture products without putting you through any hassle.</a></p>
-        <h3><a href="#">Maintenance</a></h3>
-      </div>
-      <div class="prototype">
-        <p><a href="#">To ensure that the product to be finalized suits client requirements, we offer clickable prototyping.</a></p>
-        <h3><a href="#">Clickable prototype</a></h3>
-      </div>
-      <div class="marketing">
-        <h3><a href="#">Marketing</a></h3>
-        <p><a href="#">We help clients with making their products reach the right market and provide intensive outcome, without drilling holes in their pockets!</a></p>
-      </div>
-    </section>
-    <section class="the_choice">
-      <h2><a href="#">Reasons to choose us</a></h2>
-      <p><a href="#">We are masters at our craft, resulting in 10x more productivity. We believe clients come first, employees second and shareholders third. But there’s more to us, more than you can imagine.</a></p>
-      <hr>
-      <div class="artist">
-        <img src="assets/img/artist1" alt="">
-      </div>
-    </section>
-  </body>
+      <nav>
+         <h2>Services</h2>
+         <ul>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Strategy</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Maintenance</a></li>
+            <li><a href="#">Clickable Prototype</a></li>
+         </ul>
+      </nav>
+      <nav>
+         <h2>Compagny</h2>
+         <ul>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+         </ul>
+      </nav>
+      <nav>
+         <h2>Social</h2>
+         <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Instagram</a></li>
+         </ul>
+      </nav>
+      <small>&copy; François 2019. All rights reserved.</small>
+   </footer>
+</body>
 </html>
