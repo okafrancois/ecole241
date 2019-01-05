@@ -8,8 +8,18 @@ a{text-decoration: none;color: initial}
 div.button{border: 1px solid; text-align:center; height: 40px;line-height: 40px;width:180px;border-radius: 20px;}
 /* fin des reglages */
 /* tete de page */
-header > div{
-  border: 1px solid red;
+header div.blocnav,header div.hidenlink{
+  border: 1px solid green;
+}
+.blocnav{
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.hidenlink{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .logo{
   width: 130px;
@@ -20,7 +30,6 @@ header > div{
 }
 /* liens */
 .blocnav > nav, .blocnav > div {
-  border: 1px solid red;
   display: inline-block;
 }
 .blocnav nav ul li{
@@ -43,7 +52,7 @@ div.hidenlink li.visible i{
   height:60px;
   line-height: 60px;
   text-align: center;
-}
+}header > div.blocna
 div.hidenlink li.visible i:hover{
   background-color:#0C0C0C;
   color: white;
