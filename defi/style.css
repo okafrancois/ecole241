@@ -1,5 +1,5 @@
 /* reglages de base */
-*{box-sizing: border-box;padding: 0; margin: 0;}
+*{box-sizing: border-box;padding: 0; margin:0;}
 .relative{
   position: relative;
 }
@@ -8,12 +8,31 @@ a{text-decoration: none;color: initial}
 div.button{border: 1px solid; text-align:center; height: 40px;line-height: 40px;width:180px;border-radius: 20px;}
 /* fin des reglages */
 /* tete de page */
+header > div{
+  border: 1px solid red;
+}
+.logo{
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  box-shadow: 0 0 10px 1px;
+  padding-top:8px;
+}
 /* liens */
-header div.hidenlink{
+.blocnav > nav, .blocnav > div {
+  border: 1px solid red;
+  display: inline-block;
+}
+.blocnav nav ul li{
+  display: inline-block;
+}
+/* logo */
+/* fin de log */
+/* div.hidenlink{
   position:absolute;
   right:0;
   top:0;
-}
+} */
 div.hidenlink ul li.visible{
   text-align: right;
 }
@@ -53,3 +72,4 @@ div.hidenlink:hover li.hiden{
   display: block;
 }
 /* fin des liens masqués */
+/* fin des liens */
