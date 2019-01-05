@@ -1,3 +1,55 @@
+/* reglages de base */
+*{box-sizing: border-box;padding: 0; margin: 0;}
+.relative{
+  position: relative;
+}
 li{list-style-type: none;}
 a{text-decoration: none;color: initial}
 div.button{border: 1px solid; text-align:center; height: 40px;line-height: 40px;width:180px;border-radius: 20px;}
+/* fin des reglages */
+/* tete de page */
+/* liens */
+header div.hidenlink{
+  position:absolute;
+  right:0;
+  top:0;
+}
+div.hidenlink ul li.visible{
+  text-align: right;
+}
+div.hidenlink li.visible i{
+  display: inline-block;
+  font-size: 1.5em;
+  width: 50px;
+  height:60px;
+  line-height: 60px;
+  text-align: center;
+}
+div.hidenlink li.visible i:hover{
+  background-color:#0C0C0C;
+  color: white;
+}
+/* liens masqués */
+div.hidenlink ul li.hiden{
+  display: none;
+}
+div.hidenlink ul li.hiden a{
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 250px;
+  margin-left: 5px;
+  color: #fff;
+  background-color:#0C0C0C;
+}
+div.hidenlink ul li.hiden ul li:nth-of-type(n+2) a{
+  border-top: 2px solid black;
+}
+div.hidenlink ul li.hiden a:hover{
+  background-color:#5248B4;
+}
+div.hidenlink:hover li.hiden{
+  display: block;
+}
+/* fin des liens masqués */
