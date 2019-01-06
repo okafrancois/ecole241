@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="utf-8">
    <title>Applify App Development</title>
@@ -12,45 +11,52 @@
 </head>
 <body>
    <!-- Debut de la tete de page  -->
-   <header>
+   <header class="relative">
       <!-- nav gauche -->
-      <div class="blocnav">
-         <nav class="navleft">
-            <ul>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Who We Are</a></li>
-               <li><a href="#">How It Works</a></li>
-            </ul>
-         </nav>
-         <!-- logo -->
-         <div class="logo">
-            <img src="assets/img/footer-logo.png" alt="Logo de la page">
-         </div>
-         <!-- nav droite -->
-         <nav class="navright">
-            <ul>
-               <li><a href="#">Success Stories</a></li>
-               <li><a href="#">Blog</a></li>
-               <li><a href="#">Contact</a></li>
-            </ul>
-         </nav>
-      </div>
-      <!--liens masqués-->
-      <div class="hidenlink">
+      <nav class="center">
          <ul>
-            <li class="relative visible">
-               <i class="far fa-comment-alt"></i>
+            <li class="hlink relative"><a href="#">Services</a>
+               <!-- liens masqués -->
+               <ul class="hide">
+                  <i class="fas fa-caret-up"></i>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Strategy</a></li>
+                  <li><a href="#">Marketing</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Maintenance</a></li>
+                  <li><a href="#">Clickable Prototype</a></li>
+               </ul>
             </li>
-            <li class="hiden">
-               <ul>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">How It Works</a></li>
+            <!-- logo -->
+            <li class="logo">
+              <a href="#"><img src="assets/img/footer-logo.png" alt="Logo de la page"></a>
+            </li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="hlink relative"><a href="#">Contact</a>
+              <ul class="hide">
+                <!-- liens masqués -->
+                <i class="fas fa-caret-up"></i>
+                <li><a href="#">Get in touch</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#"> FAQ</a></li>
+              </ul>
+            </li>
+            <!-- liens externes -->
+            <li class="relative hlink">
+              <i class="fas fa-external-link-alt"></i>
+              <ul class="hide">
                   <li><a href="#"><i class="fab fa-facebook-f"></i> Applify on Facebook</a></li>
                   <li><a href="#"><i class="fab fa-twitter"></i> Applify on Twitter</a></li>
                   <li><a href="#"><i class="fab fa-linkedin-in"></i> Applify on Linkedin</a></li>
                   <li><a href="#"><i class="fab fa-instagram"></i> Applify on Instagram</a></li>
-               </ul>
+              </ul>
             </li>
          </ul>
-      </div>
+      </nav>
+      <!--liens masqués-->
       <!--banniere-->
       <div class="banner">
          <h1>We are <strong>Applify.</strong></h1>
@@ -62,12 +68,11 @@
       </div>
    </header>
    <!--chatbot-->
-   <div class="chatbot">
-      <i class="far fa-comment-alt"></i>
-      <div class="chatbot_content">
-         <header>
+   <div class="chatbot hlink">
+      <div class="chatbot_content hide">
+         <div>
             <p>Hi there <br>Our support team is here to help you.<br> Over the last 100 customers we helped,<br> 96% said our service was awesome!</p>
-         </header>
+         </div>
          <section>
             <h2>Start a cosnversation</h2>
             <p>tipically replies in a few minutes</p>
@@ -85,13 +90,14 @@
                <p>What should you build - App or<br>Website? Use this simple tool and find out<br>easily.</p>
             </section>
          </a>
-         <footer>
+         <div>
             <p><a href="#">we run on intercom</a></p>
-         </footer>
-      </div>
+         </div>
       <div class="button">
          <i class="fas fa-facebook"></i>
       </div>
+    </div>
+      <i class="far fa-comment-alt"></i>
    </div>
    <!--fin de la tete de page-->
    <!--contenu principal-->
@@ -234,7 +240,7 @@
                focus and energy on one thing and one thing only: Apps.</p>
          </div>
          <div class="button">
-            <a href="#">GIVE ME ANOTHER</a>
+            <a href="#"><i class="fas fa-redo"></i>GIVE ME ANOTHER</a>
          </div>
          <div class="button">
             <a href="#">CONNECT NOW</a>
@@ -308,9 +314,9 @@
       <section>
          <h2>Offices</h2>
          <ul>
-            <li>
+            <li class="hlink">
                <a href="#"><img src="assets/img/location-london.png" alt="illustration d'un paysage anglais"></a>
-               <div class="uk_info">
+               <div class="uk_info hide hide">
                   <div class="horloge">
                      <img src="assets/img/secondes.png" alt="/">
                      <img src="assets/img/minutes.png" alt="/">
@@ -330,9 +336,9 @@
                   </div>
                </div>
             </li>
-            <li>
+            <li class="hlink">
                <a href="#"><img src="assets/img/location-india.png" alt="illustration d'un paysage indien"></a>
-               <div class="inde_info">
+               <div class="inde_info hide">
                   <div class="horloge">
                      <img src="assets/img/secondes.png" alt="/">
                      <img src="assets/img/minutes.png" alt="/">
@@ -351,9 +357,9 @@
                   </div>
                </div>
             </li>
-            <li>
+            <li class="hlink">
                <a href="#"><img src="assets/img/location-dubai.png" alt="illustration de monuments de Dubai"></a>
-               <div class="dubai_info">
+               <div class="dubai_info hide">
                   <div class="horloge">
                      <img src="assets/img/secondes.png" alt="/">
                      <img src="assets/img/minutes.png" alt="/">
@@ -373,9 +379,9 @@
                   </div>
                </div>
             </li>
-            <li>
+            <li class="hlink">
                <a href="#"><img src="assets/img/location-us.jpg" alt=""></a>
-               <div class="usa_info">
+               <div class="usa_info hide">
                   <div class="horloge">
                      <img src="assets/img/secondes.png" alt="/">
                      <img src="assets/img/minutes.png" alt="/">
@@ -395,8 +401,8 @@
                   </div>
                </div>
             </li>
-            <li><a href="#"><img src="assets/img/location-singapore.jpg" alt=""></a>
-               <div class="singapore_info">
+            <li class="hlink"><a href="#"><img src="assets/img/location-singapore.jpg" alt=""></a>
+               <div class="singapore_info hide">
                   <div class="horloge">
                      <img src="assets/img/secondes.png" alt="/">
                      <img src="assets/img/minutes.png" alt="/">
@@ -427,8 +433,8 @@
          <i class="fas fa-caret-right"></i>
       </div>
       <nav>
-         <h2>Services</h2>
          <ul>
+           <h2>Services</h2>
             <li><a href="#">Design</a></li>
             <li><a href="#">Strategy</a></li>
             <li><a href="#">Marketing</a></li>
@@ -436,10 +442,8 @@
             <li><a href="#">Maintenance</a></li>
             <li><a href="#">Clickable Prototype</a></li>
          </ul>
-      </nav>
-      <nav>
-         <h2>Compagny</h2>
          <ul>
+            <h2>Compagny</h2>
             <li><a href="#">How it works</a></li>
             <li><a href="#">Who we are</a></li>
             <li><a href="#">Success Stories</a></li>
@@ -447,10 +451,8 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">FAQ</a></li>
          </ul>
-      </nav>
-      <nav>
-         <h2>Social</h2>
          <ul>
+            <h2>Social</h2>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Linkedin</a></li>

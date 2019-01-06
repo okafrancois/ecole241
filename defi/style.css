@@ -1,84 +1,54 @@
 /* reglages de base */
-*{box-sizing: border-box;padding: 0; margin:0;}
+*{box-sizing: border-box;padding: 0;margin: 0;}
 .relative{
   position: relative;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.inline-b{
+  display: inline-block;
 }
 li{list-style-type: none;}
 a{text-decoration: none;color: initial}
 div.button{border: 1px solid; text-align:center; height: 40px;line-height: 40px;width:180px;border-radius: 20px;}
 /* fin des reglages */
 /* tete de page */
-header div.blocnav,header div.hidenlink{
-  border: 1px solid green;
+header{
+  background-color: #ff6e00;
+  color: white;
+  height:650px;
 }
-.blocnav{
-  max-width: 1000px;
-  margin: auto;
+header nav{
+  max-width:1150px;
+  max-height:130px;
+  background-color: yellow;
   text-align: center;
 }
-.hidenlink{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.logo{
+/* liens */
+header nav .logo{
   width: 130px;
   height: 130px;
   text-align: center;
-  box-shadow: 0 0 10px 1px;
-  padding-top:8px;
-}
-/* liens */
-.blocnav > nav, .blocnav > div {
-  display: inline-block;
-}
-.blocnav nav ul li{
-  display: inline-block;
-}
-/* logo */
-/* fin de log */
-/* div.hidenlink{
-  position:absolute;
-  right:0;
-  top:0;
-} */
-div.hidenlink ul li.visible{
-  text-align: right;
-}
-div.hidenlink li.visible i{
-  display: inline-block;
-  font-size: 1.5em;
-  width: 50px;
-  height:60px;
-  line-height: 60px;
-  text-align: center;
-}header > div.blocna
-div.hidenlink li.visible i:hover{
-  background-color:#0C0C0C;
-  color: white;
+  padding: 8px;
+  box-shadow: 0 0 10px 1px black;
+  background-color: white;
 }
 /* liens masqués */
-div.hidenlink ul li.hiden{
+nav > ul > li{
+  display: inline-block;
+  border: 1px solid red;
+}
+nav > ul > li+li{
+  margin-left: 60px;
+}
+.hide{
   display: none;
 }
-div.hidenlink ul li.hiden a{
+.hlink:hover .hide{
   display: block;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  width: 250px;
-  margin-left: 5px;
-  color: #fff;
-  background-color:#0C0C0C;
+  position: absolute;
 }
-div.hidenlink ul li.hiden ul li:nth-of-type(n+2) a{
-  border-top: 2px solid black;
-}
-div.hidenlink ul li.hiden a:hover{
-  background-color:#5248B4;
-}
-div.hidenlink:hover li.hiden{
-  display: block;
-}
-/* fin des liens masqués */
-/* fin des liens */
+
+/* fin des liens hide */
