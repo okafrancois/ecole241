@@ -1,54 +1,114 @@
-/* reglages de base */
-*{box-sizing: border-box;padding: 0;margin: 0;}
-.relative{
-  position: relative;
-}
-.center{
-  margin-left: auto;
-  margin-right: auto;
-}
-.inline-b{
-  display: inline-block;
-}
+
+/* reglade generaux */
+*{box-sizing: border-box;  padding:0;margin: 0;}
 li{list-style-type: none;}
-a{text-decoration: none;color: initial}
-div.button{border: 1px solid; text-align:center; height: 40px;line-height: 40px;width:180px;border-radius: 20px;}
-/* fin des reglages */
+a{text-decoration: none;color: initial;}
+.hide{display: none;}
+.center{margin-left: auto;margin-right: auto;}
+.relative{position: relative;}
+/* fin */
 /* tete de page */
 header{
+  position: relative;
+  height: 600px;
   background-color: #ff6e00;
   color: white;
-  height:650px;
 }
-header nav{
-  max-width:1150px;
-  max-height:130px;
-  background-color: yellow;
+header nav {
+  max-width: 70em;
   text-align: center;
+  height: 150px;
 }
-/* liens */
-header nav .logo{
-  width: 130px;
-  height: 130px;
-  text-align: center;
-  padding: 8px;
-  box-shadow: 0 0 10px 1px black;
-  background-color: white;
+/* logo du header */
+header nav div {
+ background-color: white;
+ width: 130px;
+ height: 130px;
+ text-align: center;
+ padding: 10px;
+ box-shadow: 0 0 10px 1px black;
+ display: inline-block;
 }
-/* liens masqués */
-nav > ul > li{
+/* liens de navigation */
+header nav>ul {
+  width: 40%;
+  font-size: 1.3em;
+  position: absolute;
+  bottom:50%;
+}
+header nav>ul:first-child{
+  left: 0;
+}
+header nav>ul:last-child{
+  right: 1.5em;
+}
+header nav>ul li{
   display: inline-block;
-  border: 1px solid red;
 }
-nav > ul > li+li{
-  margin-left: 60px;
+header nav>ul li+li{
+  margin-left: 2em;
 }
-.hide{
-  display: none;
+header nav>ul>li a{
+  color: white;
+  display: block;
+  height: 40px;
+  line-height: 40px;
 }
-.hlink:hover .hide{
+header nav>ul li a:hover{
+  border-bottom: 2px solid white;
+}
+header nav>ul li:hover ul{
   display: block;
   position: absolute;
 }
+/* fin des liens de navigations */
+/* liens externes */
+header nav+div{
+  position: absolute;
+  font-size: 1.5em;
+  right: 0;
+  top: 10px;
+  width: 260px;
+}
+header nav+div li a{
+ display: block;
+ background-color: #0c0c0c;
+ color: white;
+ height: 50px;
+ text-align: left;
+ padding: 10px;
+}
+header nav+div ul li:nth-child(n+2){
+  border-top: 1px solid black;
+}
+header nav+div li a:hover{
+  background-color: #1607bf;
+}
+#icon-ext{
+  display: inline-block;
+}
+header nav+div ul li:nth-child(n+2){
+  position: relative;
+  left: 260px;
+  transition-delay:0.5s;
+}
 
-/* fin des liens hide */
+header nav+div ul:hover li:nth-child(2){
+  left:1px;
+  transition: left 0.1s;
+}
+header nav+div ul:hover li:nth-child(3){
+  left:1px;
+  transition: left 0.3s;
+}
+header nav+div ul:hover li:nth-child(4){
+  left:1px;
+  transition: left 0.6s;
+}
+header nav+div ul:hover li:nth-child(5){
+  left:1px;
+  transition: left 0.9s;
+}
+
+
+/* fin des liens externes */
