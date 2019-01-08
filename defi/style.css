@@ -1,6 +1,6 @@
 
 /* reglade generaux */
-*{box-sizing: border-box;  padding:0;margin: 0;}
+*{box-sizing: border-box;  padding:0;margin: 0;font-family:sans-serif; }
 li{list-style-type: none;}
 a{text-decoration: none;color: initial;}
 .hide{display: none;}
@@ -26,13 +26,13 @@ header nav div {
  height: 130px;
  text-align: center;
  padding: 10px;
- box-shadow: 0 0 10px 1px black;
+ box-shadow: 0 0 10px 1px #494747;
  display: inline-block;
 }
 /* liens de navigation */
 header nav>ul {
   width: 40%;
-  font-size: 1.3em;
+  font-size: 1.2em;
   position: absolute;
   bottom:50%;
 }
@@ -64,51 +64,59 @@ header nav>ul li:hover ul{
 /* fin des liens de navigations */
 /* liens externes */
 header nav+div{
+  border: 1px solid green;
   position: absolute;
-  font-size: 1.5em;
   right: 0;
-  top: 10px;
-  width: 260px;
+  top: 0;
 }
-header nav+div li a{
- display: block;
- background-color: #0c0c0c;
- color: white;
- height: 50px;
- text-align: left;
- padding: 10px;
-}
-header nav+div ul li:nth-child(n+2){
-  border-top: 1px solid black;
-}
-header nav+div li a:hover{
-  background-color: #1607bf;
-}
-#icon-ext{
-  display: inline-block;
-}
-header nav+div ul li:nth-child(n+2){
+header nav+div li:first-child{
   position: relative;
-  left: 260px;
-  transition-delay:0.5s;
+  height: 50px;
+}
+header nav+div li:nth-child(n+2){
+  display: none;
+  position: relative;
+  right:-290px;
+  transition-property: right;
+}
+/* icone */
+header nav+div li:first-child a{
+  height: 50px;
+  padding: 10px;
+  font-size: 1.5em;
+  position: absolute;
+  right: 0;
+}
+/* icone */
+header nav+div li:nth-child(n+2) a{
+  display: block;
+  line-height: 50%;
+  width: 290px;
+  font-size: 1.5em;
+  padding: 15px;
+  background-color: #0c0c0c;
+  color: white;
+}
+header nav+div li:nth-child(n+2){
+  border-top:2px solid black;
+}
+header nav+div li:nth-child(2){
+  border-top:none
+}
+header nav+div li:nth-child(3){
+
+}
+header nav+div li:nth-child(4){
+
+}
+header nav+div li:nth-child(5){
+
 }
 
-header nav+div ul:hover li:nth-child(2){
-  left:1px;
-  transition: left 0.1s;
+header nav+div:hover li:nth-child(n+2){
+  display: block;
+  position: relative;
+  right:0;
 }
-header nav+div ul:hover li:nth-child(3){
-  left:1px;
-  transition: left 0.3s;
-}
-header nav+div ul:hover li:nth-child(4){
-  left:1px;
-  transition: left 0.6s;
-}
-header nav+div ul:hover li:nth-child(5){
-  left:1px;
-  transition: left 0.9s;
-}
-
 
 /* fin des liens externes */
