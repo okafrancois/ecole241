@@ -3,7 +3,7 @@
 *{box-sizing: border-box;  padding:0;margin: 0;font-family:sans-serif; }
 li{list-style-type: none;}
 a{text-decoration: none;color: initial;}
-.hide{display: none;}
+/* .hide{display: none;} */
 .center{margin-left: auto;margin-right: auto;}
 .relative{position: relative;}
 /* fin */
@@ -61,62 +61,85 @@ header nav>ul li:hover ul{
   display: block;
   position: absolute;
 }
+header ul.hide{
+  background-color: white;
+  position: absolute;
+  padding: 8px;
+  text-align: left;
+}
+header ul.hide a{
+  color: black;
+}
+header ul.hide i{
+  font-size: 1.7em;
+  display: block;
+  position:absolute;
+  top:-20px;
+  right: 50%;
+}
 /* fin des liens de navigations */
+
 /* liens externes */
-header nav+div{
-  border: 1px solid green;
+header div.liens-ext{
   position: absolute;
   right: 0;
   top: 0;
 }
-header nav+div li:first-child{
-  position: relative;
+/* icone */
+header div.liens-ext div.icon-ext a{
   height: 50px;
 }
-header nav+div li:nth-child(n+2){
-  display: none;
-  position: relative;
-  right:-290px;
-  transition-property: right;
-}
-/* icone */
-header nav+div li:first-child a{
+header div.liens-ext>a{
+  display: block;
   height: 50px;
   padding: 10px;
   font-size: 1.5em;
   position: absolute;
   right: 0;
+  transition: all 0.5s;
 }
-/* icone */
-header nav+div li:nth-child(n+2) a{
+header div.liens-ext> a:hover{
+  background-color:#0c0c0c;
+  color: white;
+}
+/* icone fin */
+header div.liens-ext ul a{
   display: block;
   line-height: 50%;
-  width: 290px;
-  font-size: 1.5em;
-  padding: 15px;
+  width: 270px;
+  font-size: 1.3em;
+  padding: 20px;
   background-color: #0c0c0c;
   color: white;
 }
-header nav+div li:nth-child(n+2){
-  border-top:2px solid black;
-}
-header nav+div li:nth-child(2){
-  border-top:none
-}
-header nav+div li:nth-child(3){
 
+/*effets au survol des liens externes*/
+header div.liens-ext li+li a{
+  border-top: 2px solid black;
 }
-header nav+div li:nth-child(4){
+/* effets de transition */
+header div.liens-ext li:nth-child(1) a:hover{
+  /* lien facebook */
+  background-color: #0962c9;
+}
+header div.liens-ext li:nth-child(2) a:hover{
+  /* lien twitter */
+  background-color: #1fd0db;
+}
+header div.liens-ext li:nth-child(3) a:hover{
+  /* lien linkedin */
+  background-color: #00559a;
+}
+header div.liens-ext li:nth-child(4) a:hover{
+  /* lien instagram */
+  background-color: #833c3c;
+}
+/* fin */
+/* masquage des liens*/
+header div.liens-ext ul{
+  overflow-x: hidden;
+  /* display: none; */
+}
 
-}
-header nav+div li:nth-child(5){
-
-}
-
-header nav+div:hover li:nth-child(n+2){
-  display: block;
-  position: relative;
-  right:0;
-}
 
 /* fin des liens externes */
