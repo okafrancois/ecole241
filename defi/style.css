@@ -3,7 +3,7 @@
 *{box-sizing: border-box;  padding:0;margin: 0;font-family:sans-serif; }
 li{list-style-type: none;}
 a{text-decoration: none;color: initial;}
-/* .hide{display: none;} */
+.hide{display: none;}
 .center{margin-left: auto;margin-right: auto;}
 .relative{position: relative;}
 /* fin */
@@ -140,6 +140,4 @@ header div.liens-ext ul{
   overflow-x: hidden;
   /* display: none; */
 }
-
-
 /* fin des liens externes */
