@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+}
+
+header>nav{
+  position: fixed;
+  background-color: red;
+  top:30%;
+  width: 30px;
+}
+header ul{
+  list-style-type: none;
+}
+header>nav li{
+  border: 1px solid green;
+  margin-bottom: 10px;
+}
+header a{
+  display: block;
+  text-align: center;
+}
+header>ul{
+  background-color: green;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 50px;
+}
+header>ul li{
+  width: 30px;
+  float: right;
+}
+/* fin de tete ede page */
+main{
+  margin-left: 40px;
+}
+main section{
+  background-color: coral;
+}
+main section p:first-child{
+  text-align: right;
+  padding-right:
+}
