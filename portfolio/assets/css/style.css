@@ -1,18 +1,28 @@
+/*
+Polices: font-family: 'Muli', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Cantarell', sans-serif; */
 html {
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
-body{
+
+body {
   overflow: hidden;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  font-family:"Cantarell"
 }
+
 /* lien de navigation */
-a{
+a {
   color: initial;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
   color: initial;
 }
@@ -33,7 +43,7 @@ nav ul:first-child li {
   width: 30px;
   height: 30px;
   transition: all 0.5s;
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 nav ul:first-child li:hover {
@@ -49,19 +59,27 @@ nav ul:last-child {
 nav ul:last-child li {
   display: inline-block;
 }
+
 /* liens de navigation */
 nav ul:first-child li a {
   width: 200px;
 }
+
 nav ul:first-child li a i {
   width: 25px;
   display: inline-block;
 }
+
 /* description des liens */
 nav ul li a, nav ul li span {
   display: inline-block;
 }
+
 /* liens reseaux sociaux */
+nav ul:last-child a:hover i {
+  color: black;
+}
+
 nav ul:last-child a {
   display: block;
   width: 30px;
@@ -69,46 +87,54 @@ nav ul:last-child a {
   line-height: 30px;
   border-radius: 50%;
   text-align: center;
+  background-color: black;
+  transition: all 0.5s 0.1s;
 }
+
+nav ul:last-child a:hover {
+  color: black;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+}
+
+nav ul:last-child a i {
+  color: white;
+}
+
 /* fin des liens de navigation */
 /*  peid de page*/
-footer{
+footer {
   position: fixed;
   bottom: 10px;
   text-align: center;
   width: 100%;
 }
+
 /* fin du pied de page */
-main{
-  overflow-x: hidden;
-  max-width:1370px;
-  background-color: red;
-  z-index: -1;
+main {
+  width: 100%;
+  height: 700px;
 }
-div.container{
-  width: 6900px;
-  background-color: gold;
-  position: absolute;
-  z-index:-2;
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
 }
-.container>section{
-  height:9em;
-  width: 1370px;
-  height: 670px;
-  padding-right: 10px;
+
+#acceuil {
 }
-#acceuil{
-  background-color: green;
-}
-#competences{
-  background-color: pink;
-}
-#process{
-  background-color: red;
-}
-#portfolio{
-  background-color: violet;
-}
-#contact{
-  background-color: yellow;
+
+#competences {}
+
+#process {}
+
+#portfolio {}
+
+#contact {}
+.lien{
+  font-family: "Muli";
+  text-decoration: underline;
 }
