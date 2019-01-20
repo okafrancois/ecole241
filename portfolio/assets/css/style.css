@@ -1,42 +1,112 @@
-*{
-  padding: 0;
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  overflow: hidden;
+}
+/* lien de navigation */
+a:hover{
+  text-decoration: none;
+  color: initial;
 }
 
-header>nav{
-  position: fixed;
-  background-color: red;
-  top:30%;
-  width: 30px;
-}
-header ul{
+ul {
   list-style-type: none;
 }
-header>nav li{
-  border: 1px solid green;
-  margin-bottom: 10px;
+
+nav ul:first-child {
+  position: fixed;
+  top: 40%;
+  left: -20px;
 }
-header a{
+
+nav ul:first-child li {
+  margin-top: 10px;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s;
+  font-size: 1.2rem
+}
+
+nav ul:first-child li:hover {
+  width: 200px;
+}
+
+nav ul:last-child {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+nav ul:last-child li {
+  display: inline-block;
+}
+/* liens de navigation */
+nav ul:first-child li a {
+  width: 200px;
+}
+nav ul:first-child li a i {
+  width: 25px;
+  display: inline-block;
+}
+/* description des liens */
+nav ul li a, nav ul li span {
+  display: inline-block;
+  color: initial;
+}
+/* liens reseaux sociaux */
+nav ul:last-child a {
   display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
   text-align: center;
 }
-header>ul{
-  background-color: green;
-  height: 50px;
-  line-height: 50px;
-  padding-right: 50px;
+/* fin des liens de navigation */
+/*  peid de page*/
+footer{
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
 }
-header>ul li{
-  width: 30px;
-  float: right;
-}
-/* fin de tete ede page */
+/* fin du pied de page */
 main{
-  margin-left: 40px;
+  overflow-x: hidden;
+  max-width:1370px;
+  background-color: red;
+  z-index: -1;
 }
-main section{
-  background-color: coral;
+div.container{
+  width: 6900px;
+  background-color: gold;
+  position: absolute;
+  z-index:-2;
 }
-main section p:first-child{
-  text-align: right;
-  padding-right:
+.container>section{
+  height:9em;
+  width: 1370px;
+  height: 670px;
+  padding-right: 10px;
+}
+#acceuil{
+  background-color: green;
+}
+#competences{
+  background-color: pink;
+}
+#process{
+  background-color: red;
+}
+#portfolio{
+  background-color: violet;
+}
+#contact{
+  background-color: yellow;
 }
