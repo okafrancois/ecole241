@@ -9,6 +9,9 @@ body{
   overflow: hidden;
 }
 /* lien de navigation */
+a{
+  color: initial;
+}
 a:hover{
   text-decoration: none;
   color: initial;
@@ -57,7 +60,6 @@ nav ul:first-child li a i {
 /* description des liens */
 nav ul li a, nav ul li span {
   display: inline-block;
-  color: initial;
 }
 /* liens reseaux sociaux */
 nav ul:last-child a {
