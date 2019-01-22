@@ -5,7 +5,12 @@
    <meta charset="utf-8">
    <link rel="icon" href="assets/img/logof.png" type="image/x-icon">
    <title>Portfolio</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+   <link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet'/>
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Cabin|La+Belle+Aurore" rel="stylesheet">
+   <!--font-family: 'La Belle Aurore', cursive;font-family: 'Cabin', sans-serif;-->
    <link rel="stylesheet" href="assets/css/master.css">
 </head>
 
@@ -19,26 +24,28 @@
       <nav>
          <!-- liens internes -->
          <ul>
-            <li><a href="#acceuil"><i class="fas fa-home"></i></a></li>
-            <li><a href="#apropos"><i class="far fa-user"></i></a></li>
-            <li><a href="#skills"><i class="fas fa-cog"></i></a></li>
-            <li><a href="#portfolio"><i class="far fa-eye"></i></a></li>
-            <li><a href="#contact"><i class="far fa-envelope"></i></a></li>
-         </ul>
-         <!-- liens externes -->
-         <ul>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <!-- <li><a href="#"><i class="fas fa-code-branch"></i></a></li> -->
-         </ul>
-         <!-- liens fleches -->
-         <ul>
-            <li><a href="#"><i class="fab fa-angle-up"></i></a></li>
-            <li><a href="#"><i class="fab fa-angle-down"></i></a></li>
+           <div class="linkcontainer">
+             <li><a href="#acceuil"><i class="fas fa-home"></i><span class="hiden">Acceuil</span> </a></li>
+             <li><a href="#apropos"><i class="far fa-user"></i><span class="hiden">A propos</span> </a></li>
+             <li><a href="#skills"><i class="fas fa-cog"></i><span class="hiden">Skills</span> </a></li>
+             <li><a href="#portfolio"><i class="far fa-eye"></i><span class="hiden">Travaux</span> </a></li>
+             <li><a href="#contact"><i class="far fa-envelope"></i><span class="hiden">Contact</span> </a></li>
+           </div>
          </ul>
       </nav>
+      <!-- liens externes -->
+      <ul id="lkext">
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <!-- <li><a href="#"><i class="fas fa-code-branch"></i></a></li> -->
+      </ul>
+      <!-- liens fleches -->
+      <ul id="fleches">
+        <li><a href="#"><i class="fas fa-angle-up"></i></a></li>
+        <li><a href="#"><i class="fas fa-angle-down"></i></a></li>
+      </ul>
    </header>
    <main>
       <section id="acceuil">
@@ -66,8 +73,8 @@
             <span class="deco">&lt;h1 &gt;</span>
             <h1>A propos de Moi</h1>
             <span class="deco">&lt;/h1&gt;</span>
-            <p>Je m'appelle Itoutou François, je suis un passioné du code.<br>Tout commence par ma passion pour le monde de technologie; passion qui m'a emmenée à suivre une formation en developpement Web à l'ecole241. </p>
-            <p>Je suis destiné à devenir un developpeur complet autant dans les competences que dans le caractère.<br>Mais pour l'instant je suis en phase apprentissage, en tan qu'apprenant de la premiere promotion de developpeur de OkaCode.</p>
+            <p>Je m'appelle Itoutou François, je suis un passioné du code.<br>Tout commence par ma passion pour le monde de technologie; passion qui m'a conduit à suivre une formation en developpement Web à l'ecole241. </p>
+            <p>Je suis destiné à devenir un developpeur complet autant dans les compétences que dans le caractère.<br>Mais pour l'instant je suis en phase apprentissage, en tan qu'apprenant de la premiere promotion de developpeur de OkaCode.</p>
             <span class="deco">&lt;/body&gt;</span>
             <span class="deco">&lt;html &gt;</span>
          </div>
@@ -88,14 +95,14 @@
             <span class="deco">&lt;html &gt;</span>
          </div>
          <div class="image">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fas fa-code-branch"></i>
-            <i class="fas fa-code"></i>
-            <i class="fas fa-terminal"></i>
-            <i class="fab fa-github-alt"></i>
-            <i class="fab fa-ubuntu"></i>
-            <i class="fas fa-atom"></i>
+            <i class="fab fa-html5 skills"></i>
+            <i class="fab fa-css3-alt skills"></i>
+            <i class="fas fa-code-branch skills"></i>
+            <i class="fas fa-code skills"></i>
+            <i class="fas fa-terminal skills"></i>
+            <i class="fab fa-github-alt skills"></i>
+            <i class="fab fa-ubuntu skills"></i>
+            <i class="fas fa-atom skills"></i>
          </div>
       </section>
       <section id="portfolio">
@@ -113,11 +120,11 @@
                </div>
             </div>
             <div class="reali">
-              <h2>Deshi Mag</h2>
-              <p>Mon premier travail d'intégration Web. Je suis parti d'une maquette graphique(une image) que j'ai matérialisé en maquette html.</p>
-              <div class="btn">
-                <span><a href="https://bernyfrancois.github.io/ecole241/magazine"></a> Aperçu du site</span>
-              </div>
+               <h2>Deshi Mag</h2>
+               <p>Mon premier travail d'intégration Web. Je suis parti d'une maquette graphique(une image) que j'ai matérialisé en maquette html.</p>
+               <div class="btn">
+                  <span><a href="https://bernyfrancois.github.io/ecole241/magazine"></a> Aperçu du site</span>
+               </div>
             </div>
             <div class="reali">
                <h2>Agri collect</h2>
@@ -137,14 +144,14 @@
                <h2>QCM</h2>
                <p>J'qi due coder un qcm en assez peu de temps, il n'y a que du html.</p>
                <div class="btn">
-                  <span><a href="https://bernyfrancois.github.io/ecole241/"></a> Aperçu du site</span>
+                  <span><a href="https://bernyfrancois.github.io/ecole241/qcm"></a> Aperçu du site</span>
                </div>
             </div>
             <div class="reali">
                <h2>Lettre</h2>
                <p>J'ai utilisé le html et le css pour coder une lettre de motivation. C'est l'un de mes tout premier travaux à l'école241</p>
                <div class="btn">
-                  <span><a href="https://bernyfrancois.github.io/ecole241/"></a> Aperçu du site</span>
+                  <span><a href="https://bernyfrancois.github.io/ecole241/lettre"></a> Aperçu du site</span>
                </div>
             </div>
             <span class="deco">&lt;/body&gt;</span>
@@ -159,15 +166,34 @@
             <span class="deco">&lt;html &gt;</span>
             <span class="deco">&lt;body &gt;</span>
             <span class="deco">&lt;h1 &gt;</span>
+            <h1>Me contacter</h1>
             <span class="deco">&lt;/h1&gt;</span>
+            <p>Si vous avez une question ou une proposition, n'hésitez pas à m'écrire.</p>
+            <form class="message" action="/" method="post">
+               <input type="text" name="nom" placeholder="Nom">
+               <input type="email" name="email" placeholder="Email">
+               <input type="textarea" name="message" placeholder="Votre message">
+               <input type="button" name="send" value="Envoyer" class="btn">
+            </form>
             <span class="deco">&lt;/body&gt;</span>
             <span class="deco">&lt;html &gt;</span>
          </div>
          <div class="image">
-
+            <div class="texte">
+               <p>ITOUTOU Berny François<br>Libreville/Gabon<br><a href="mailto:bernystone2k@gmail.com">bernystone2k@gmail.com</a><br><a href="tel:+24104994130">+24104994130</a></p>
+            </div>
+            <div id='map' style='width: 400px; height: 400px;background-color:violet;'></div>
+            <script>
+               mapboxgl.accessToken = 'pk.eyJ1IjoiZnJhbmNvaXMyNDEiLCJhIjoiY2pyNnpxMnprMDBxazQ5a3VrcnA4czI5NyJ9.vfYGd-qK6FVB5qFWpvE-eg';
+               var map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/mapbox/streets-v11'
+               });
+            </script>
          </div>
       </section>
    </main>
+   <footer><small>&copy;Copyright by François, OkaCode 2019</small> </footer>
 </body>
 
 </html>

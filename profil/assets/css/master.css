@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
 }
@@ -6,4 +5,175 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
+  /* overflow: hidden; */
 }
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 10px;
+  margin-left: 60px;
+  background-color: #2A2A2B;
+}
+
+/* font-family: 'La Belle Aurore', cursive;font-family: 'Cabin', sans-serif */
+/* fond section:#2A2A2B, fond navbar:#101010* text blue:#6eeada */
+.deco {
+  display: block;
+  height: 20px;
+  font-size: 15px;
+  color: #4e4e50;
+  font-family: 'La Belle Aurore';
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+h1 {
+  color: #6eeada;
+}
+
+p {
+  color: white;
+}
+
+a i {
+  color: #4e4e50;
+}
+
+section a {
+  color: white;
+}
+
+a:hover, a:hover i{
+  color: #6eeada;
+}
+
+/*  liens de navigation*/
+nav {
+  position: fixed;
+  left: 0;
+  width: 60px;
+  background-color: #101010;
+  height: 100%;
+}
+
+.linkcontainer {
+  display: inline-block;
+}
+
+nav span {
+  color: #6eeada;
+  display: none;
+}
+
+nav li:hover i {
+  display: none;
+}
+
+nav li:hover span {
+  display: inline;
+}
+
+nav ul {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul li>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+}
+
+nav ul li a i {
+  font-size: 140%;
+}
+/* liens reseaux sociaux */
+#lkext{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#lkext li{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+#lkext li a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+/* fleches */
+#fleches{
+  position: fixed;
+  right: 10px;
+  top: 40%;
+}
+#fleches li{
+  width: 35px;
+  height: 35px;
+}
+#fleches li+li{
+  margin-top: 30px;
+}
+#fleches li a{
+  display: block;
+  font-size: 200%;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: #6eeada;
+}
+#fleches li a:hover i{
+  color:#6eeada;
+}
+#fleches a:hover{
+  background-color: #2A2A2B;
+}
+/* fin de fleches */
+/* fin des liens de navigation */
+/* liens reseaux sociaux */
+/* logo */
+#logo {
+  position: fixed;
+  width: 60px;
+  height: 70px;
+  background-color: black;
+  text-align: center;
+  line-height: 70px;
+  z-index: 1000;
+}
+
+#logo i {
+  font-size: 2em;
+  color: #6eeada;
+}
+/* fin du logo */
