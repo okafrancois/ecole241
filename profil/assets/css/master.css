@@ -5,12 +5,31 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: sans-serif;
   /* overflow: hidden; */
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn a {
+  display: block;
+  border: 1px solid #6eeada;
+  color: #6eeada;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn:hover a {
+  background-color: #6eeada;
+  color: #413e3e;
 }
 
 a {
   text-decoration: none;
   color: initial;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 ul {
@@ -25,12 +44,12 @@ section {
   background-color: #2A2A2B;
 }
 
-/* font-family: 'La Belle Aurore', cursive;font-family: 'Cabin', sans-serif */
+/* font-family: 'La Belle Aurore', cursive;font-family: 'Cabin', sans-serif
+font-family: 'Inconsolata', monospace; */
 /* fond section:#2A2A2B, fond navbar:#101010* text blue:#6eeada */
 .deco {
   display: block;
-  height: 20px;
-  font-size: 15px;
+  font-size: 20px;
   color: #4e4e50;
   font-family: 'La Belle Aurore';
   -webkit-user-select: none;
@@ -45,6 +64,8 @@ section {
 
 h1 {
   color: #6eeada;
+  font-family: 'Inconsolata', monospace;
+  font-size: 2em;
 }
 
 p {
@@ -59,7 +80,7 @@ section a {
   color: white;
 }
 
-a:hover, a:hover i{
+a:hover, a:hover i {
   color: #6eeada;
 }
 
@@ -112,39 +133,52 @@ nav ul li>a {
 nav ul li a i {
   font-size: 140%;
 }
+
 /* liens reseaux sociaux */
-#lkext{
+#lkext {
   position: fixed;
   top: 0;
   right: 0;
 }
-#lkext li{
+
+#lkext li {
   display: inline-block;
   width: 40px;
   height: 40px;
   text-align: center;
 }
-#lkext li a{
+
+#lkext li a {
   display: block;
   height: 100%;
   width: 100%;
   text-align: center;
   line-height: 40px;
 }
+#lkext li a i{
+ font-size: 110%;
+ color: #9a9094;
+}
+#lkext li a:hover i{
+  color:#6eeada;
+}
 /* fleches */
-#fleches{
+#fleches {
   position: fixed;
   right: 10px;
   top: 40%;
 }
-#fleches li{
+
+#fleches li {
   width: 35px;
   height: 35px;
 }
-#fleches li+li{
+
+#fleches li+li {
   margin-top: 30px;
 }
-#fleches li a{
+
+#fleches li a {
   display: block;
   font-size: 200%;
   text-align: center;
@@ -152,15 +186,17 @@ nav ul li a i {
   border-radius: 50%;
   background-color: #6eeada;
 }
-#fleches li a:hover i{
-  color:#6eeada;
+
+#fleches li a:hover i {
+  color: #6eeada;
 }
-#fleches a:hover{
+
+#fleches a:hover {
   background-color: #2A2A2B;
 }
+
 /* fin de fleches */
 /* fin des liens de navigation */
-/* liens reseaux sociaux */
 /* logo */
 #logo {
   position: fixed;
@@ -176,4 +212,134 @@ nav ul li a i {
   font-size: 2em;
   color: #6eeada;
 }
+
 /* fin du logo */
+/* mise en forme des deco */
+.html {
+  padding-left: 20px;
+  margin-bottom:
+}
+
+.html:first-child {
+  margin-bottom: 40px;
+}
+
+.html+.body {
+  margin-bottom: 40px;
+}
+
+.body {
+  padding-left: 35px;
+}
+
+.h1 {
+  padding-left: 60px;
+}
+
+.h1+h1 {
+  padding-left: 60px;
+}
+
+.h1+p, .h1+p+p {
+  padding-left: 60px;
+}
+
+.body2 {
+  margin-top: 50px;
+}
+
+/* fin des deco */
+section {
+  height: 670px;
+}
+
+#acceuil {
+  overflow: hidden;
+}
+
+/* section acceuil */
+#acceuil>div:first-child {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.image {
+  text-align: center;
+  height: 100%;
+}
+
+#acceuil>div.image {
+  padding-top: 180px;
+}
+
+#acceuil>div.image div {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  padding-top: 25px;
+}
+
+#acceuil>div:last-child div img {
+  width: 250px;
+  display: inline-block;
+  border-radius: 50%;
+  border-top: 5px solid gray;
+  border-right: 5px solid #6eeada;
+  border-bottom: 5px solid gray;
+  border-left: 5px solid #6eeada;
+}
+
+#acceuil .btn {
+  margin-left: 60px;
+}
+
+#acceuil h1 small {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.body2+.html {
+  margin-top: 100px;
+}
+
+/* fin de section acceuil... Enfin!!! */
+/* section a propos */
+#apropos {
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+#apropos>div:first-child {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.image {
+  text-align: center;
+  height: 100%;
+}
+
+#apropos>div.image {
+  padding-top: 80px;
+}
+
+#apropos>div.image div {
+  display: inline-block;
+  height: 450px;
+  width: 450px;
+}
+
+#apropos>div:last-child div img {
+  width: 410px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border-top: 5px solid gray;
+  border-right: 5px solid #6eeada;
+  border-bottom: 5px solid gray;
+  border-left: 5px solid #6eeada;
+}
