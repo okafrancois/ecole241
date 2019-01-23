@@ -30,7 +30,8 @@ header{
 header div a{color:#00A14C;}
 header div a:hover{color:white;}
 header div{
-  position:fixed;
+  position:sticky;
+  top: 80px;
   width: 80px;
   height: 60px;
   border-radius: 5px 40px 40px 5px;
