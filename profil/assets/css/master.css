@@ -1,16 +1,19 @@
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: sans-serif;
-  /* overflow: hidden; */
 }
 
 .btn {
   display: inline-block;
+  width: 180px;
 }
 
 .btn a {
@@ -18,7 +21,7 @@ html {
   border: 1px solid #6eeada;
   color: #6eeada;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 .btn:hover a {
@@ -39,9 +42,13 @@ ul {
 }
 
 section {
-  padding: 10px;
   margin-left: 60px;
   background-color: #2A2A2B;
+}
+
+h1+.h1 {
+  display: inline;
+  padding-left: 0;
 }
 
 /* font-family: 'La Belle Aurore', cursive;font-family: 'Cabin', sans-serif
@@ -65,11 +72,13 @@ font-family: 'Inconsolata', monospace; */
 h1 {
   color: #6eeada;
   font-family: 'Inconsolata', monospace;
-  font-size: 2em;
+  font-size: 3.2em;
+  display: inline-block;
 }
 
 p {
   color: white;
+  font-size: 1.2em;
 }
 
 a i {
@@ -139,6 +148,7 @@ nav ul li a i {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1000;
 }
 
 #lkext li {
@@ -155,23 +165,27 @@ nav ul li a i {
   text-align: center;
   line-height: 40px;
 }
-#lkext li a i{
- font-size: 110%;
- color: #9a9094;
+
+#lkext li a i {
+  font-size: 110%;
+  color: #9a9094;
 }
-#lkext li a:hover i{
-  color:#6eeada;
+
+#lkext li a:hover i {
+  color: #6eeada;
 }
+
 /* fleches */
 #fleches {
   position: fixed;
   right: 10px;
   top: 40%;
+  z-index: 1001;
 }
 
 #fleches li {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
 #fleches li+li {
@@ -180,9 +194,9 @@ nav ul li a i {
 
 #fleches li a {
   display: block;
-  font-size: 200%;
+  font-size: 25px;
   text-align: center;
-  line-height: 35px;
+  line-height: 25px;
   border-radius: 50%;
   background-color: #6eeada;
 }
@@ -250,39 +264,42 @@ nav ul li a i {
 
 /* fin des deco */
 section {
-  height: 670px;
+  height: 100vh;
+  width: 100vw;
 }
 
+section:not(#portfolio)>* {
+  width: 50vw;
+  height: 100vh;
+  display: inline-block;
+}
+
+section:not(#portfolio)>div:first-child {
+  float: left;
+}
+
+/* section:not(#portfolio)>div:last-child{
+  float: right
+} */
 #acceuil {
   overflow: hidden;
 }
 
-/* section acceuil */
-#acceuil>div:first-child {
-  float: left;
-  height: 100%;
-  width: 50%;
+#acceuil h1 {
+  font-size: 3.2em;
 }
 
+/* section acceuil */
 .image {
   text-align: center;
-  height: 100%;
 }
 
 #acceuil>div.image {
   padding-top: 180px;
 }
 
-#acceuil>div.image div {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  padding-top: 25px;
-}
-
 #acceuil>div:last-child div img {
-  width: 250px;
+  width: 300px;
   display: inline-block;
   border-radius: 50%;
   border-top: 5px solid gray;
@@ -293,12 +310,15 @@ section {
 
 #acceuil .btn {
   margin-left: 60px;
+  width: 180px;
+  text-align: center;
 }
 
-#acceuil h1 small {
+#acceuil small {
   font-size: 15px;
   font-family: sans-serif;
   font-weight: lighter;
+  color: cyan;
 }
 
 .body2+.html {
@@ -309,18 +329,12 @@ section {
 /* section a propos */
 #apropos {
   overflow: hidden;
-  border: 1px solid white;
 }
 
-#apropos>div:first-child {
-  float: left;
-  height: 100%;
-  width: 50%;
-}
+#apropos>div:first-child {}
 
 .image {
   text-align: center;
-  height: 100%;
 }
 
 #apropos>div.image {
@@ -342,4 +356,313 @@ section {
   border-right: 5px solid #6eeada;
   border-bottom: 5px solid gray;
   border-left: 5px solid #6eeada;
+}
+
+/* fin de apropos...pour l'instant */
+/* section skills */
+#skills>div:first-child {}
+
+#skills>div:last-child {
+  text-align: center;
+  position: relative;
+}
+
+#skills div.image {
+  position: relative;
+  top: 80px;
+}
+
+.skills {
+  display: inline-block;
+  font-size: 3em;
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  padding: 5px;
+  line-height: 60px;
+  transition: all 0.5s 0.1s;
+}
+
+#skills i {
+  border: 1px solid cyan;
+}
+
+#skills i:hover {
+  background: gray;
+  color: white;
+  border: none;
+}
+
+.cercle1 {
+  border: 2px dashed gray;
+  border-radius: 50%;
+  height: 70%;
+  width: 70%;
+  max-width: 450px;
+  max-height: 450px;
+  display: inline-block;
+}
+
+.cercle2 {
+  border: 2px solid gray;
+  height: 70%;
+  width: 70%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* premier cercle */
+.cercle1>i {
+  position: relative;
+}
+
+.cercle1>i:nth-child(4) {
+  font-size: 40px;
+}
+
+.cercle1>i:nth-child(1), .cercle1>i:nth-child(4) {
+  top: -5px;
+}
+
+.cercle1>i:nth-child(2) {
+  top: 300px;
+  left: -150px;
+}
+
+.cercle1>i:nth-child(3) {
+  top: 300px;
+  right: -150px;
+}
+
+/* fin du cercle 1
+/* cercle 2 */
+.cercle2 i {
+  position: relative;
+}
+
+#skills .cercle2>i:nth-child(4) {
+  border: 1px solid cyan;
+  background-color: initial;
+  color: cyan;
+  top: 25px;
+  width: 100px;
+  height: 100px;
+  line-height: 90px;
+}
+
+.cercle2 i:nth-child(1) {
+  top: 60px;
+  left: -55px;
+}
+
+.cercle2 i:nth-child(2) {
+  top: 270px;
+}
+
+.cercle2 i:nth-child(3) {
+  top: 60px;
+  right: -55px;
+}
+
+/* fin des skills... enfin! */
+#portfolio .html {
+  margin-bottom: 0;
+}
+
+#portfolio .body {
+  margin-bottom: 0;
+}
+
+#portfolio .content {
+  width: 95%;
+  overflow: auto;
+  text-align: center;
+}
+
+.reali {
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid white;
+  width: 30%;
+  min-height: 200px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  min-width: 200px;
+  min-height: 150px;
+}
+
+.reali .infos {
+  height: 200px;
+  color: white;
+  padding-top: 30px;
+  position: relative;
+}
+
+.reali:nth-child(n+4) .infos {
+  bottom: -300px;
+  transition: all 0.5s 0.1s;
+}
+
+.reali .infos {
+  bottom: 300px;
+  transition: all 0.5s 0.1s;
+}
+
+.reali .infos h2 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.reali:nth-child(1) {
+  background: url('../img/proxima.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(2) {
+  background: url('../img/deshi.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(3) {
+  background: url('../img/githun.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(4) {
+  background: url('../img/myga.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(5) {
+  background: url('../img/qcm.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(6) {
+  background: url('../img/lettre.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:first-child .infos {
+  background-color: #4e0357;
+}
+
+.reali:nth-child(2) .infos {
+  background-color: #0a7969;
+}
+
+.reali:nth-child(3) .infos {
+  background-color: #025912;
+}
+
+.reali:nth-child(4) .infos {
+  background-color: #024259;
+}
+
+.reali:nth-child(5) .infos {
+  background-color: #d1da66;
+}
+
+.reali:nth-child(6) .infos {
+  background-color: #743030;
+}
+
+.reali:hover .infos {
+  bottom: 0;
+}
+
+#portfolio .btn {
+  width: 180px;
+  margin-top: 10px;
+}
+
+#portfolio .btn a {
+  border: 2px solid #141617;
+  color: #141617;
+  border-radius: 50px;
+}
+
+#portfolio .btn a:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+
+/* fin des realisations */
+/* section contact */
+#contact div.map {
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 660px;
+}
+
+.map .texte {
+  position: absolute;
+  z-index: 2;
+  background: rgba(51, 46, 46, 0.8);
+  width: 220px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  top: 50px;
+  left: 50px;
+}
+
+#contact form {
+  margin-left: 60px;
+}
+
+#contact input {
+  height:40px;
+  background: initial;
+  border: initial;
+  display: block;
+  margin-top: 5px;
+  border-bottom: 2px solid cyan;
+  background-color: rgba(139, 140, 143, 0.3);
+  font-size: 1.5em;
+  padding: 0;
+}
+
+#contact input:focus{
+  background:none;
+  color: white;
+}
+#contact input:first-child {
+  width: 200px;
+  border-bottom:;
+}
+#contact input:last-child{
+  display: none;
+}
+#contact label{
+  display: block;
+  margin-top: 5px;
+  height: 60px;
+  width: 70px;
+  overflow: hidden;
+}
+#contact label i{
+  display:inline-block;
+  color: cyan;
+  font-size: 2em;
+  transition: all 0.5s 0.5s;
+  transform: rotate(90deg);
+}
+#contact label span{
+  color: cyan;
+  position: relative;
+  right: -70px;
+  transition: all 0.7s 0.1s;
+  display: block;
+  margin-top: 5px;
+}
+#contact label:hover span{
+  right:0;
 }
