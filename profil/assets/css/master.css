@@ -307,7 +307,6 @@ section:not(#portfolio)>div:first-child {
   border-bottom: 5px solid gray;
   border-left: 5px solid #6eeada;
 }
-
 #acceuil .btn {
   margin-left: 60px;
   width: 180px;
@@ -619,7 +618,7 @@ section:not(#portfolio)>div:first-child {
 }
 
 #contact input {
-  height:40px;
+  height: 40px;
   background: initial;
   border: initial;
   display: block;
@@ -630,32 +629,37 @@ section:not(#portfolio)>div:first-child {
   padding: 0;
 }
 
-#contact input:focus{
-  background:none;
+#contact input:focus {
+  background: none;
   color: white;
 }
+
 #contact input:first-child {
   width: 200px;
-  border-bottom:;
+  border-bottom: ;
 }
-#contact input:last-child{
+
+#contact input:last-child {
   display: none;
 }
-#contact label{
+
+#contact label {
   display: block;
   margin-top: 5px;
   height: 60px;
   width: 70px;
   overflow: hidden;
 }
-#contact label i{
-  display:inline-block;
+
+#contact label i {
+  display: inline-block;
   color: cyan;
   font-size: 2em;
   transition: all 0.5s 0.5s;
   transform: rotate(90deg);
 }
-#contact label span{
+
+#contact label span {
   color: cyan;
   position: relative;
   right: -70px;
@@ -663,6 +667,7 @@ section:not(#portfolio)>div:first-child {
   display: block;
   margin-top: 5px;
 }
-#contact label:hover span{
-  right:0;
+
+#contact label:hover span {
+  right: 0;
 }
