@@ -4,26 +4,24 @@ html {
   width: 100vw;
   height: 100vh;
 }
-input:focus{
+input:focus,textarea:focus{
   outline: none;
 }
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
 }
 
 .btn {
   display: inline-block;
-  width: 180px;
 }
 
 .btn a {
-  display: block;
+  display: inline-block;
   border: 1px solid #6eeada;
   color: #6eeada;
   padding: 5px;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .btn:hover a {
@@ -53,9 +51,7 @@ h1+.h1 {
   padding-left: 0;
 }
 
-/* font-family: 'La Belle Aurore', cursive;font-family: 'Cabin', sans-serif
-font-family: 'Inconsolata', monospace; */
-/* fond section:#2A2A2B, fond navbar:#101010* text blue:#6eeada */
+
 .deco {
   display: block;
   font-size: 20px;
@@ -73,16 +69,24 @@ font-family: 'Inconsolata', monospace; */
 
 h1 {
   color: #6eeada;
-  font-family: 'Inconsolata', monospace;
-  font-size: 3.2em;
+  font-family: 'Acme', monospace;
+  font-size: 3.5em;
+  font-weight: normal;
   display: inline-block;
 }
 
 p {
   color: white;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  font-weight: 150;
+  font-family: 'Lato'
 }
-
+p+p{
+  margin-top: 10px;
+}
+#apropos p:last-of-type{
+  margin-left: 60px;
+}
 a i {
   color: #4e4e50;
 }
@@ -289,6 +293,7 @@ section:not(#portfolio)>div:first-child {
 
 #acceuil h1 {
   font-size: 3.2em;
+  color: white;
 }
 
 /* section acceuil */
@@ -311,15 +316,15 @@ section:not(#portfolio)>div:first-child {
 }
 #acceuil .btn {
   margin-left: 60px;
-  width: 180px;
   text-align: center;
+  margin-top: 20px;
 }
 
 #acceuil small {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: 'Inconsolata';
   font-weight: lighter;
-  color: cyan;
+  color: #6c6c6b;
 }
 
 .body2+.html {
@@ -584,7 +589,7 @@ section:not(#portfolio)>div:first-child {
 #portfolio .btn a {
   border: 2px solid #141617;
   color: #141617;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 #portfolio .btn a:hover {
@@ -606,7 +611,7 @@ section:not(#portfolio)>div:first-child {
 .map .texte {
   position: absolute;
   z-index: 2;
-  background: rgba(51, 46, 46, 0.8);
+  background: rgba(51, 46, 46, 0.9);
   width: 220px;
   text-align: center;
   border-radius: 5px;
@@ -614,9 +619,15 @@ section:not(#portfolio)>div:first-child {
   top: 50px;
   left: 50px;
 }
-
+#contact .map .texte a{
+  text-decoration: underline;
+}
 #contact form {
   margin-left: 60px;
+}
+input[required]{
+  border: none;
+  border-bottom: 2px solid red;
 }
 
 #contact input {
@@ -625,20 +636,29 @@ section:not(#portfolio)>div:first-child {
   border: initial;
   display: block;
   margin-top: 5px;
-  border-bottom: 2px solid cyan;
   background-color: rgba(139, 140, 143, 0.3);
   font-size: 1.5em;
   padding: 0;
+  transition: all 0.5s 0.1s;
 }
-
-#contact input:focus {
-  background: none;
+#contact textarea{
   color: white;
+    background: initial;
+    border: initial;
+    margin-top: 5px;
+    background-color: rgba(139, 140, 143, 0.3);
+    transition: all 0.5s 0.1s;
 }
 
 #contact input:first-child {
   width: 200px;
   border-bottom: ;
+}
+
+#contact input:focus,#contact textarea:focus{
+  background: none;
+  color: white;
+  border-bottom: 2px solid cyan;
 }
 
 #contact input:last-child {
@@ -672,4 +692,14 @@ section:not(#portfolio)>div:first-child {
 
 #contact label:hover span {
   right: 0;
+}
+/* fin de la section contact */
+/* pied de page */
+footer{
+  position: fixed;
+  bottom: 5px;
+  left: 45%;
+  z-index: 1000;
+  color: gray;
+  font-size: 1.1em;
 }

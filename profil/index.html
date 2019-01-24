@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang=fr>
-
 <head>
    <meta charset="utf-8">
    <link rel="icon" href="assets/img/logof.png" type="image/x-icon">
@@ -10,11 +9,9 @@
    <link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Cabin|La+Belle+Aurore" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-   <!--font-family: 'La Belle Aurore', cursive;font-family: 'Cabin', sans-serif;-->
+   <link href="https://fonts.googleapis.com/css?family=Acme|Lato" rel="stylesheet">
    <link rel="stylesheet" href="assets/css/master.css">
 </head>
-
 <body>
    <header>
       <!-- logo de la oage -->
@@ -54,10 +51,10 @@
             <span class="deco html">&lt;html&gt;</span>
             <span class="deco body">&lt;body&gt;</span>
             <span class="deco h1">&lt;h1&gt;</span>
-            <h1>Bonjour, <br>je suis François.<br>Developpeur Web.
+            <h1>Bonjour, <br>Je suis François,<br>Developpeur Web.
             </h1>
             <span class="deco h1">&lt;/h1&gt;</span>
-            <p><small>Promotion <a href="https://lacastafiore.github.io/ecole241/okacode/">OkaCode</a>/<a href="ecole241.org">ecole{241}</a>/2019</small></p>
+            <p><small>Developpeur Front-end / Bootstrap / Atom</small></p>
             <div class="btn">
                <span><a href="#contact">Me contacter</a></span>
             </div>
@@ -78,7 +75,8 @@
             <h1>A propos de Moi</h1>
             <span class="deco h1">&lt;/h1&gt;</span>
             <p>Je m'appelle Itoutou François, je suis un passioné du code.<br>Tout commence par ma passion pour le monde de technologie; passion qui m'a conduit à suivre une formation en developpement Web à l'ecole241. </p>
-            <p>Je suis destiné à devenir un developpeur complet autant dans les compétences que dans le caractère.<br>Mais pour l'instant je suis en phase apprentissage, en tant qu'apprenant de la premiere promotion de developpeur de OkaCode.</p>
+            <p>Je suis destiné à devenir un developpeur complet autant dans les compétences que dans le caractère.</p>
+            <p>Mais pour l'instant je suis en phase apprentissage, en tant qu'apprenant de la premiere promotion de developpeur de OkaCode.</p>
             <span class="deco body body2">&lt;/body&gt;</span>
             <span class="deco html">&lt;/html&gt;</span>
          </div>
@@ -182,26 +180,27 @@
       </section>
       <section id="contact">
          <div class="content">
-           <span class="deco">&lt;html&gt;</span>
-           <span class="deco">&lt;body&gt;</span>
-           <span class="deco h1">&lt;h1&gt;</span>
+            <span class="deco">&lt;html&gt;</span>
+            <span class="deco">&lt;body&gt;</span>
+            <span class="deco h1">&lt;h1&gt;</span>
             <h1>Me contacter</h1>
             <span class="deco h1">&lt;/h1&gt;</span>
             <p>Si vous avez une question ou une proposition, n'hésitez pas à m'écrire.</p>
             <form class="message" action="/" method="post">
                <input type="text" name="nom" placeholder="Nom">
-               <input type="email" name="email" placeholder="Email">
-               <input type="textarea" name="message" placeholder="Votre message">
+               <input type="email" name="email" placeholder="Email" required>
+               <input type="text" name="subject" placeholder="L'objet">
+               <textarea name="message" rows="10" cols="37" placeholder="Saisissez votre message"></textarea>
                <label for="send"><i class="fab fa-atlassian"></i> <span>Envoyer</span></label>
-               <input id="send" type="button" value="Envoyer"name="send">
+               <input id="send" type="button" value="Envoyer" name="send">
             </form>
             <span class="deco">&lt;/body&gt;</span>
             <span class="deco">&lt;/html&gt;</span>
          </div>
          <div class="map">
-           <div class="texte">
-             <p>ITOUTOU Berny François<br>Libreville/Gabon<br><a href="mailto:bernystone2k@gmail.com">bernystone2k@gmail.com</a><br><a href="tel:+24104994130">+24104994130</a></p>
-           </div>
+            <div class="texte">
+               <p>ITOUTOU Berny François<br>Libreville/Gabon<br><a href="mailto:bernystone2k@gmail.com">bernystone2k@gmail.com</a><br><a href="tel:+24104994130">+24104994130</a></p>
+            </div>
             <div id='map'></div>
             <script>
                mapboxgl.accessToken = 'pk.eyJ1IjoiZnJhbmNvaXMyNDEiLCJhIjoiY2pyNnpxMnprMDBxazQ5a3VrcnA4czI5NyJ9.vfYGd-qK6FVB5qFWpvE-eg';
@@ -213,7 +212,8 @@
          </div>
       </section>
    </main>
-   <footer><small>&copy;Copyright by François, OkaCode 2019</small> </footer>
+   <footer>
+     <small>&copy;Copyright by François, OkaCode 2019</small>
+   </footer>
 </body>
-
 </html>
