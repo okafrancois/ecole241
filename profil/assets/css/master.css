@@ -27,7 +27,7 @@ nav  #blocliens li.active a>*{
 .btn a {
   display: inline-block;
   border: 1px solid #6eeada;
-  color: gray;
+  color: cyan;
   padding: 5px;
   border-radius: 5px;
 }
