@@ -586,7 +586,7 @@ section:not(#portfolio)>div:first-child {
 }
 
 .reali:nth-child(5) .infos {
-  background-color: #d1da66;
+  background-color: #4a4d2f;
 }
 
 .reali:nth-child(6) .infos {
@@ -603,14 +603,15 @@ section:not(#portfolio)>div:first-child {
 }
 
 #portfolio .btn a {
-  border: 2px solid #141617;
-  color: #141617;
+  border: 2px solid white;
+  color: white;
   border-radius: 5px;
 }
 
 #portfolio .btn a:hover {
   background-color: white;
   border: 1px solid white;
+  color: black;
 }
 
 /* fin des realisations */
@@ -675,7 +676,9 @@ input[required] {
   padding-left: 10px;
   border-radius: 2px;
 }
-
+#contact textarea::placeholder{
+  font-family:sans-serif;
+}
 #contact input:focus, #contact textarea:focus {
   background: none;
   color: white;
