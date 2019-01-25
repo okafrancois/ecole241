@@ -1,17 +1,25 @@
+
 html {
   scroll-behavior: smooth;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
-input:focus,textarea:focus{
+
+input:focus, textarea:focus {
   outline: none;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
-
+nav #blocliens li.normal a i{
+ color: gray;
+}
+nav  #blocliens li.active a>*{
+ color: cyan;
+}
 .btn {
   display: inline-block;
 }
@@ -19,7 +27,7 @@ input:focus,textarea:focus{
 .btn a {
   display: inline-block;
   border: 1px solid #6eeada;
-  color: #6eeada;
+  color: gray;
   padding: 5px;
   border-radius: 5px;
 }
@@ -51,7 +59,6 @@ h1+.h1 {
   padding-left: 0;
 }
 
-
 .deco {
   display: block;
   font-size: 20px;
@@ -81,12 +88,15 @@ p {
   font-weight: 150;
   font-family: 'Lato'
 }
-p+p{
+
+p+p {
   margin-top: 10px;
 }
-#apropos p:last-of-type{
+
+#apropos p:last-of-type {
   margin-left: 60px;
 }
+
 a i {
   color: #4e4e50;
 }
@@ -111,18 +121,25 @@ nav {
 .linkcontainer {
   display: inline-block;
 }
-
+nav li{
+  position: relative;
+}
+nav li i,nav li span{
+  transition: all 0.4s 0.2s ease;
+}
 nav span {
   color: #6eeada;
-  display: none;
+  display:block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-
-nav li:hover i {
-  display: none;
+nav li:hover i{
+  opacity:0;
 }
-
 nav li:hover span {
-  display: inline;
+  opacity: 1;
 }
 
 nav ul {
@@ -284,9 +301,6 @@ section:not(#portfolio)>div:first-child {
   float: left;
 }
 
-/* section:not(#portfolio)>div:last-child{
-  float: right
-} */
 #acceuil {
   overflow: hidden;
 }
@@ -314,6 +328,8 @@ section:not(#portfolio)>div:first-child {
   border-bottom: 5px solid gray;
   border-left: 5px solid #6eeada;
 }
+#acceuil>div:last-child div img{
+}
 #acceuil .btn {
   margin-left: 60px;
   text-align: center;
@@ -328,7 +344,7 @@ section:not(#portfolio)>div:first-child {
 }
 
 .body2+.html {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 /* fin de section acceuil... Enfin!!! */
@@ -366,7 +382,6 @@ section:not(#portfolio)>div:first-child {
 
 /* fin de apropos...pour l'instant */
 /* section skills */
-#skills>div:first-child {}
 
 #skills>div:last-child {
   text-align: center;
@@ -377,6 +392,7 @@ section:not(#portfolio)>div:first-child {
   position: relative;
   top: 80px;
 }
+
 
 .skills {
   display: inline-block;
@@ -619,46 +635,52 @@ section:not(#portfolio)>div:first-child {
   top: 50px;
   left: 50px;
 }
-#contact .map .texte a{
+
+#contact .map .texte a {
   text-decoration: underline;
 }
+
 #contact form {
   margin-left: 60px;
 }
-input[required]{
+
+input[required] {
   border: none;
   border-bottom: 2px solid red;
 }
 
 #contact input {
   height: 40px;
+  width: 300px;
   background: initial;
   border: initial;
   display: block;
   margin-top: 5px;
   background-color: rgba(139, 140, 143, 0.3);
-  font-size: 1.5em;
-  padding: 0;
-  transition: all 0.5s 0.1s;
+  font-size: 1.2em;
+  padding-left: 10px;
+  border-radius: 2px;
+  transition: all 0.5s 0.1s ease;
 }
-#contact textarea{
+
+#contact textarea {
   color: white;
-    background: initial;
-    border: initial;
-    margin-top: 5px;
-    background-color: rgba(139, 140, 143, 0.3);
-    transition: all 0.5s 0.1s;
+  background: initial;
+  border: initial;
+  display:inline-block;
+  margin-top: 5px;
+  background-color: rgba(139, 140, 143, 0.3);
+  transition: all 0.5s 0.1s;
+  font-size: 1.2em;
+  padding-left: 10px;
+  border-radius: 2px;
 }
 
-#contact input:first-child {
-  width: 200px;
-  border-bottom: ;
-}
-
-#contact input:focus,#contact textarea:focus{
+#contact input:focus, #contact textarea:focus {
   background: none;
   color: white;
   border-bottom: 2px solid cyan;
+  width: 350px;
 }
 
 #contact input:last-child {
@@ -666,11 +688,13 @@ input[required]{
 }
 
 #contact label {
-  display: block;
+  display: inline-block;
   margin-top: 5px;
   height: 60px;
   width: 70px;
   overflow: hidden;
+  margin-bottom: 19%;
+  margin-left: 1%;
 }
 
 #contact label i {
@@ -679,6 +703,7 @@ input[required]{
   font-size: 2em;
   transition: all 0.5s 0.5s;
   transform: rotate(90deg);
+  cursor: pointer;
 }
 
 #contact label span {
@@ -693,13 +718,17 @@ input[required]{
 #contact label:hover span {
   right: 0;
 }
+
 /* fin de la section contact */
 /* pied de page */
-footer{
+footer {
   position: fixed;
   bottom: 5px;
   left: 45%;
   z-index: 1000;
   color: gray;
   font-size: 1.1em;
+}
+footer a{
+  color: inherit;
 }
