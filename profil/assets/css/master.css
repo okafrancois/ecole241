@@ -104,7 +104,6 @@ h1+.h1 {
   user-select: none;
   /* Standard */
 }
-
 h1 {
   color: #6eeada;
   font-family: 'Acme', monospace;
@@ -112,6 +111,12 @@ h1 {
   font-weight: normal;
   display: inline-block;
 }
+/* titre animation */
+h1>span:hover{
+  color: cyan;
+}
+
+/* fin */
 
 p {
   color: white;
@@ -674,15 +679,6 @@ div.cercle2 {
   padding: 10px;
   top: 50px;
   left: 50px;
-}
-
-.foot {
-  height: 100px;
-  width: 200px;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 #contact .map .texte a {
