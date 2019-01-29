@@ -1,8 +1,6 @@
 html {
   scroll-behavior: smooth;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
 }
 
 input:focus, textarea:focus {
@@ -42,6 +40,23 @@ input:focus, textarea:focus {
   box-sizing: border-box;
   margin: 0;
 }
+main{
+  width: 500vw;
+  display: flex;
+  height: 100vh;
+}
+section {
+  width: 100vw;
+  background-color: #2A2A2B;
+  padding-left: 40px;
+  height: 100vh;
+}
+section:not(#portfolio){
+  display: flex;
+}
+section:not(#portfolio)>*{
+ width: 50%;
+}
 
 nav #blocliens li.normal a i {
   color: gray;
@@ -67,7 +82,9 @@ nav #blocliens li.active a>* {
   background-color: #6eeada;
   color: #413e3e;
 }
-
+section a {
+  color: white;
+}
 a {
   text-decoration: none;
   color: initial;
@@ -80,10 +97,6 @@ ul {
   margin: 0;
 }
 
-section {
-  margin-left: 60px;
-  background-color: #2A2A2B;
-}
 
 h1+.h1 {
   display: inline;
@@ -112,6 +125,9 @@ h1 {
   display: inline-block;
 }
 /* titre animation */
+h1>span{
+  transition: color 1s 0.5s;
+}
 h1>span:hover{
   color: cyan;
 }
@@ -135,10 +151,6 @@ p+p {
 
 a i {
   color: #4e4e50;
-}
-
-section a {
-  color: white;
 }
 
 a:hover, a:hover i {
@@ -242,14 +254,16 @@ nav ul li a i {
 /* fleches */
 #fleches {
   position: fixed;
-  right: 10px;
-  top: 40%;
+  right: 30px;
+  bottom: 20px;
   z-index: 1001;
 }
 
 #fleches li {
   width: 25px;
   height: 25px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 #fleches li+li {
@@ -327,21 +341,6 @@ nav ul li a i {
 }
 
 /* fin des deco */
-section {
-  height: 100vh;
-  width: 100vw;
-}
-
-section:not(#portfolio)>* {
-  width: 50vw;
-  height: 100vh;
-  display: inline-block;
-}
-
-section:not(#portfolio)>div:first-child {
-  float: left;
-}
-
 #acceuil {
   overflow: hidden;
 }
@@ -664,11 +663,7 @@ div.cercle2 {
   position: relative;
 }
 
-#map {
-  width: 100%;
-  height: 660px;
-}
-
+#map { position:absolute; top:0; bottom:0; width:100%;}
 .map .texte {
   position: absolute;
   z-index: 2;

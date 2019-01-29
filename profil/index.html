@@ -11,17 +11,9 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Cabin|La+Belle+Aurore" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Acme|Lato" rel="stylesheet">
-   <script>
-      function toggleClass(el) {
-             var kids = document.getElementById('blocliens').children;
-             for (var i = 0; i < kids.length; i++) {
-                kids[i].className = "normal";
-             }
-             el.className = "active";
-          }
-       </script>
    <link rel="stylesheet" href="assets/css/master.css">
 </head>
+
 <body>
    <header>
       <!-- logo de la oage -->
@@ -51,8 +43,8 @@
       </ul>
       <!-- liens fleches -->
       <ul id="fleches">
-         <li><a href="#acceuil"><i class="fas fa-angle-up"></i></a></li>
-         <li><a href="#contact"><i class="fas fa-angle-down"></i></a></li>
+         <li><a href="#acceuil"><i class="fas fa-angle-left"></i></a></li>
+         <li><a href="#contact"><i class="fas fa-angle-right"></i></a></li>
       </ul>
    </header>
    <main>
@@ -62,8 +54,8 @@
             <span class="deco body">&lt;body&gt;</span>
             <span class="deco h1">&lt;h1&gt;</span>
             <h1><span>B</span><span>o</span><span>n</span><span>j</span><span>o</span><span>u</span><span>r</span><span>,</span> <br><span>J</span><span>e</span>
-              <span>s</span><span>u</span><span>i</span><span>s</span> <span>F</span><span>r</span><span>a</span><span>n</span><span>ç</span><span>o</span><span>i</span><span>s</span><span>,</span><br>
-              <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>p</span><span>e</span><span>u</span><span>r</span> <span>W</span><span>e</span><span>b</span>.
+               <span>s</span><span>u</span><span>i</span><span>s</span> <span>F</span><span>r</span><span>a</span><span>n</span><span>ç</span><span>o</span><span>i</span><span>s</span><span>,</span><br>
+               <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>p</span><span>e</span><span>u</span><span>r</span> <span>W</span><span>e</span><span>b</span>.
             </h1>
             <span class="deco h1">&lt;/h1&gt;</span>
             <p><small>Developpeur Front-end / Bootstrap / Atom</small></p>
@@ -230,5 +222,15 @@
    <footer>
       <small>&copy;Copyright by François, <a href="https://lacastafiore.github.io/ecole241/okacode/">OkaCode</a> 2019</small>
    </footer>
+    <script>
+       function toggleClass(el) {
+              var kids = document.getElementById('blocliens').children;
+              for (var i = 0; i < kids.length; i++) {
+                 kids[i].className = "normal";
+              }
+              el.className = "active";
+           }
+     </script>
 </body>
+
 </html>
