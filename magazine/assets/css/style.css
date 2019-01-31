@@ -360,10 +360,10 @@ form input:last-child {
   font-weight: bold;
 }
 
-.liens li:first-child a {
+.liens li:first-child a{
   background-color: #226195;
 }
-.liens li:first-child a:hover {
+.liens li:first-child a:hover{
   border: 2px solid #226195;
   background-color: white;
   color:#226195;
@@ -372,7 +372,7 @@ form input:last-child {
 .liens li:nth-child(2) a {
   background-color: #4ba2eb;
 }
-.liens li:nth-child(2) a:hover {
+.liens li:nth-child(2) a:hover{
   border: 2px solid #4ba2eb ;
   background-color: white;
   color:#4ba2eb;
