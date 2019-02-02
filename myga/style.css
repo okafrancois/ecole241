@@ -7,10 +7,10 @@
 }
 *{padding:0;margin:0;max-width:1500px; margin-left:auto;margin-right:auto;}
 a{text-decoration: none;color: green;}
-.color-yellow{color: yellow;}
+.color-yellow{colo#00A14Cr: yellow;}
 .bg-green{background-color:#00A14C;}
 .inline-block{display: inline-block;}
-body{font-family: 'Nunito'; font-weight: bold;  background: url('assets/img/Plage1.jpg') no-repeat;}
+body{font-family: 'Nunito'; font-weight: bold;}
 li{border-left: 2px solid yellow;padding-left: 10px;padding-right:2px;min-height:1.5em;max-height:50px;line-height:1.5;}
 li:hover{border-bottom: 2px solid yellow;}
 
@@ -19,21 +19,19 @@ li:hover{border-bottom: 2px solid yellow;}
 header{
   text-align: right;
   padding-right:20px;
-  min-height: 50px;
-  max-height:40px;
-  line-height:50px;
+  min-height: 80px;
+  max-height:80px;
+  line-height:80px;
 }
 header div{
-<<<<<<< HEAD
   position:sticky;
-  top: 80px;
+  top: 10px;
   width: 80px;
   height: 60px;
   border-radius: 5px 40px 40px 5px;
   padding-right:7px;
   background-color: white;
   line-height: 55px;
-=======
   position:fixed;
   width: 100px;
   height: 50px;
@@ -41,18 +39,19 @@ header div{
   padding-right:3px;
   background-color:rgba(28, 144, 18,0.8);
   line-height: 40px;
->>>>>>> 11c027be23b45f9ac13b11e27f3362e18823c83d
   font-size: 3em;
   font-family: 'spartan';
 }
 header div a{
  color: white;
 }
+header div a:hover{
+   color:#00A14C;
+}
 header div:hover{
-  background-color:#00A14C;
+  background-color:white;
   font-size: 3.1em;
-  font-family: 'spartan'
-  color:white;
+  font-family: 'spartan';
 }
 header  nav form select{
   border-radius: 5px;
@@ -65,11 +64,14 @@ header  nav form select{
 /* fin de tete de page */
 /* corps de la page */
 section{
-  min-height:400px;
-  max-height: 500px;
-  padding-top:100px;
+  min-height:380px;
+  padding-top:50px;
+  background: url('fond1.jpg') no-repeat;
   background-size: cover;
+  background-position: top;
+  margin-top: 30px;
 }
+
 .fond{
   width:40em;
   text-align:center;
@@ -112,10 +114,11 @@ section form input[type="submit"]{
 /* pied de page */
 footer{
   background-color:#00A14C;
-  padding-left: 100px;
-  padding-right: 100px;
-  min-height:50px;
-  line-height:50px;
+  min-height:80px;
+  line-height:80px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 footer ul{
   width: 48%;
@@ -123,4 +126,7 @@ footer ul{
 }
 .pied-r{
   text-align: right;
+}
+footer a{
+  color: white;
 }
