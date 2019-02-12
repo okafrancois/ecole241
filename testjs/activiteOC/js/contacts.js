@@ -1,6 +1,7 @@
 /*
 Activité : gestion des contacts
 */
+// TODO : complétez le programme
 class Contact {//classe pour creer un contact
   constructor(prenom, nom, numero) {
     this.prenom = prenom;
@@ -11,7 +12,6 @@ class Contact {//classe pour creer un contact
     console.log(`Prenom: ${this.prenom}\nNom: ${this.nom}\nNumero: ${this.numero}`)
   }
 }
-// TODO : complétez le programme
 function lister(){//lister les contacts
   for(let i = 0; i < contacts.length; i++){
     console.log(`Contact ${i+1}`)
@@ -37,10 +37,10 @@ let option = '3';
 do{
    option = prompt("Choisissez une option");
   switch (option) {
-    case '1':
+    case '1'://Option lister les contacts
       lister();
       break;
-    case '2':
+    case '2'://Option ajouter un contact
       ajouter();
       break;
     default:
