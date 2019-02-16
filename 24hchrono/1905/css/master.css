@@ -1,0 +1,54 @@
+
+#navbar li:hover{
+  border-bottom: 2px solid blue;
+}
+
+#navbar a {
+  font-size: 1.2em;
+  font-weight:30px;
+  color: black;
+}
+#navbar .dropdown a {
+  font-size: 1.2em;
+  font-weight:30px;
+  color: white;
+}
+#navbar  input{
+  color: white;
+}
+	.fh5co-nav ul li.has-search {
+    /*RechercheBouton*/
+    position: relative;
+    right: 90%;
+  }
+
+  .btn-proxima{
+    border-color: #470090;
+  }
+  #send{
+    border-radius: 25px;
+  }
+  #equip{
+    background-color: #470090;
+    color: white;
+  }
+  #equip:hover{
+    background-color: white;
+    color: #470090;
+  }
+  #connect{
+    background-color: #470090;
+    color: white;
+  }
+  #connect:hover{
+    background-color: white;
+    color: #470090;
+  }
+  #develop{
+    background-color: #470090;
+    color: white;
+  }
+  #develop:hover{
+    background-color: white;
+    color: #470090;
+  }

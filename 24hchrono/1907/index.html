@@ -14,58 +14,19 @@
    <link href="css/style.css" rel="stylesheet">
    <link href="css/responsive.css" rel="stylesheet">
    <link rel="stylesheet" href="css/skins/green.css">
-   <style media="screen">
-   body {
-    color: #555;
-    padding: 0;
-    margin: 0;
-    font-family: "Open Sans";
-    font-size: 0.9rem;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.7;
-    position: relative;
-}
-      .preloader h1{
-     text-align: center;
-     padding: 10%;
-   }
-   .image-box img {
-     height: 300px;
-     width: 100px;
-     display: block;
-     overflow: hidden;
-   }
-   .sponsors-logo img{
-     width: 130px;
-     height: 100px;
-   }
-   .btn-primary{
-     background-color: #38b51f;
-   }
-   .btn{
-     width: 100px;
-     border-radius: 1px;
-   }
-   .form-control{
-     border-radius: 1px;
-   }
-   /* modal */
-   </style>
-
 </head>
 <body>
    <div class="page-wrapper">
       <div class="preloader">
-         <h1>LA CHAMBRE DE COMMERCE</h1>
+         <h1>LA CHAMBRE DE COMMERCE<br>DU GABON</h1>
       </div>
             <div class="header-top-bar">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-3">
+                     <div class="col-md-2">
                         <div class="login">
                            <ul>
-                              <li class="top-li" data-login="loginDialog"><a id="llogin"><i class="fa fa-user"></i><span class="ti-unlock" data-toggle="modal" data-target=".bd-example-modal-lg">Espace adhérents</span></a></li>
+                              <li class="top-li"><a id="llogin" href="contact.html"><span class="ti-unlock">Nous contacter</span></a></li>
                               <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                  <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -90,14 +51,14 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-md-3">
+                     <div class="col-md-2">
                         <div class="login">
                            <ul>
-                              <li class="top-li" data-login="loginDialog"><a href="adhesion.html"><i class="fa fa-user"></i><span class="ti-unlock">Adhésion</span></a></li>
+                              <li class="top-li"><a href="forum.html"><span class="ti-unlock">Forum</span></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="nav-icon-wrap">
                            <div class="search-wrap"> <i class="fa fa-search"></i>
                               <div class="search-form-wrap">
@@ -118,26 +79,17 @@
                <div class="logo"><img src="images/logo.jpg" alt=""></div>
             </div>
             <ul class="right-side pull-right clearfix row">
-               <li class="item">
-                  <div class="icon-box"> <i class="flaticon-signs"></i></div>
-                  <h4>Addresse</h4>
-                  <p>Libreville, Gabon</p>
-               </li>
-               <li class="item">
-                  <div class="icon-box"> <i class="flaticon-technology"></i></div>
-                  <h4>Nous joindre</h4>
-                  <p>+241-01-72-20-64</p>
-               </li>
-               <li class="item">
-                  <div class="icon-box"> <i class="flaticon-message"></i></div>
-                  <h4>Email</h4>
-                  <p>contact@cci-gabon.com</p>
+              <li class="item"  id="connect" class="adhesion" data-login="loginDialog">
+               <a class="adhesion" ><i class="fa fa-user"></i><span class="ti-unlock" data-toggle="modal" data-target=".bd-example-modal-lg">Espace adhérents</span></a>
+              </li>
+               <li class="item" id="addto" class="adhesion" data-login="loginDialog">
+                <a href="adhesion.html"><i class="fa fa-user"></i><span class="ti-unlock">Adhérer</span></a>
                </li>
             </ul>
          </div>
       </section>
       <header class="main-header sticky-header">
-         <div class="container-fluid clearfix">
+         <div class="container clearfix">
             <nav class="main-menu">
                <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button></div>
                <div class="navbar-collapse collapse clearfix">
@@ -148,7 +100,7 @@
                         <ul>
                            <li><a href="presentation.html">Présentations</a></li>
                            <li><a href="#">Missions</a></li>
-                           <li><a href="orga.pdf">Organigramme</a></li>
+                           <li><a href="http://www.ccima.cm/phocadownload/organigramme%20schmatique%20ccima.pdf" target="_blank">Organigramme</a></li>
                            <li><a href="mediatheque.html">Mediatheque</a></li>
                         </ul>
                      </li>
@@ -161,8 +113,8 @@
                            <li><a href="#">Projet CAMCGA</a></li>
                         </ul>
                      </li>
-                     <li><a href="temp/espace.html">Espace vente</a></li>
-                     <li class="dropdown"><a href="project.html">Profils</a>
+                     <li><a href="espace.html">Espace vente</a></li>
+                     <li class="dropdown"><a href="#">Profils</a>
                         <ul>
                            <li><a href="actus.html">Entreprises</a></li>
                            <li><a href="#">Jeunes diplomes</a></li>
@@ -186,8 +138,6 @@
                            <li><a href="#">ONG</a></li>
                          </ul>
                       </li>
-                      <li><a href="forum.html">Forum</a></li>
-                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                </div>
             </nav>

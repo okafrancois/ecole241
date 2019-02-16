@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Accueil |ACCAIMAG</title>
+   <title>Accueil |Base de données</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -15,193 +15,151 @@
    <link href="css/responsive.css" rel="stylesheet">
    <link rel="stylesheet" href="css/skins/green.css">
    <style media="screen">
-      body {
-    color: #555;
-    padding: 0;
-    margin: 0;
-    font-family: "Open Sans";
-    font-size: 0.9rem;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.7;
-    position: relative;
-}
-      .preloader h1{
-     text-align: center;
-     padding: 10%;
-   }
-   .image-box img {
-     height: 300px;
-     width: 100px;
-     display: block;
-     overflow: hidden;
-   }
-   .sponsors-logo img{
-     width: 130px;
-     height: 100px;
-   }
-   .btn-primary{
-     background-color: #38b51f;
-   }
-   .btn{
-     width: 100px;
-     border-radius: 1px;
-   }
-   .form-control{
-     border-radius: 1px;
-   }
-   .fond-noir{
-     background-color: rgba(0, 0, 0,0.5);
-     width:100%;
-     height:300px;
-   }
-   /* modal */
-   .page-title{
-     padding:0;
-   }
+     .fond-noir{
+       background-color: rgba(0, 0, 0, 0.5);
+       height: 100%;
+       padding: 10%;
+     }
+     .page-title{
+       padding: 0;
+       height: 350px;
+     }
+     .btn{
+       border-radius: 1px;
+       margin-top: 5px;
+     }
    </style>
-
 </head>
 
 <body>
    <div class="page-wrapper">
-      <div class="preloader">
-         <h1>LA CHAMBRE DE COMMERCE</h1>
-      </div>
-      <div class="header-top-bar">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-3">
-                  <div class="login">
-                     <ul>
-                        <li class="top-li" data-login="loginDialog"><a id="llogin"><i class="fa fa-user"></i><span class="ti-unlock" data-toggle="modal" data-target=".bd-example-modal-lg">Espace adhérents</span></a></li>
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                           <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                 <div class="dialog-inner">
-                                    <form action="" method="post" class="account login-form">
-                                       <fieldset>
-                                          <h2 class="text-center">Espace membre</h2>
-                                          <p><input type="text" class="form-control" name="email" id="user_login" placeholder="Adresse Email *" required="" autocomplete="off"></p>
-                                          <input type="hidden" name="_token" value="In22gJGSlSDpbYOaySW1nOa72ViA5rWfvoByM1J6">
-                                          <p><input type="password" class="form-control" name="password" id="user_pass" placeholder="Mot de passe *" required="" autocomplete="off"></p>
-                                          <p class="text-center">
-                                             <button class="button" type="submit"><a href="actus.html">Me connecter</a></button>
-                                          </p>
-                                          <hr>
-                                          <p class="text-center">Pas encore membre ? <a href="inscription.html#">Inscrivez-vous dès maitenant.</a></p>
-                                       </fieldset>
-                                    </form>
+      <div class="page-wrapper">
+         <div class="preloader">
+            <h1>LA CHAMBRE DE COMMERCE<br>DU GABON</h1>
+         </div>
+               <div class="header-top-bar">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-2">
+                           <div class="login">
+                              <ul>
+                                 <li class="top-li"><a id="llogin" href="contact.html"><span class="ti-unlock">Nous contacter</span></a></li>
+                                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                       <div class="modal-content">
+                                              <div class="dialog-inner">
+                                                 <form action="" method="post" class="account login-form">
+                                                    <fieldset>
+                                                       <h2 class="text-center">Espace membre</h2>
+                                                       <p><input type="text" class="form-control" name="email" id="user_login" placeholder="Adresse Email *" required="" autocomplete="off"></p>
+                                                       <input type="hidden" name="_token" value="In22gJGSlSDpbYOaySW1nOa72ViA5rWfvoByM1J6">
+                                                       <p><input type="password" class="form-control" name="password" id="user_pass" placeholder="Mot de passe *" required="" autocomplete="off"></p>
+                                                       <p class="text-center">
+                                                          <button class="button" type="submit"><a href="actus.html">Me connecter</a></button>
+                                                       </p>
+                                                       <hr>
+                                                       <p class="text-center">Pas encore membre ? <a href="inscription.html#">Inscrivez-vous dès maitenant.</a></p>
+                                                    </fieldset>
+                                                 </form>
+                                              </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-2">
+                           <div class="login">
+                              <ul>
+                                 <li class="top-li"><a href="forum.html"><span class="ti-unlock">Forum</span></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="nav-icon-wrap">
+                              <div class="search-wrap"> <i class="fa fa-search"></i>
+                                 <div class="search-form-wrap">
+                                    <form class="search-form"> <input type="search" name="search" value="" placeholder="Search..."> <input type="submit" name="submit" value="Search"></form>
                                  </div>
                               </div>
                            </div>
                         </div>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="login">
-                     <ul>
-                        <li class="top-li" data-login="loginDialog"><a href="adhesion.html"><i class="fa fa-user"></i><span class="ti-unlock">Adhésion</span></a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="nav-icon-wrap">
-                     <div class="search-wrap"> <i class="fa fa-search"></i>
-                        <div class="search-form-wrap">
-                           <form class="search-form"> <input type="search" name="search" value="" placeholder="Search..."> <input type="submit" name="submit" value="Search"></form>
+                        <div class="col-md-2">
+                           <div class="header-top-social text-center"> <a href="https://www.facebook.com/ccaimagabon/"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a></div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="col-md-2">
-                  <div class="header-top-social text-center"> <a href="https://www.facebook.com/ccaimagabon/"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i
-                          class="fa fa-linkedin"></i></a></div>
+         <section class="header-top">
+            <div class="container clearfix">
+               <div class="left-side pull-left">
+                  <div class="logo"><img src="images/logo.jpg" alt=""></div>
                </div>
+               <ul class="right-side pull-right clearfix row">
+                 <li class="item"  id="connect" class="adhesion" data-login="loginDialog">
+                  <a class="adhesion" ><i class="fa fa-user"></i><span class="ti-unlock" data-toggle="modal" data-target=".bd-example-modal-lg">Espace adhérents</span></a>
+                 </li>
+                  <li class="item" id="addto" class="adhesion" data-login="loginDialog">
+                   <a href="adhesion.html"><i class="fa fa-user"></i><span class="ti-unlock">Adhérer</span></a>
+                  </li>
+               </ul>
             </div>
-         </div>
-      </div>
-      <section class="header-top">
-         <div class="container clearfix">
-            <div class="left-side pull-left">
-               <div class="logo"><img src="images/logo.jpg" alt=""></div>
+         </section>
+         <header class="main-header sticky-header">
+            <div class="container clearfix">
+               <nav class="main-menu">
+                  <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button></div>
+                  <div class="navbar-collapse collapse clearfix">
+                     <ul class="navigation clearfix">
+                        <li class="current"><a href="index.html">Accueil</a>
+                        </li>
+                        <li class="dropdown"><a href="service.html">La CCAIMAG</a>
+                           <ul>
+                              <li><a href="presentation.html">Présentations</a></li>
+                              <li><a href="#">Missions</a></li>
+                              <li><a href="http://www.ccima.cm/phocadownload/organigramme%20schmatique%20ccima.pdf" target="_blank">Organigramme</a></li>
+                              <li><a href="mediatheque.html">Mediatheque</a></li>
+                           </ul>
+                        </li>
+                        </li>
+                        <li class="dropdown"><a href="about.html">Services</a>
+                           <ul>
+                              <li><a href="#">Assistance</a></li>
+                              <li><a href="service.html">Projet BSTPG</a></li>
+                              <li><a href="#">Projet CGA.GA</a></li>
+                              <li><a href="#">Projet CAMCGA</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="espace.html">Espace vente</a></li>
+                        <li class="dropdown"><a href="#">Profils</a>
+                           <ul>
+                              <li><a href="actus.html">Entreprises</a></li>
+                              <li><a href="#">Jeunes diplomes</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown"><a href="blog.html">Investir au Gabon</a>
+                           <ul>
+                              <li><a href="#">Le Gabon en bref</a></li>
+                              <li><a href="#">Environnement juridique</a></li>
+                              <li><a href="#">Procédures import/export</a></li>
+                              <li><a href="#">Documentation</a></li>
+                              <li><a href="database.html">Base de données</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="actus.html">Actualités</a></li>
+                         <li class="dropdown"><a href="#">Notre reseau</a>
+                            <ul>
+                              <li><a href="#">ANPI</a></li>
+                              <li><a href="#">Chambres de commerce internationales</a></li>
+                              <li><a href="#">Ministeres du commerce</a></li>
+                              <li><a href="#">ONG</a></li>
+                            </ul>
+                         </li>
+                     </ul>
+                  </div>
+               </nav>
             </div>
-            <ul class="right-side pull-right clearfix row">
-               <li class="item">
-                  <div class="icon-box"> <i class="flaticon-signs"></i></div>
-                  <h4>Addresse</h4>
-                  <p>Libreville, Gabon</p>
-               </li>
-               <li class="item">
-                  <div class="icon-box"> <i class="flaticon-technology"></i></div>
-                  <h4>Nous joindre</h4>
-                  <p>+241-01-72-20-64</p>
-               </li>
-               <li class="item">
-                  <div class="icon-box"> <i class="flaticon-message"></i></div>
-                  <h4>Email</h4>
-                  <p>contact@cci-gabon.com</p>
-               </li>
-            </ul>
-         </div>
-      </section>
-      <header class="main-header sticky-header">
-         <div class="container-fluid clearfix">
-            <nav class="main-menu">
-               <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button></div>
-               <div class="navbar-collapse collapse clearfix">
-                  <ul class="navigation clearfix">
-                     <li class="current"><a href="index.html">Accueil</a>
-                     </li>
-                     <li class="dropdown"><a href="service.html">La CCAIMAG</a>
-                        <ul>
-                           <li><a href="presentation.html">Présentations</a></li>
-                           <li><a href="#">Missions</a></li>
-                           <li><a href="orga.pdf">Organigramme</a></li>
-                           <li><a href="mediatheque.html">Mediatheque</a></li>
-                        </ul>
-                     </li>
-                     <li class="dropdown"><a href="about.html">Services</a>
-                        <ul>
-                           <li><a href="#">Assistance</a></li>
-                           <li><a href="service.html">Projet BSTPG</a></li>
-                           <li><a href="#">Projet CGA.GA</a></li>
-                           <li><a href="#">Projet CAMCGA</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="temp/espace.html">Espace vente</a></li>
-                     <li class="dropdown"><a href="project.html">Profils</a>
-                        <ul>
-                           <li><a href="actus.html">Entreprises</a></li>
-                           <li><a href="#">Jeunes diplomes</a></li>
-                        </ul>
-                     </li>
-                     <li class="dropdown"><a href="blog.html">Investir au Gabon</a>
-                        <ul>
-                           <li><a href="#">Le Gabon en bref</a></li>
-                           <li><a href="#">Environnement juridique</a></li>
-                           <li><a href="#">Procédures import/export</a></li>
-                           <li><a href="#">Documentation</a></li>
-                           <li><a href="#">Base de données</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="#">Actualités</a></li>
-                     <li class="dropdown"><a href="#">Notre reseau</a>
-                        <ul>
-                           <li><a href="#">ANPI</a></li>
-                           <li><a href="#">Chambres de commerce internationales</a></li>
-                           <li><a href="#">Ministeres du commerce</a></li>
-                           <li><a href="#">ONG</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="forum.html">Forum</a></li>
-                     <li><a href="contact.html">Contact</a></li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </header>
+         </header>
       <section class="page-title" style="background: url(images/data.jpg);">
          <div class="container-fluid fond-noir">
             <div class="text text-center">
@@ -220,13 +178,13 @@
                         <h5>Rechercher une entreprise</h5>
                      </div>
                      <div class="col-lg-4 col-sm-4">
-                        <p>Age</p>
+                        <p>Nom</p>
                         <div class="input-warapp">
-                           <input type="date" class="form-control dateMount_format" placeholder="Rechercher..." />
+                           <input type="text" class="form-control dateMount_format" placeholder="Rechercher..." />
                         </div>
                      </div>
                      <div class="col-lg-4 col-sm-4 marginbot30">
-                        <p>Secteur d'activité</p>
+                        <p>Secteur d'activité & Zone géographique</p>
                         <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
                            <option value="Agriculture">Agriculture</option>
                            <option value="Informatique">Informatique</option>
@@ -239,67 +197,34 @@
                            <option value="11:00">Distribution</option>
                         </select>
                      </div>
-                     <div class="col-lg-4 col-sm-4 marginbot30">
-                        <p>Depart</p>
+                     <div class="col-lg-4 col-sm-4">
+                        <p>Type d'entreprise</p>
                         <select class="form-control" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                           <option disabled="" selected="" value=""> Arrivee </option>
-                           <option value="7:00">7:00</option>
-                           <option value="7:30">7:30</option>
-                           <option value="8:00">8:00</option>
-                           <option value="8:30">8:30</option>
-                           <option value="9:00">9:00</option>
-                           <option value="9:30">9:30</option>
-                           <option value="10:00">10:00</option>
-                           <option value="10:30">10:30</option>
-                           <option value="11:00">11:00</option>
-                           <option value="11:30">11:30</option>
-                           <option value="12:00">12:00</option>
-                           <option value="12:30">12:30</option>
-                           <option value="13:00">13:00</option>
-                           <option value="13:30">13:30</option>
-                           <option value="14:00">14:00</option>
-                           <option value="14:30">14:30</option>
-                           <option value="15:00">15:00</option>
-                           <option value="15:30">15:30</option>
-                           <option value="16:00">16:00</option>
-                           <option value="16:30">16:30</option>
-                           <option value="17:00">17:00</option>
-                           <option value="17:30">17:30</option>
-                           <option value="18:00">18:00</option>
-                           <option value="18:30">18:30</option>
-                           <option value="19:00">19:00</option>
-                           <option value="19:30">19:30</option>
-                           <option value="20:00">20:00</option>
-                           <option value="20:30">20:30</option>
-                           <option value="21:00">21:00</option>
-                           <option value="21:30">21:30</option>
-                           <option value="22:00">22:00</option>
-                           <option value="22:30">22:30</option>
+                           <option></option>
+                           <option value="7:00" selected="" value="">PME</option>
+                           <option value="7:30">StartUp</option>
+                           <option value="8:00">Multinationale</option>
+                           <option value="8:30">Individuelle</option>
                         </select>
                      </div>
                      <div class="form-group col-lg-4 col-xs-12">
-                        <select id="nbPeople" class="form-control selectpicker btn btn-default" style="width:100% !important;">
-                           <option disabled="" selected="" value="">Pourquoi reservez-vous cet espace?</option>
-                           <option value="1">Affaires</option>
-                           <option value="2">Conference</option>
-                           <option value="3">co-working</option>
-                           <option value="4">Seminaire</option>
-                           <option value="5">Forum</option>
+                        <select id="nbPeople" class="form-control selectpicker btn btn-default">
+                           <option disabled="" selected="" value="">Marché</option>
+                           <option value="1">Importations</option>
+                           <option value="2">Exportations</option>
                         </select>
                      </div>
                      <div class="form-group col-lg-4 col-xs-12">
-                        <select id="nbPeople" class="form-control selectpicker btn btn-default" style="width:100% !important;">
-                           <option disabled="" selected="" value=""> Nombre d'invites </option>
-                           <option value="1">50-200</option>
-                           <option value="2">200-350</option>
-                           <option value="3">350-500</option>
-                           <option value="4">500-1000</option>
-                           <option value="5">1000-2000</option>
+                        <select id="nbPeople" class="form-control selectpicker btn btn-default">
+                           <option disabled="" selected="" value="">Libreville</option>
+                           <option value="1">Akanda</option>
+                           <option value="2">Owendo</option>
+                           <option value="3">Oyem</option>
                         </select>
                      </div>
 
-                     <div class="col-lg-4 col-sm-4 marginbot30">
-                        <button class="btn btn-default btn-lg btn-3d btn-icon-right icon-divider btn-block" type="submit">
+                     <div class="col-lg-4 col-sm-4">
+                        <button class="btn button" type="submit" style="height:35px; width: 100%;">
                            Rechercher <i class="fa fa-search"></i>
                         </button>
                      </div>
@@ -433,10 +358,10 @@
                         <h6>Trier</h6>
                      </div>
                      <ul>
-                        <li><a href="#">Appels d'offres<span>+</span></a></li>
-                        <li><a href="#">Reglementation<span>+</span></a></li>
-                        <li><a href="#">Statistiques<span>+</span></a></li>
-                        <li><a href="#">Avis et legislation<span>+</span></a></li>
+                        <li><a href="#">Par type d'entreprises<span>+</span></a></li>
+                        <li><a href="#">Par secteur d'activité<span>+</span></a></li>
+                        <li><a href="#">Par marché<span>+</span></a></li>
+                        <li><a href="#">Par zone<span>+</span></a></li>
                      </ul>
                   </div>
                   <div class="tag-list">
@@ -447,7 +372,7 @@
                      <a href="#">Numerique</a>
                      <a href="#">Mine</a>
                      <a href="#">Informatique</a>
-                     <a href="#">Exportation</a>
+                     <a href="#">Mine</a>
                      <a href="#">Production</a>
                   </div>
                   <div class="blog-tweets">

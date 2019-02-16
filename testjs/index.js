@@ -218,7 +218,7 @@
     for (let i = 0; i < text.length; i++) {
       console.log(`${i+1}: ${text[i]}`);
     }
-    let text = 'Bonjour les gens'
+    text = 'Bonjour les gens'
     let tabtext = text.split(' '); // separer les element de la chaine par rapport aux espaces
     for (let i = 0; i < tabtext.length; i++) {
       console.log(tabtext[i]) //Bonjour, les et les gens
@@ -246,7 +246,9 @@
     console.log(compterVoyelles("RadAr")); // 2
     console.log(compterVoyelles("Tic et Tac")); // 3
     console.log(compterVoyelles("Oasis Oasis Oh")); // 7
-    //le combat
+
+
+    //LA BAITAILLE CODAL
     class Perso {
       constructor(nom, type, sante, force) {
         this.nom = nom;
@@ -289,3 +291,116 @@
     perso1.attaque(perso2);
     perso1.decrire();
     perso2.decrire();
+
+
+    //GESTIONNNAIRE DE CONTACTS
+    /*
+    Activité : gestion des contacts
+    */
+    // TODO : complétez le programme
+    class Contact { //classe pour creer un contact
+      constructor(prenom, nom, numero) {
+        this.prenom = prenom;
+        this.nom = nom;
+        this.numero = numero;
+      }
+      decrire() { //methode pour la description
+        console.log(`Prenom: ${this.prenom}\nNom: ${this.nom}\nNumero: ${this.numero}`)
+      }
+    }
+
+    function lister() { //lister les contacts
+      for (let i = 0; i < contacts.length; i++) {
+        console.log(`Contact ${i+1}`)
+        contacts[i].decrire();
+      }
+    }
+
+    function ajouter() { //ajouter un contacte
+      let prenom = prompt('Entrez le prenom :');
+      let nom = prompt('Entrez le nom :');
+      let numero = prompt('Entrez le numero :');
+      let contact3 = new Contact(prenom, nom, numero);
+      contacts.push(contact3);
+      console.log('votre contact a été ajouté');
+    }
+    let contact = new Contact('Carole', 'Lévisse', '04594130');
+    let contact1 = new Contact('Mélodie', 'Nelsonne', '04596190');
+    //tableau contenant tout les contacts
+    const contacts = [contact, contact1];
+    console.log("Bienvenue dans le gestionnaire de contacts !");
+    lister();
+    console.log("1: Lister les contacts\n2: Ajouter un contacts\n3: Quitter");
+    let option = '3';
+    do {
+      option = prompt("Choisissez une option");
+      switch (option) {
+        case '1': //Option lister les contacts
+          lister();
+          break;
+        case '2': //Option ajouter un contact
+          ajouter();
+          break;
+        default:
+          console.log(`option inconnu`);
+      }
+    } while (option != '3');
+
+    console.log('Aurevoir.')
+    //gestionnaire de contact fin
+    // moyenne
+    let eleves = [{
+      nom: "Marc",
+      moyenne: 15
+    },
+    {
+      nom: "Stone",
+      moyenne: 9
+    },
+    {
+      nom: "Marc",
+      moyenne: 4
+    }]
+    console.log("Voici la liste des eleves qui n'ont pas la moyenne");
+    for(let i= eleves.length-1; i>=0; i--){
+      if(eleves[i].moyenne<10){
+        console.log(`Nom: ${eleves[i].nom}, Moyenne: ${eleves[i].moyenne}`)
+      }
+    }
+
+    // QUI EST LE MEILLEUR ELEVE
+    // calculer la Moyenne
+    // TODO: calculer la moyenne de chaque eleves
+    // si la moyenne de l'eleve1 est superieure a celle de l'eleve 2 alors on renvoi true
+    //On affiche le message de confirmation
+    class Eleve {
+      constructor(nom, [a, b, c]) {//prend en parametre le nom de l'eleve et un tableau avec ses notes
+        this.nom = nom;
+        this.notes = [a, b, c]
+      }
+      moyenne(){
+        let tabNotes = this.notes;
+        let moyenne = 0;
+        let total = 0;
+        for(let i = 0 ;i < tabNotes.length; i++ ){
+          let note  = tabNotes[i];
+          total += note;//on incremente le total de la de al note a chaque iteration
+        }
+        moyenne = total/tabNotes.length;
+        return moyenne
+      }
+    }
+    function theBest(a, b){//prend en parametre les deux sujets a comparer
+      console.log('comparaison en cours')
+      console.log(`${a.moyenne()} pour ${a.nom} et ${b.moyenne()} pour ${b.nom}`)
+      if(a.moyenne() > b.moyenne()){
+        console.log(`${a.nom} a une meilleure moyenne que ${b.nom}`)
+      }else{
+        console.log(`${a.nom} n'a pas une meilleure moyenne que ${b.nom}`)
+      }
+    }
+    let eleve1 = new Eleve('Stone',[10, 20, 15]);
+    let eleve2 = new Eleve('Berny', [18, 4, 15]);
+    console.log(eleve1.moyenne());
+    console.log(eleve2.moyenne());
+    theBest(eleve1, eleve2);
