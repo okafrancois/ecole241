@@ -7,4 +7,6 @@ s5/ Ecrire un programme qui demande deux nombres et affiche le plus grand.
 s6/Ecrire un programme qui demande l’âge de l’utilisateur et affiche en console Vous êtes majeur ou Vous êtes mineur
 s7/Ecrire un programme qui demande de saisir un nombre tant que le nombre saisi n’est pas négatif.
 Ne jamais déclarer une variable dans une boucle
-Never trust in user's input 
+Never trust in user's input
+s8/
+s9/
