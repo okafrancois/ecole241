@@ -1,2 +1,3 @@
 S1 / ecrire un programme qui affiche oka code dans la console
 S2/ ecrire un programme qui affiche 22 fois okacode
+s3/
