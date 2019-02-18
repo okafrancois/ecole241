@@ -1,4 +1,6 @@
 S1 / ecrire un programme qui affiche oka code dans la console
 S2/ ecrire un programme qui affiche 22 fois okacode
 s3/ ecrire un programme qui dit si un nombre est superieur ou inferieur a 10
-Jeu d'essaie : valeur que l'on utilise pour tester un programme 
+s4/ demander son nom a l'utilisateur et lui dire bonjour
+Jeu d'essaie : valeur que l'on utilise pour tester un programme
+s5/ Ecrire un programme qui demande deux nombres et affiche le plus grand.
