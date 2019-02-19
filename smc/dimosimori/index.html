@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+   <!--- basic page needs
+    ================================================== -->
+   <meta charset="utf-8">
+   <title>ONG | DIMOSIMORI</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <!-- mobile specific metas
+    ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- CSS
+    ================================================== -->
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+
+   <!-- script
+    ================================================== -->
+   <script src="js/modernizr.js"></script>
+   <script src="js/pace.min.js"></script>
+
+   <!-- favicons
+    ================================================== -->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <style>
+      #video1{
+      width: auto;
+      height: 40%''
+      border: 2px solid #e47b00;
+    }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  transition: all 1s 0.5s;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 600px;
+  transition: all 1s 0.5s;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content p{
+  color: black!important;
+}
+.modal h1{
+  font-size: 5rem;
+}
+.argent{
+  background-color: #F89D00;
+  color: black;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 2px;
+}
+.foto{
+  width: 310px;
+  height: 310px;
+}
+    </style>
+
+</head>
+
+<body id="top">
+
+   <!-- header
+    ================================================== -->
+   <header class="s-header">
+
+      <div class="header-logo">
+         <a class="site-logo" href="index.html">
+            <span id="logo">DIMOSIMORI</span>
+         </a>
+      </div> <!-- end header-logo -->
+
+      <nav class="header-nav">
+
+         <a href="#0" class="header-nav__close" title="close"><span>Fermer</span></a>
+
+         <div class="header-nav__content">
+            <h3>Dimosimori</h3>
+
+            <ul class="header-nav__list">
+               <li class="current"><a class="smoothscroll" href="#home" title="home">Accueil</a></li>
+               <li><a class="smoothscroll" href="#about" title="about">A propos</a></li>
+               <li><a class="smoothscroll" href="#services" title="services">Galerie</a></li>
+               <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+            </ul>
+
+            <p>Suivez l'évènement depuis cette page.</p>
+
+            <ul class="header-nav__social">
+               <li>
+                  <a href="#0"><i class="fab fa-facebook"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-twitter"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-instagram"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-behance"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-dribbble"></i></a>
+               </li>
+            </ul>
+
+         </div> <!-- end header-nav__content -->
+
+      </nav> <!-- end header-nav -->
+
+      <a class="header-menu-toggle" href="#0">
+         <span class="header-menu-icon"></span>
+      </a>
+
+   </header> <!-- end s-header -->
+
+
+   <!-- home
+    ================================================== -->
+   <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/dimobg.png" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+
+      <div class="shadow-overlay"></div>
+
+      <div class="home-content">
+
+         <div class="row home-content__main ">
+            <h1>
+               Il Suffit d'y croire, <br>
+               Raconte-moi...
+            </h1>
+            <p>
+               Le premier concert caritatif présenté par <br>
+               les orphelins des centres d'accueil de Libreville.
+            </p>
+            <a href="#contact"><button type="button" name="button">Faire un don</button></a>
+            <button type="button" name="button" id="myBtn">Suivre en direct</button>
+            <div id="myModal" class="modal">
+
+               <!-- Modal content -->
+               <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h1>Rendez vous les 22 et 23 Février à 20h pour le 22 et 15h pour le 23.</h1>
+                  <p>Suivez aussi l'évènement sur les réseaux sociaux </p>
+                  <div style="text-align:center">
+                  <img src="images/dimo11.png" alt="photo des orphelins">
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </div> <!-- end home-content -->
+
+      <ul class="home-sidelinks">
+         <li><a class="smoothscroll" href="#about">A propos <span>de l'évènement</span></a></li>
+         <li><a class="smoothscroll" href="#services">Description<span>de l'association</span></a></li>
+         <li><a class="smoothscroll" href="#contact">Contact<span>pour l'évènement</span></a></li>
+      </ul> <!-- end home-sidelinks -->
+
+      <ul class="home-social">
+         <li class="home-social-title">Suivez nous aussi sur...</li>
+         <li><a href="#0">
+               <i class="fab fa-facebook"></i>
+               <a href="https://www.facebook.com/LONG-Dimosimori-344636259595410/"><span class="home-social-text">Facebook</span></a>
+            </a></li>
+         <li><a href="#0">
+               <i class="fab fa-twitter"></i>
+               <span class="home-social-text">Twitter</span>
+            </a></li>
+         <li><a href="#0">
+               <i class="fab fa-linkedin"></i>
+               <span class="home-social-text">LinkedIn</span>
+            </a></li>
+      </ul> <!-- end home-social -->
+      <a href="#about" class="home-scroll smoothscroll">
+         <span class="home-scroll__text">Allez en bas</span>
+         <span class="home-scroll__icon"></span>
+      </a> <!-- end home-scroll -->
+
+   </section> <!-- end s-home -->
+
+
+   <!-- about
+================================================== -->
+   <section id='about' class="s-about">
+      <div class="row section-header" data-aos="fade-up">
+         <div class="col-full">
+            <h3 class="subhead">A propos de l'evenement</h3>
+            <h1 class="display-1">Il suffit d’y croire, Raconte-moi c'est...</h1>
+         </div>
+      </div> <!-- end section-header -->
+      <div class="row" data-aos="fade-up">
+         <div class="col-full">
+            <img src="images/dimo7.png" alt="" style="float: left;margin-right: 15px" width="300px;">
+            <p class="lead" style="text-align: justify; font-size: 20px;">
+               Des enfants passionnés et engagés avec
+               des dons innés et polyvalents
+               Des enfants qui découvrent l’univers artistique
+               avec des professionnels de la culture
+               Des enfants capables de créer en écrivant leur
+               texte de slam, en racontant leur histoire via
+               une pièce de Théâtre, et surtout chanter leur
+               réalité en traduisant leurs émotions.
+               et surtout de notre capacité à lui offrir un projet
+               de société auquel elle adhère. Le projet Il Suffit d’y
+               croire est un projet à caractère humanitaire qui
+               regroupe en lui seul un éventail d’activités favorables au développement personnel, a l’instruction, et a l’intégration sociale.
+            </p>
+         </div>
+      </div> <!-- end about-desc -->
+   </section> <!-- end s-about -->
+   <!-- services
+================================================== -->
+   <section id='services' class="s-services light-gray">
+      <div class="row section-header" data-aos="fade-up">
+         <div class="col-full">
+            <h3 class="subhead">Qui nous sommes?</h3>
+            <h1 class="display-1">L’Association DIMOSIMORI</h1>
+         </div>
+      </div> <!-- end section-header -->
+      <div class="row" data-aos="fade-up">
+         <div class="col-full">
+            <p class="lead">
+               Crée en 2015, Dimosimori est
+               une association apolitique qui
+               aspire accompagner le Gabon
+               dans ses objectifs de développement et de lutte contre l’exclusion sociale.
+               Dimosimori vise à dépasser les
+               pratiques d’assistanat. Nous
+               nous sommes assignés de multiples objectifs et à travers nos
+               actions nous réalisons notre vision en :
+            </p>
+            <ul>
+               <li>Nous investissant activement pour le bien-être de la
+                  communauté en soulignant l’importance de l’éducation multiforme et en intégrant cet aspect dans chaque activité de l’ONG</li>
+               <li> Accompagnant la
+                  conception et la mise en œuvre
+                  de projets favorables au déve-
+                  loppement et à l’autonomisa-
+                  tion en adaptant des actions qui
+                  répondent aux besoins sociaux</li>
+               <li>Promouvant la valeur de l’exemple, en valorisant la
+                  connaissance et en éveillant la
+                  conscientisation et l’implication
+                  personnelle des jeunes au sein
+                  de la société.
+                  Nous vous invitons à vous recon-
+                  naitre dans ces objectifs et nous
+                  vous demandons d’y apporter
+                  votre concours.</li>
+            </ul>
+         </div>
+         <div style="margin-left: 135px">
+            <img src="images/foto.png" alt="" class="foto"style="padding: 5px">
+            <img src="images/foto2.jpg" alt="" class="foto"style="padding: 5px">
+            <img src="images/foto3.jpg" alt="" class="foto"style="padding: 5px">
+         </div>
+      </div> <!-- end about-desc -->
+   </section> <!-- end s-services -->
+   <!-- works
+    ================================================== -->
+   <section id='works' class="s-works">
+
+      <div class="row section-header" data-aos="fade-up">
+         <div class="col-full">
+            <h3 class="subhead">Galerie</h3>
+            <h1 class="display-1">Découvrer en images tous ces jeunes orphelins qui s'investissent dans leur passion.</h1>
+         </div>
+      </div> <!-- end section-header -->
+
+      <div class="row masonry-wrap">
+         <div class="masonry">
+
+            <div class="masonry__brick" data-aos="fade-up">
+               <div class="item-folio">
+
+                  <div class="item-folio__thumb">
+                     <a href="images/dimo3a.png" class="thumb-link" title="Lamp" data-size="1050x700">
+                        <img src="images/portfolio/lamp.jpg" srcset="images/dimo3a.png 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                     </a>
+                  </div>
+
+                  <div class="item-folio__text">
+                     <h3 class="item-folio__title">
+                        Lamp
+                     </h3>
+                     <p class="item-folio__cat">
+                        Web Design
+                     </p>
+                  </div>
+
+                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                     Project Link
+                  </a>
+
+                  <div class="item-folio__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </div>
+
+               </div> <!-- end item-folio -->
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+               <div class="item-folio">
+
+                  <div class="item-folio__thumb">
+                     <a href="images/dimo15b.jpg" class="thumb-link" title="Salad" data-size="1050x700">
+                        <img src="images/dimo15a.jpg" srcset="images/dimo15a.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
+                     </a>
+                  </div>
+
+                  <div class="item-folio__text">
+                     <h3 class="item-folio__title">
+                        Salad
+                     </h3>
+                     <p class="item-folio__cat">
+                        Branding
+                     </p>
+                  </div>
+
+                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                     Project Link
+                  </a>
+
+                  <span class="item-folio__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </span>
+
+               </div> <!-- end item-folio -->
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+               <div class="item-folio">
+
+                  <div class="item-folio__thumb">
+                     <a href="images/dimo6a.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                        <img src="images/portfolio/woodcraft.jpg" srcset="images/dimo6b.png 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                     </a>
+                  </div>
+
+                  <div class="item-folio__text">
+                     <h3 class="item-folio__title">
+                        Woodcraft
+                     </h3>
+                     <p class="item-folio__cat">
+                        Branding
+                     </p>
+                  </div>
+
+                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                     Project Link
+                  </a>
+
+                  <span class="item-folio__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </span>
+
+               </div> <!-- end item-folio -->
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+               <div class="item-folio">
+
+                  <div class="item-folio__thumb">
+                     <a href="images/dimo2b.png" class="thumb-link" title="Liberty" data-size="1050x700">
+                        <img src="images/portfolio/liberty.jpg" srcset="images/dimo2a.png 1x, images/portfolio/liberty@2x.jp 2x" alt="">
+                     </a>
+                  </div>
+
+                  <div class="item-folio__text">
+                     <h3 class="item-folio__title">
+                        Liberty
+                     </h3>
+                     <p class="item-folio__cat">
+                        Web Development
+                     </p>
+                  </div>
+
+                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                     Project Link
+                  </a>
+
+                  <span class="item-folio__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </span>
+
+               </div> <!-- end item-folio -->
+            </div> <!-- end masonry__brick -->
+
+
+            <div class="masonry__brick" data-aos="fade-up">
+               <div class="item-folio">
+
+                  <div class="item-folio__thumb">
+                     <a href="images/dimo20b.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
+                        <img src="images/portfolio/fuji.jpg" srcset="images/dimo20a.png 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                     </a>
+                  </div>
+
+                  <div class="item-folio__text">
+                     <h3 class="item-folio__title">
+                        Fuji
+                     </h3>
+                     <p class="item-folio__cat">
+                        Web Design
+                     </p>
+                  </div>
+
+                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                     Project Link
+                  </a>
+
+                  <span class="item-folio__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </span>
+
+               </div> <!-- end item-folio -->
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+               <div class="item-folio">
+
+                  <div class="item-folio__thumb">
+                     <a href="images/dimo1b.png" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                        <img src="images/portfolio/shutterbug.jpg" srcset="images/dimo1a.png 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                     </a>
+                  </div>
+
+                  <div class="item-folio__text">
+                     <h3 class="item-folio__title">
+                        Lady Shutterbug
+                     </h3>
+                     <p class="item-folio__cat">
+                        Branding
+                     </p>
+                  </div>
+
+                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                     Project Link
+                  </a>
+
+                  <span class="item-folio__caption">
+                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                  </span>
+
+               </div> <!-- end item-folio -->
+            </div> <!-- end masonry__brick -->
+
+         </div> <!-- end masonry -->
+      </div> <!-- end masonry-wrap -->
+   </section> <!-- end s-works -->
+
+   <!-- contact
+    ================================================== -->
+   <section id="contact" class="s-contact">
+     <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">Faire un don</h3>
+                <h2 class="display-1 display-1--light">Soutenez ces jeunes talents, en faisant un don alimentaire , matériel, medical ou contribuez financiairement.</h2>
+                <p class="argent"><span>Airtel money:</span> <a href="tel:04170568">04170568</a></p>
+            </div>
+        </div>
+      <!-- end section-header -->
+      <div class="row">
+         <div class="col-full contact-main" data-aos="fade-up">
+            <p>
+               <a href="mailto:dimosimori@gmail.com" class="contact-email">dimosimori@gmail.com</a>
+               <span class="contact-number">+241 : 07 70 98 29</span>
+            </p>
+         </div> <!-- end contact-main -->
+      </div> <!-- end row -->
+      <div class="row">
+         <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+            <h3 class="subhead subhead--light">Ou nous retrouver?</h3>
+            <p class="contact-address">
+               BP : 12830 <br>
+               Libreville - Gabon
+            </p>
+         </div> <!-- end contact-secondary -->
+         <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+            <h3 class="subhead subhead--light">Suivez-nous</h3>
+            <ul class="contact-social">
+               <li>
+                  <a href="#0"><i class="fab fa-facebook"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-twitter"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-instagram"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-behance"></i></a>
+               </li>
+               <li>
+                  <a href="#0"><i class="fab fa-youtube"></i></a>
+               </li>
+            </ul> <!-- end contact-social -->
+            <div class="contact-subscribe">
+               <form id="mc-form" class="group mc-form" novalidate="true">
+                  <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Souscrire et devenez un donateur" required="">
+                  <input type="submit" name="subscribe" value="Subscribe">
+                  <label for="mc-email" class="subscribe-message"></label>
+               </form>
+            </div> <!-- end contact-subscribe -->
+         </div> <!-- end contact-secondary -->
+      </div> <!-- end row -->
+      <div class="row">
+         <div class="col-full cl-copyright">
+            <span>
+               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+               Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+               </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+         </div>
+      </div>
+      <div class="cl-go-top">
+         <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+      </div>
+   </section> <!-- end s-contact -->
+
+
+   <!-- photoswipe background
+    ================================================== -->
+   <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+
+         <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+         </div>
+
+         <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+               <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs"
+                 title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+               <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                     <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+               <div class="pswp__share-tooltip"></div>
+            </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+               <div class="pswp__caption__center"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </div> <!-- end photoSwipe background -->
+
+
+   <!-- preloader
+    ================================================== -->
+   <div id="preloader">
+      <div id="loader">
+      </div>
+   </div>
+
+
+   <!-- Java Script
+    ================================================== -->
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+         modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+         modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";
+         }
+      }
+   </script>
+</body>
+
+</html>
