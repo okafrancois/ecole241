@@ -1,18 +1,20 @@
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
-function compare(a, b){
-    return (a === b)? true : false
-}
+let compare = function(a, b){
+  return (a === b)
+};
+//00000000
+let nombre;
+let choix;
+let result;
+let again;
 window.alert('Jouons un peu ensemble\n devine quel nombre je génère de 1 à 10');
   do{
-    let nombre = getRandomInt(10);
-    let choix = Number(window.prompt('Choisis un nombre'));
-    let result = compare(choix, nombre);
-    if(result){
-      window.alert(`Bravo`)
-    } else{
-      window.alert(`C'est raté, c'était ${nombre}`)
-    }
-    let oui = window.confirm('Continuer ?');
-  } while(oui === true)
+    nombre = getRandomInt(10);
+    choix = Number(window.prompt('Choisis un nombre'));
+    result = compare(choix, nombre);
+    result ? window.alert(`Bravo c'était bien ${choix}`) : window.alert(`C'est raté, c'était ${nombre}`);
+    again = window.confirm('Continuer ?');
+  } while(again === true)
+console.log('Game over, Aurevoir ;)')
