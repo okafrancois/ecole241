@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blog</title>
+		<description><![CDATA[]]></description>
+		<link>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog</link>
+		<lastBuildDate>Thu, 21 Feb 2019 14:10:19 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<item>
+			<title>Happy Manager (Conference)</title>
+			<link>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/271-happy-manager-conference</link>
+			<guid isPermaLink="true">https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/271-happy-manager-conference</guid>
+			<description><![CDATA[<p><img src="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img1.jpg" /></p>How does a happy manager look like? Find out the most common mistakes and learn how to avoid them to succeed on your way to a pro manager! 
+<p>Join us on the 13th of January at 10:00 am and discover all secret tactics of happy managers!</p>
+]]></description>
+			<category>Events</category>
+			<pubDate>Fri, 07 Dec 2018 14:42:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>Impact is the Heart of Business</title>
+			<link>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/272-impact-is-the-heart-of-business</link>
+			<guid isPermaLink="true">https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/272-impact-is-the-heart-of-business</guid>
+			<description><![CDATA[<p><img src="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img2.jpg" /></p><p>Thousands of people dream of having their own business and even more so be a successful entrepreneur. But what does it take to achieve success in the business industry?</p>
+]]></description>
+			<category>Events</category>
+			<pubDate>Fri, 07 Dec 2018 14:42:07 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Contact Us</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com"/>
+	<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us</id>
+	<updated>2019-02-21T14:07:08+00:00</updated>
+	<author>
+		<name>Jedi</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us?format=feed&amp;type=atom"/>
+	<entry>
+		<title>John Doe</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/41-john-doe"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/41-john-doe</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-1.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-1.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+		<category term="Team" />
+	</entry>
+	<entry>
+		<title>July Mao</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/42-july-mao"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/42-july-mao</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-2.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-2.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+		<category term="Team" />
+	</entry>
+	<entry>
+		<title>Bernard Show</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/43-bernard-show"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/43-bernard-show</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-3.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-3.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+		<category term="Team" />
+	</entry>
+	<entry>
+		<title>Ronald Oswald</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/44-ronald-oswald"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/44-ronald-oswald</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-4.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/team/team-4.jpg&quot; /&gt;&lt;/p&gt;&lt;ul class=&quot;social-links&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/#&quot; title=&quot;Google+&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+		<category term="Team" />
+	</entry>
+	<entry>
+		<title>Communication Skills.</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/133-conse-ctetu"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/133-conse-ctetu</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<category term="Team" />
+	</entry>
+	<entry>
+		<title>Analytical/Research Skills.</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/134-dipiscing-elit"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/134-dipiscing-elit</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<category term="Team" />
+	</entry>
+	<entry>
+		<title>Computer/Technical Knowledge.</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/132-dolor-sit-amet-conse"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/132-dolor-sit-amet-conse</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<category term="Team" />
+	</entry>
+	<entry>
+		<title>Leadership/Management Skills.</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/131-sit-amet-conse"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/pages/contact-us/61-team-skills/131-sit-amet-conse</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<category term="Team" />
+	</entry>
+</feed>

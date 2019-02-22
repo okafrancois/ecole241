@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="en-gb">
+	<title type="text">Sidebar Right</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com"/>
+	<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/sidebar-right</id>
+	<updated>2019-02-21T14:10:54+00:00</updated>
+	<author>
+		<name>Jedi</name>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/sidebar-right?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Happy Manager (Conference)</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/271-happy-manager-conference"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/271-happy-manager-conference</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img1.jpg&quot; /&gt;&lt;/p&gt;How does a happy manager look like? Find out the most common mistakes and learn how to avoid them to succeed on your way to a pro manager! 
+&lt;p&gt;Join us on the 13th of January at 10:00 am and discover all secret tactics of happy managers!&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img1.jpg&quot; /&gt;&lt;/p&gt;How does a happy manager look like? Find out the most common mistakes and learn how to avoid them to succeed on your way to a pro manager! 
+&lt;p&gt;Join us on the 13th of January at 10:00 am and discover all secret tactics of happy managers!&lt;/p&gt;
+</content>
+		<category term="Events" />
+	</entry>
+	<entry>
+		<title>Impact is the Heart of Business</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/272-impact-is-the-heart-of-business"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/272-impact-is-the-heart-of-business</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img2.jpg&quot; /&gt;&lt;/p&gt;&lt;p&gt;Thousands of people dream of having their own business and even more so be a successful entrepreneur. But what does it take to achieve success in the business industry?&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img2.jpg&quot; /&gt;&lt;/p&gt;&lt;p&gt;Thousands of people dream of having their own business and even more so be a successful entrepreneur. But what does it take to achieve success in the business industry?&lt;/p&gt;
+</content>
+		<category term="Events" />
+	</entry>
+	<entry>
+		<title>Believe in the Business of Your Dreams</title>
+		<link rel="alternate" type="text/html" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/273-believe-in-the-business-of-your-dreams"/>
+		<published>2018-12-07T14:42:07+00:00</published>
+		<updated>2018-12-07T14:42:07+00:00</updated>
+		<id>https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/blog/273-believe-in-the-business-of-your-dreams</id>
+		<author>
+			<name>Super User</name>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img3.jpg&quot; /&gt;&lt;/p&gt;&lt;p&gt;What is stopping you from believing in the business of your dreams? Insecurity? Fear? Lack of confidence? All of the above? How can you overcome these obstructions?&lt;/p&gt;
+</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/images/events/blog-img3.jpg&quot; /&gt;&lt;/p&gt;&lt;p&gt;What is stopping you from believing in the business of your dreams? Insecurity? Fear? Lack of confidence? All of the above? How can you overcome these obstructions?&lt;/p&gt;
+</content>
+		<category term="Events" />
+	</entry>
+</feed>
