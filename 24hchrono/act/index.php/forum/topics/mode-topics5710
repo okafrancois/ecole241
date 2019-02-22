@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Kunena Forum (Joomla)" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Recent Topics - Kunena</title>
+		<description><![CDATA[]]></description>
+		<link>https://livedemo00-joomla.template-help.com</link>
+		<lastBuildDate>Thu, 21 Feb 2019 14:08:24 +0000</lastBuildDate>
+		<generator>Kunena Forum (Joomla)</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://livedemo00-joomla.template-help.com/joomla_prod-4375_v2/index.php/forum/topics/mode-topics?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+	</channel>
+</rss>

@@ -17,20 +17,18 @@
       console.log('Fin du programme');
     }
     //le manege
-    rep = String(prompt('Voulez vous faire des tours de manège? (oui/non)'));
-    if (rep === 'oui') {
-      const nbTours = Number(prompt('Vous voulez faire combien de tours de manege?'));
+    let tours = function(){
+      const nombre = Number(prompt('Vous voulez faire combien de tours de manege?'));
       console.log("Le manège démarre");
-      for (let i = 1; i <= nbTours; i++) {
+      for (let i = 1; i <= nombre; i++) {
         console.log(`C'est le tour numéro ${i}`)
       }
       console.log("Le manège s'arrête");
-    } else {
-      if (rep !== 'non') {
-        alert("Je ne comprends pas ce que tu m'écris. Aurevoir");
-      }
-      console.log("Le programme prend fin");
     }
+    let rep = window.confirm('Voulez vous faire des tours de manège?');
+    rep ? tours(): console.log("Le programme prend fin");
+
+
     //table de 10
     const nombre = Number(prompt('Saisissez un nombre')); // Faites varier cette variable entre 1 et 10
     console.log(`Table de multiplication de ${nombre}`);
@@ -44,67 +42,44 @@
     // Fizz Buzz
     // Ajoutez votre code ici
     for (i = 1; i <= 100; i++) {
-      if ((i % 3) === 0) {
-        //si le nombre est divisible par 3
-        console.log('Fizz')
-      } else {
-        //si le nombre est divisible par 5 mais pas par 3
-        if (((i % 5) === 0) && ((i % 3) === 1)) {
-          console.log('Buzz')
-        } else if (((i % 5) === 0) && ((i % 3) === 0)) {
-          //si le nombre est divisible par 5 et par 3
-          console.log('FizBuzz')
-        } else { // le nombre est normal...On va dire
-          console.log(i)
-        }
-      }
+      console.log(((i % 3) === 0)? "Fiz" : (((i % 5) === 0) && ((i % 3) === 1)) ? 'Buzz': (((i % 5) === 0) && ((i % 3) === 0)) ? 'FizBuzz' : (i))
     }
     // tours de manege 2.0
-    function tourManege(nombre) { // fonction qui lance les tours de manege
+    let manege = function(nombre) { // fonction qui lance les tours de manege
       for (i = 1; i <= nombre; i++) {
         console.log(`C'est le tour numero ${i}`);
       }
     }
-    var rep = String(prompt("Voulez vous faire du manege ?(oui/non)"));
-    if (rep === 'oui') { // si oui debut des tours
-      let nombre = Number(prompt('Combien de tours voulez vous faire ?'))
-      console.log('Demarrage du manege');
-      tourManege(nombre);
-      console.log('Fin du manege, Revenez vite!')
-    } else {
-      if (rep !== 'non') {
-        alert("Je ne comprends pas ce que tu m'écris. Aurevoir");
-      }
-      console.log("Le programme prend fin");
-    }
+
+
     // la calculette
     // Ajoutez votre code ici
-    function calculer(nb1, op, nb2) {
+    let calculer = function(nb1, op, nb2) {
       switch (op) {
         case "+": // dans le cas ou l'op est une addition
-          var result = nb1 + nb2;
-          return result;
+          return `${nb1 + nb2}`;
           break;
         case "-": // dans le cas ou l'op est une soustraction
-          var result = nb1 - nb2;
-          return result;
+          return `${nb1 - nb2}`;
           break;
         case "*": // dans le cas ou l'op est une multiplication
-          var result = nb1 * nb2;
-          return result;
+          return `${nb1 * nb2}`;
           break;
         case "/": // dans le cas ou l'op est une division
-          var result = nb1 / nb2;
-          return result;
+          return `${nb1 / nb2}`;
           break;
+        default:
+        return "operation inconnue";
       }
     }
     console.log(calculer(4, "+", 6)); // 10
     console.log(calculer(4, "-", 6)); // -2
     console.log(calculer(2, "*", 0)); // 0
     console.log(calculer(12, "/", 0)); // Infinity
+
+
     //le combat
-    function decrire(perso) {
+    let decrire = (perso) => {
       console.log(`Le personnnage se nomme ${perso.nom}, c'est un ${perso.type} avec ${perso.force} points de force et ${perso.sante} point de vie. `)
     }
     const perso1 = {
