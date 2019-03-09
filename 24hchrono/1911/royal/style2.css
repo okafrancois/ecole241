@@ -1,0 +1,59 @@
+.categories{
+ width: 100%;
+ margin: 5px;
+ padding: 0;
+
+
+}
+.categories a div{
+ color: #fff;
+ padding: 10px;
+ text-align: center;
+ font-size: 1.3em;
+ border-radius: 5px;
+ font-weight: bold;
+
+}
+
+.cate1{
+ background-color:rgba(198, 10, 10, 0.5);
+ background-image: url('images/genrs/img3.jpg');
+ background-size: cover;
+}
+.cate2{
+ background-image: url('images/genrs/img7.jpg');
+ background-size: cover}
+.cate3{
+ background-image: url('images/genrs/img5.jpg');
+ background-size: cover}
+.cate4{
+ background-image: url('images/genrs/img8.jpg');
+ background-size: cover}
+.cate5{
+ background-image: url('images/genrs/img6.jpg');
+ background-size: cover}
+.cate6{
+ background-image: url('images/genrs/img9.jpg');
+ background-size: cover}
+
+ input[type="button"]{
+ background: none;
+ border: 1px solid #fff;
+ border-radius: 5px;
+ margin-top: 10px;
+ color: #fff;
+}
+
+.abonnepub{
+ background-color: #0b26b0;
+ padding: 15px;
+ color: #fff;
+}
+.abonnepub h1{
+ color: #fff;
+ font-size: 1.3em;
+}
+.abonnepub input[type="button"]:hover{
+ background-color: white;
+ color: #0b26b0;
+ }
