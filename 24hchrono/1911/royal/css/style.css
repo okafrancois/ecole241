@@ -395,7 +395,7 @@ body.loaded .ms_loader {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	min-height: 164px;
+	min-height: 104px;
 }
 .ms_nav_wrapper {
 	padding: 0px 0px;
@@ -557,6 +557,8 @@ span.nav_text {
 	background-color: #32353d;
 	padding: 0px 12px;
 	white-space: nowrap;
+  color: #000;
+  font-weight: 500;
 }
 .shop_body.sidebar_hide .wx_sidebar_wrapper .wx_sidebar_nav ul>li>a>.nav_text:after {
 	content: "";
@@ -1617,8 +1619,8 @@ span.ovrly_text2 {
 }
 .ms_footer_logo {
 	text-align: center;
-	padding-left: 80px;
-	padding-bottom: 25px;
+	padding-left: 50px;
+	padding-bottom: 5px;
 }
 .ms_footer_logo span {
 	display: block;
@@ -3390,7 +3392,7 @@ div#myModal1 p {
 }
 /*====Save Modal Css Start====*/
 .save_modal_btn {
-	padding: 20px 0px;
+	padding: 15px 0px;
 }
 .save_modal_btn a {
 	background-color: #fff;
@@ -5084,7 +5086,7 @@ h2.widget-title:after {
 	}
 
 	.ms_free_download.ms_purchase_wrapper .album_list_wrapper>ul>li {
-		width: 11%;
+		width: 7%;
 		font-size: 10px;
 	}
 	.ms_free_download.ms_purchase_wrapper .album_list_wrapper>ul>li>a {
@@ -5206,7 +5208,7 @@ h2.widget-title:after {
 		font-size: 13px;
 	}
 	.ms_logo_inner {
-		min-height: 120px;
+		min-height: 30px;
 	}
 	.ms_nav_wrapper {
 		top: 140px;
@@ -5748,7 +5750,7 @@ h2.widget-title:after {
 	}
 	.ms_footer_logo {
 		padding-left: 0;
-		padding-top: 50px;
+		padding-top: 0;
 	}
 	h1.footer_title:after {
 		margin-left: -50px;
@@ -5964,7 +5966,7 @@ h2.widget-title:after {
 		width: 262%;
 	}
 	.ms_logo_inner {
-		min-height: 95px;
+		min-height: 55px;
 	}
 	.ms_nav_wrapper {
 		top: 120px;
@@ -6053,7 +6055,7 @@ h2.widget-title:after {
 		padding-left: 40px;
 	}
 	.album_list_wrapper>ul>li {
-		width: 15%;
+		width: 100vw;
 	}
 	.ms_main_wrapper.ms_profile a.ms_btn {
 		width: auto;
