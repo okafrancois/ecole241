@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-   <meta charset="utf-8">
-   <title>bloc</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="master.css">
+  <meta charset="utf-8">
+  <title>bloc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="master.css">
 </head>
+
 <body>
-   <div class="container">
-      <nav>
-         <a href="#1">1</a>
-         <a href="#2">2</a>
-         <a href="#3">3</a>
-         <a href="#4">4</a>
-      </nav>
-      <div class="section1" id="1"></div>
-      <div class="section2" id="2"></div>
-      <div class="section3" id="3"></div>
-      <div class="section4" id="4"></div>
-   </div>
-   <!-- <script type="text/javascript" src="index.js"></script> -->
-   <script type="text/javascript" src="app.js"></script>
+  <div>
+    <!-- parent des liens de navigation -->
+    <div>
+      <ul class="liens">
+        <li class="actif"><a href="#accueil">Accueil</a></li>
+        <li><a href="#mentions">Mentions</a></li>
+        <li><a href="#apropos">A propos</a></li>
+      </ul>
+    </div>
+    <!-- parent des contenus -->
+    <div class="contenus">
+      <div id="accueil" class="contenu actif">Nous sommes dans l'accueil Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident<div>
+        </div>
+      </div>
+      <div id="mentions" class="contenu">Nous sommes dans mentions Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</div>
+      <div id="apropos" class="contenu">Nous sommes dans a propos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</div>
+    </div>
+  </div>
+  <div class="cherche">
+    <h1>OKA le monde !</h1>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>

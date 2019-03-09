@@ -1,0 +1,52 @@
+.bannertitle{
+  color: #fff;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  font-family: sans-serif;
+  text-align: right;
+}
+.bannertitle h1{
+  font-size: 1.4em;
+  color: #fff;
+  width: 50%;
+  float: right;
+}
+input[type="button"]{
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #fff;
+}
+.ms_top_left{
+  height: auto;
+  overflow: auto;
+}
+.abonnepub{
+  background-color: #0b26b0;
+  padding: 15px;
+  color: #fff;
+}
+.abonnepub h1{
+  color: #fff;
+  font-size: 1.3em;
+}
+.abonnepub input[type="button"]:hover{
+  background-color: white;
+  color: #0b26b0;
+}
+.w_tp_song_img{
+  border-radius: 50%;
+}
+.bannertitle.newsong{
+  padding: 20px;
+}
+.bannertitle.newsong div{
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+.bannertitle.newsong h3{
+  font-size: 1.5em;
+}

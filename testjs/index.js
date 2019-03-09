@@ -379,3 +379,18 @@
     console.log(eleve1.moyenne());
     console.log(eleve2.moyenne());
     theBest(eleve1, eleve2);
+    //La date du jour
+
+    let date = new Date();
+    let dy = date.getFullYear();
+    let dmonth = date.getMonth();
+    let dday= date.getDay();
+    let dhour = date.getHours();
+    let ddate = date.getDate();
+    let dmin = date.getMinutes();
+    let mois = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
+    let jours = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+    let datefr = function() {
+      return `Nous sommes ${jours[dday]} ${ddate} ${mois[dmonth]} ${dy}\nIl est ${dhour}H:${dmin}Min`
+    }
+    alert(datefr())
