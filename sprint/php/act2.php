@@ -12,7 +12,7 @@
   $hasAccess = true;//bool
   $comment = NULL;//Null
 
-  echo "$username <br>Age: $age ans <br>Taille: $height <br> Autorisation : $hasAccess <br> Comments: $comment";
+  echo " Nom: $userName <br>Age: $age ans <br>Taille: $height <br> Autorisation : $hasAccess <br> Comments: $comment";
   ?>
   </body>
 </html>
