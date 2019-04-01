@@ -107,22 +107,25 @@
     <table class="table table-hover table-dark">
   <thead>
     <tr>
-      <th scope="col">Nom</th>
+      <th scope="col">#</th>
       <th scope="col">Prenom</th>
+      <th scope="col">Nom</th>
       <th scope="col">Age</th>
       <th scope="col">Profil</th>
     </tr>
   </thead>
   <tbody>
     <?php
+      $i = 1;
       foreach ($liste as $el) :?>
       <tr>
+        <td><?= $i ?></td>
         <td><?= $el['prenom'] ?></td>
         <td><?= $el['nom'] ?></td>
         <td><?= " {$el['age']} ans" ?></td>
         <td><?= "<a href='{$el["profil"]}' target='_blank'>Consulter</a>" ?></td>
       </tr>
-
+      <?php $i++ ?>
     <?php endforeach; ?>
   </tbody>
 </table>
