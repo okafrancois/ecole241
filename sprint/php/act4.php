@@ -117,10 +117,10 @@
     <?php
       foreach ($liste as $el) :?>
       <tr>
-        <td><?= $el['nom'] ?></td>
         <td><?= $el['prenom'] ?></td>
+        <td><?= $el['nom'] ?></td>
         <td><?= " {$el['age']} ans" ?></td>
-        <td><?= $el['profil'] ?></td>
+        <td><?= "<a href='{$el["profil"]}' target='_blank'>Consulter</a>" ?></td>
       </tr>
 
     <?php endforeach; ?>
