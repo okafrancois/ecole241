@@ -1,5 +1,5 @@
 <!-- //tableau a 2 dimension -->
-<!-- Les apre20+ts de ecole241 -->
+<!-- Les apreNaNts de ecole241 -->
 <?php
   $liste = array(
     array(
@@ -23,7 +23,7 @@
     array(
       "nom"    => "Nze Bitome",
       "prenom" => "Leticia",
-      "age"    => "20+",
+      "age"    => "NaN",
       "profil" => "https://nzebitome.github.io/ecole241/profil/"
     ),
     array(
@@ -41,7 +41,7 @@
     array(
       "nom"    => "Maurio",
       "prenom" => "Joe",
-      "age"    => "20+",
+      "age"    => "NaN",
       "profil" => "https://DinKelby7.github.io/ecole241/profil/"
     ),
     array(
@@ -53,13 +53,13 @@
     array(
       "nom"    => "Kamgoua",
       "prenom" => "Grace",
-      "age"    => "20+",
+      "age"    => "NaN",
       "profil" => "https://lacastafiore.github.io/ecole241/profil/"
     ),
     array(
       "nom"    => "Ribelson",
       "prenom" => "Boris",
-      "age"    => "20+",
+      "age"    => "NaN",
       "profil" => "https://ribelson.github.io/ecole241/profil/"
     )
   )
@@ -87,6 +87,9 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+      }
+      table a{
+        text-decoration: underline;
       }
     </style>
     <!-- Custom styles for this template -->
@@ -122,8 +125,12 @@
         <td><?= $i ?></td>
         <td><?= $el['prenom'] ?></td>
         <td><?= $el['nom'] ?></td>
-        <td><?= " {$el['age']} ans" ?></td>
-        <td><?= "<a href='{$el["profil"]}' target='_blank'>Consulter</a>" ?></td>
+        <td><?php if ($el['age']==="NaN") {
+          echo "inconnu";
+        } else {
+          echo "{$el['age']} ans";
+        }?></td>
+        <td><a href="<?= $el['profil']?>" target="_blank">Consulter</a> </td>
       </tr>
       <?php $i++ ?>
     <?php endforeach; ?>
