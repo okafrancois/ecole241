@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Entrepreneurs Chat</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   <link rel="stylesheet" type="text/css" href="css/animate.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+   <link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+   <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   <style>
+      .hide{
+            display: none !important;
+			}
+         </style>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header>
+         <div class="container">
+            <div class="header-data">
+               <div class="logo">
+
+               </div>
+               <div class="search-bar">
+                  <form action="result.html">
+                     <input type="text" name="search" placeholder="Recherche un entrepreneurs...">
+                     <button type="submit"><i class="la la-search"></i></button>
+                  </form>
+               </div>
+               <!--search-bar end-->
+               <nav>
+                  <ul>
+                     <li>
+                        <a href="index.html" title="">
+                           <span><img src="images/icon1.png" alt=""></span>
+                           Accueil
+                        </a>
+                     </li>
+                     <li>
+                        <a href="companies.html" title="">
+                           <span><img src="images/icon2.png" alt=""></span>
+                           Entrepreneurs
+                        </a>
+                     </li>
+                     <li>
+                        <a href="my-profile-feed.html">
+                           <span><img src="images/icon4.png" alt=""></span>
+                           Profil
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" title="" class="not-box-open">
+                           <span><img src="images/icon7.png" alt=""></span>
+                           Notification
+                        </a>
+                        <div class="notification-box">
+                           <div class="nt-title">
+                              <h4>Parametre</h4>
+                              <a href="#" title="">Tous effacer</a>
+                           </div>
+                           <div class="nott-list">
+                              <div class="notfication-details">
+                                 <div class="noty-user-img">
+                                    <img src="images/resources/ny-img1.png" alt="">
+                                 </div>
+                                 <div class="notification-info">
+                                    <h3><a href="#" title="">Jassica William</a> est interressé par "E-shop".</h3>
+                                    <span>Il y' 5 min</span>
+                                 </div>
+                                 <!--notification-info -->
+                              </div>
+
+                              <div class="view-all-nots">
+                                 <a href="#" title="">Voir toutes les notifications</a>
+                              </div>
+                           </div>
+                           <!--nott-list end-->
+                        </div>
+                        <!--notification-box end-->
+                     </li>
+                  </ul>
+               </nav>
+               <!--nav end-->
+               <div class="menu-btn">
+                  <a href="#" title=""><i class="fa fa-bars"></i></a>
+               </div>
+               <!--menu-btn end-->
+               <div class="user-account">
+                  <div class="user-info">
+                     <img src="images/circle.png" alt="">
+                     <a href="#" title="">Gabin</a>
+                     <i class="la la-sort-down"></i>
+                  </div>
+                  <div class="user-account-settingss">
+                     <h3>Status de connexion</h3>
+                     <ul class="on-off-status">
+                        <li>
+                           <div class="fgt-sec">
+                              <input type="radio" name="cc" id="c5">
+                              <label for="c5">
+                                 <span></span>
+                              </label>
+                              <small>en line</small>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="fgt-sec">
+                              <input type="radio" name="cc" id="c6">
+                              <label for="c6">
+                                 <span></span>
+                              </label>
+                              <small>Hors ligne</small>
+                           </div>
+                        </li>
+                     </ul>
+
+                     <h3>Parametre</h3>
+                     <ul class="us-links">
+                        <li><a href="profile-account-setting.html" title="">Votre compte</a></li>
+                        <li><a href="#" title="">Privacy</a></li>
+                        <li><a href="#" title="">Faqs</a></li>
+                        <li><a href="#" title="">Terms & Conditions</a></li>
+                     </ul>
+                     <h3 class="tc"><a href="#" title="">Deconnexion</a></h3>
+                  </div>
+                  <!--user-account-settingss end-->
+               </div>
+            </div>
+            <!--header-data end-->
+         </div>
+      </header>
+      <!--header end-->
+      <main>
+         <div class="main-section">
+            <div class="container">
+               <div class="main-section-data">
+                  <div class="row">
+                     <div class="col-lg-3 col-md-4 pd-left-none no-pd">
+                        <div class="main-left-sidebar no-margin">
+                           <div class="user-data full-width">
+                              <div class="user-profile">
+                                 <div class="username-dt">
+                                    <div class="usr-pic">
+                                       <img src="images/circle-pic.png" alt="">
+                                    </div>
+                                 </div>
+                                 <!--username-dt end-->
+                                 <div class="user-specs">
+                                    <h3>Gabin Moundziegou</h3>
+                                    <span>Developpeur Web full stack, Graphique Designer</span>
+                                 </div>
+                              </div>
+                              <!--user-profile end-->
+                              <ul class="user-fw-status">
+                                 <li>
+                                    <h4>Ceux que je suis</h4>
+                                    <span>34</span>
+                                 </li>
+                                 <li>
+                                    <h4>Ceux qui me suivent</h4>
+                                    <span>155</span>
+                                 </li>
+                                 <li>
+                                    <a href="#" title="">Aller vers mon profil</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <!--user-data end-->
+                           <div class="suggestions full-width">
+                              <div class="sd-title">
+                                 <h3>Suggestions</h3>
+                                 <i class="la la-ellipsis-v"></i>
+                              </div>
+                              <!--sd-title end-->
+                              <div class="suggestions-list">
+                                 <div class="suggestion-usd">
+                                    <img src="images/charles_edited.jpg" alt="" width="40" height="40" style="border-radius:50%">
+                                    <div class="sgt-text">
+                                       <h4>Lauryn MILAGUE</h4>
+                                       <span>Model Photo (FREELANCE)</span>
+                                    </div>
+                                    <span><i class="la la-plus"></i></span>
+                                 </div>
+                                 <div class="suggestion-usd">
+                                    <img src="images/anael.jpg" width="40" alt="">
+                                    <div class="sgt-text">
+                                       <h4>ANTCHANDIET ANAEL</h4>
+                                       <span>Consultant communication</span>
+                                    </div>
+                                    <span><i class="la la-plus"></i></span>
+                                 </div>
+                                 <div class="suggestion-usd">
+                                    <img src="images/precision.jpg" alt="" width="40" height="40" style="border-radius:50%;">
+                                    <div class="sgt-text">
+                                       <h4>Precision NickHerm</h4>
+                                       <span>Spécialiste Identité visuel</span>
+                                    </div>
+                                    <span><i class="la la-plus"></i></span>
+                                 </div>
+                                 <div class="suggestion-usd">
+                                    <img src="images/francois.jpg" alt="" width="40" height="50">
+                                    <div class="sgt-text">
+                                       <h4>François ITOUTOU</h4>
+                                       <span>Développeur fullstack Freeleance</span>
+                                    </div>
+                                    <span><i class="la la-plus"></i></span>
+                                 </div>
+
+                                 <div class="view-more">
+                                    <a href="#" title="">Voir plus</a>
+                                 </div>
+                              </div>
+                              <!--suggestions-list end-->
+                           </div>
+                           <!--suggestions end-->
+
+                        </div>
+                        <!--main-left-sidebar end-->
+                     </div>
+                     <div class="col-lg-6 col-md-8 no-pd">
+                        <div class="main-ws-sec">
+                           <div class="post-topbar">
+                              <div class="user-picy">
+                                 <img src="images/circle-pic.png" alt="">
+                              </div>
+                              <div class="post-st">
+                                 <ul>
+                                    <li><a class="post_project" href="#" title="">Exposer un Projet</a></li>
+                                    <li><a class="post-jb active" href="#" title="">Poster une Opportunité d'affaire</a></li>
+                                 </ul>
+                              </div>
+                              <!--post-st end-->
+                           </div>
+                           <!--post-topbar end-->
+                           <div class="posts-section">
+                              <div class="post-bar">
+                                 <div class="post_topbar">
+                                    <div class="usy-dt">
+                                       <img src="images/circle.png" alt="">
+                                       <div class="usy-name">
+                                          <h3>Gabin Moundziegou</h3>
+                                          <span><img src="images/clock.png" alt="">Il y'a 10 min</span>
+                                       </div>
+                                    </div>
+                                    <div class="ed-opts">
+                                       <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                       <ul class="ed-options">
+                                          <li><a href="#" title="">Modifier</a></li>
+                                          <li><a href="#" title="">Supprimer</a></li>
+                                          <li><a href="#" title="">Booster</a></li>
+
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="epi-sec">
+                                    <ul class="descp">
+                                       <li><img src="images/icon8.png" alt=""><span>Informatique</span></li>
+                                       <li><img src="images/icon9.png" alt=""><span>Gabon, Libreville</span></li>
+                                    </ul>
+                                    <ul class="bk-links">
+                                       <li><a href="#" title=""><i class="la la-star"></i></a></li>
+                                    </ul>
+                                 </div>
+                                 <div class="job_descp">
+                                    <h3>Comment gagner de l'argent sur internet ?</h3>
+                                    <ul class="job-dt">
+                                       <li><a href="#" title="">15 Fevrier 2019</a></li>
+                                       <li><span>10.000 XAF participation</span></li>
+                                    </ul>
+                                    <img src="images/LeWeb.jpg" alt="" style="width:100%;">
+                                 </div>
+                                 <div class="job-status-bar">
+                                    <ul class="like-com">
+                                       <li>
+                                          <a href="#"><i class="la la-heart"></i>Bonne</a>
+                                          <img src="images/liked-img.png" alt="">
+                                          <span>25</span>
+                                       </li>
+                                       <li><i class="com" onclick="derouler()"><img src="images/com.png" alt=""> Commentaire 15</i></li>
+                                    </ul>
+                                    <a><i class="la la-eye"></i>50 vues</a>
+                                 </div>
+                                 <!--barre de commentaires-->
+                                 <div class="comment-section  hide" id="comment">
+                                    <div class="comment-sec">
+                                       <ul>
+                                          <li>
+                                             <div class="comment-list">
+                                                <div class="bg-img">
+                                                   <img src="images/charles_edited.jpg" alt="" width="50">
+                                                </div>
+                                                <div class="comment">
+                                                   <h3>Lauryn</h3>
+                                                   <span><img src="images/clock.png" alt="">Il y'a 4 min</span>
+                                                   <p>Je suis très interréssée</p>
+                                                   <a href="#" title="" class="active"><i class="fa fa-reply-all"></i>Reponse</a>
+                                                </div>
+                                             </div>
+                                             <!--comment-list end-->
+                                             <ul>
+                                                <li>
+                                                   <div class="comment-list">
+                                                      <div class="bg-img">
+                                                         <img src="images/resources/bg-img2.png" alt="">
+                                                      </div>
+                                                      <div class="comment">
+                                                         <h3>John Doe</h3>
+                                                         <span><img src="images/clock.png" alt=""> Il y'a 3 min</span>
+                                                         <p>Bonjour LAURYN</p>
+                                                         <a href="#" title=""><i class="fa fa-reply-all"></i>Reponse</a>
+                                                      </div>
+                                                   </div>
+                                                   <!--comment-list end-->
+                                                </li>
+                                             </ul>
+                                          </li>
+                                          <li>
+                                             <div class="comment-list">
+                                                <div class="bg-img">
+                                                   <img src="images/resources/bg-img3.png" alt="">
+                                                </div>
+                                                <div class="comment">
+                                                   <h3>Paul Sebastien</h3>
+                                                   <span><img src="images/clock.png" alt=""> Il y'a 1 min</span>
+                                                   <p>Il est temps que les gens se levent et prennent conscience que le numerique est plus que le petrole</p>
+                                                   <a href="#" title=""><i class="fa fa-reply-all"></i>Reponse</a>
+                                                </div>
+                                             </div>
+                                             <!--comment-list end-->
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <!--comment-sec end-->
+                                    <div class="post-comment">
+                                       <div class="cm_img">
+                                          <img src="images/circle.png" alt="">
+                                       </div>
+                                       <div class="comment_box">
+                                          <form>
+                                             <input type="text" placeholder="Postez votre commentaire">
+                                             <button type="submit">Envoyer</button>
+                                          </form>
+                                       </div>
+                                    </div>
+                                    <!--post-comment end-->
+                                 </div>
+                              </div>
+                              <div class="top-profiles">
+                                 <div class="pf-hd">
+                                    <h3>Profils actifs dans l'ecosysteme Numerique</h3>
+                                    <i class="la la-ellipsis-v"></i>
+                                 </div>
+                                 <div class="profiles-slider">
+                                    <div class="user-profy">
+                                       <img src="images/Coach_Silvere.jpg" alt="" width="100">
+                                       <h3>Sylvere Bousssamba</h3>
+                                       <span>Fondateur OGOOUÉ-LABS</span>
+                                       <ul>
+                                          <li><a href="#" title="" class="followw">Suivre</a></li>
+                                          <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+
+                                       </ul>
+                                       <a href="silvere" title="">Voir profil</a>
+                                    </div>
+                                    <!--user-profy end-->
+                                    <div class="user-profy">
+                                       <img src="images/Madame_Silvie.jpg" alt="" width="100">
+                                       <h3>Silvie Toure</h3>
+                                       <span>Fondatrice du Magizin OKOUME</span>
+                                       <ul>
+                                          <li><a href="#" title="" class="followw">Suivre</a></li>
+                                          <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+
+                                       </ul>
+                                       <a href="#" title="">Voir profil</a>
+                                    </div>
+                                    <!--user-profy end-->
+
+                                    <div class="user-profy">
+                                       <img src="images/dave.jpg" alt="" width="100">
+                                       <h3>DAVE WALKER</h3>
+                                       <span>Fondateur de YATOU</span>
+                                       <ul>
+                                          <li><a href="#" title="" class="followw">Suivre</a></li>
+                                          <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+                                       </ul>
+                                       <a href="#" title="">Voir le profil</a>
+                                    </div>
+                                    <!--user-profy end-->
+                                    <div class="user-profy">
+                                       <img src="images/henry.jpg" alt="" width="100">
+                                       <h3>Henry LEPA</h3>
+                                       <span>Developpeur fullstack Freelance</span>
+                                       <ul>
+                                          <li><a href="#" title="" class="followw">Suivre</a></li>
+                                          <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+
+                                       </ul>
+                                       <a href="#" title="">Voir profil</a>
+                                    </div>
+                                    <!--user-profy end-->
+                                    <div class="user-profy">
+                                       <img src="images/pascal.jpg" alt="">
+                                       <h3>Pascal Ango</h3>
+                                       <span>Communication Digital freelance</span>
+                                       <ul>
+                                          <li><a href="#" title="" class="followw">Suivre</a></li>
+                                          <li><a href="#" title="" class="envlp"><img src="images/envelop.png" alt=""></a></li>
+
+                                       </ul>
+                                       <a href="#" title="">View Profile</a>
+                                    </div>
+                                    <!--user-profy end-->
+                                 </div>
+                                 <!--profiles-slider end-->
+                              </div>
+                              <!--top-profiles end-->
+                              <div class="post-bar">
+                                 <div class="post_topbar">
+                                    <div class="usy-dt">
+                                       <img src="images/Madame_Silvie.jpg" alt="" width="80" height="80">
+                                       <div class="usy-name">
+                                          <h3>Silvie Toure</h3>
+                                          <span><img src="images/clock.png" alt="">Il y'a 3 min</span>
+                                       </div>
+                                    </div>
+                                    <div class="ed-opts">
+                                       <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                       <ul class="ed-options">
+                                          <li><a href="#" title="">Partager</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="epi-sec">
+                                    <ul class="descp">
+                                       <li><img src="images/icon8.png" alt=""><span>Numerique</span></li>
+                                       <li><img src="images/icon9.png" alt=""><span>Gabon, Librevile</span></li>
+                                    </ul>
+                                    <ul class="bk-links">
+                                       <li><a href="#" title=""><i class="la la-star"></i></a></li>
+                                       <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                                    </ul>
+                                 </div>
+                                 <div class="job_descp">
+                                    <h3>Café Numérique</h3>
+                                    <ul class="job-dt">
+                                       <li><a href="#" title="">25 Janvier 2019</a></li>
+                                       <li><span>Entrée Libre</span></li>
+                                    </ul>
+                                    <img src="images/Café_numérique.jpg" alt="" style="width:100%;">
+                                 </div>
+                                 <div class="job-status-bar">
+                                    <ul class="like-com">
+                                       <li>
+                                          <a href="#"><i class="la la-heart"></i> Bonne</a>
+                                          <img src="images/liked-img.png" alt="">
+                                          <span>22</span>
+                                       </li>
+                                       <li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Commentaire 22</a></li>
+                                    </ul>
+                                    <a><i class="la la-eye"></i>Vues 150</a>
+                                 </div>
+                              </div>
+                              <!--post-bar end-->
+                              <div class="posty">
+                                 <div class="post-bar no-margin">
+                                    <div class="post_topbar">
+                                       <div class="usy-dt">
+                                          <img src="images/anael.jpg" alt="" width="40">
+                                          <div class="usy-name">
+                                             <h3>ANTCHANDIET ANAEL</h3>
+                                             <span><img src="images/clock.png" alt="">Il y'a 10 min</span>
+                                          </div>
+                                       </div>
+                                       <div class="ed-opts">
+                                          <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                          <ul class="ed-options">
+                                             <li><a href="#" title="">Partager</a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="epi-sec">
+                                       <ul class="descp">
+                                          <li><img src="images/icon8.png" alt=""><span>Communication</span></li>
+                                          <li><img src="images/icon9.png" alt=""><span>France, Paris</span></li>
+                                       </ul>
+                                       <ul class="bk-links">
+                                          <li><a href="#" title=""><i class="la la-star"></i></a></li>
+                                          <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="job_descp">
+                                       <h3>Projet et Opportunité d'affaire</h3>
+
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
+                                       <img src="images/business.jpg" alt="" style="width: 100%;">
+                                       <ul class="skill-tags">
+                                          <li><a href="#" title="" class="active">Je suis interéssé</a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="job-status-bar">
+                                       <ul class="like-com">
+                                          <li>
+                                             <a href="#"><i class="la la-heart"></i> Bonne</a>
+                                             <img src="images/liked-img.png" alt="">
+                                             <span>22</span>
+                                          </li>
+                                          <li><a href="#" title="" class="com"><img src="images/com.png" alt=""> Commentaire 30</a></li>
+                                       </ul>
+                                       <a><i class="la la-eye"></i>Vues 520</a>
+                                    </div>
+                                 </div>
+                                 <!--post-bar end-->
+
+                              </div>
+                              <!--posty end-->
+                              <div class="process-comm">
+                                 <a href="#" title=""><img src="images/process-icon.png" alt=""></a>
+                              </div>
+                              <!--process-comm end-->
+                           </div>
+                           <!--posts-section end-->
+                        </div>
+                        <!--main-ws-sec end-->
+                     </div>
+                     <div class="col-lg-3 pd-right-none no-pd">
+                        <div class="right-sidebar">
+                           <div class="widget widget-jobs">
+                              <div class="sd-title">
+                                 <h3>Opportunité d'affaire</h3>
+                              </div>
+                              <div class="jobs-list">
+                                 <div class="job-info">
+                                    <div class="job-details">
+                                       <h3>Application Agri-Collect</h3>
+                                       <p>Contribué à la collect d'information agricole au travers d'une application... Vous pouvez investir à partir de</p>
+                                    </div>
+                                    <div class="hr-rate">
+                                       <span>25.000 XAF</span>
+                                    </div>
+                                 </div>
+                                 <!--job-info end-->
+
+                              </div>
+                              <!--jobs-list end-->
+                           </div>
+                           <!--widget-jobs end-->
+                           <div class="widget widget-jobs">
+                              <div class="sd-title">
+                                 <h3>Projets interéssants</h3>
+                              </div>
+                              <div class="jobs-list">
+                                 <div class="job-info">
+                                    <div class="job-details">
+                                       <h3>Programme de sensibilisation VIH/SIDA</h3>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                                    </div>
+                                    <div class="hr-rate">
+                                       <span>35.000<br>XAF</span>
+                                    </div>
+                                 </div>
+                                 <!--job-info end-->
+
+                              </div>
+                              <!--jobs-list end-->
+                           </div>
+                           <!--widget-jobs end-->
+                        </div>
+                        <!--right-sidebar end-->
+                     </div>
+                  </div>
+               </div><!-- main-section-data end-->
+            </div>
+         </div>
+      </main>
+
+      <div class="post-popup pst-pj">
+         <div class="post-project">
+            <h3>Poster un Projet</h3>
+            <div class="post-project-fields">
+               <form>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <input type="text" name="title" placeholder="Titre du projet">
+                     </div>
+                     <div class="col-lg-12">
+                        <div class="inp-field">
+                           <select>
+                              <option>Numerique</option>
+                              <option>Agricole</option>
+                              <option>Education</option>
+                              <option>Santé/Prevention</option>
+                           </select>
+                        </div>
+                     </div>
+                     <label for="importe">
+                        <input type="file" style="border:none;">
+                     </label>
+                     <div class="col-lg-12">
+                        <textarea name="description" placeholder="Description Du projet"></textarea>
+                     </div>
+                     <div class="col-lg-12">
+                        <ul>
+                           <li><button class="active" type="submit" value="post">Poster</button></li>
+                           <li><a href="#" title="">Annuler</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <!--post-project-fields end-->
+            <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+         </div>
+         <!--post-project end-->
+      </div>
+      <!--post-project-popup end-->
+
+      <div class="post-popup job_post">
+         <div class="post-project">
+            <h3>Poster une Opportunité d'affaire</h3>
+            <div class="post-project-fields">
+               <form>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <input type="text" name="title" placeholder="Titre">
+                     </div>
+                     <div class="col-lg-12">
+                        <div class="inp-field">
+                           <select>
+                              <option>Numerique</option>
+                              <option>Agricole</option>
+                              <option>Education</option>
+                              <option>Santé/Prevention</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-12">
+                        <textarea name="description" placeholder="Description globale"></textarea>
+                     </div>
+                     <div class="col-lg-12">
+                        <ul>
+                           <li><button class="active" type="submit" value="post">Poster</button></li>
+                           <li><a href="#" title="">Annuler</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <!--post-project-fields end-->
+            <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+         </div>
+         <!--post-project end-->
+      </div>
+      <!--post-project-popup end-->
+      <div class="chatbox-list">
+         <div class="chatbox">
+            <div class="chat-mg">
+               <a href="#" title=""><img src="images/Coach_Silvere.jpg" alt=""></a>
+               <span>2</span>
+            </div>
+            <div class="conversation-box">
+               <div class="con-title mg-3">
+                  <div class="chat-user-info">
+                     <img src="images/Coach_Silvere.jpg" width="40" alt="">
+                     <h3>Sylvere Boussamba<span class="status-info"></span></h3>
+                  </div>
+                  <div class="st-icons">
+                     <a href="#" title=""><i class="la la-cog"></i></a>
+                     <a href="#" title="" class="close-chat"><i class="la la-minus-square"></i></a>
+                     <a href="#" title="" class="close-chat"><i class="la la-close"></i></a>
+                  </div>
+               </div>
+               <div class="chat-hist mCustomScrollbar" data-mcs-theme="dark">
+                  <div class="chat-msg">
+                     <p>
+                        Je serais à Tokio d'ici quelques jours, je souhaite avoir plus de détaille sur l'ecosysteme </p>
+                     <span>Sam, Fev 2, 5:10 PM</span>
+                  </div>
+                  <div class="date-nd">
+                     <span> Sam, Fevrier 3,</span>
+                  </div>
+                  <div class="chat-msg st2">
+                     <p>Je vais vous envoyer une carte interactive<p>
+                           <span>Il y'a 5 min</span>
+                  </div>
+
+               </div>
+               <!--chat-list end-->
+               <div class="typing-msg">
+                  <form>
+                     <textarea placeholder="Tapez votre message"></textarea>
+                     <button type="submit"><i class="fa fa-send"></i></button>
+                  </form>
+                  <ul class="ft-options">
+                     <li><a href="#" title=""><i class="la la-smile-o"></i></a></li>
+                     <li><a href="#" title=""><i class="la la-camera"></i></a></li>
+                     <li><a href="#" title=""><i class="fa fa-paperclip"></i></a></li>
+                  </ul>
+               </div>
+               <!--typing-msg end-->
+            </div>
+            <!--chat-history end-->
+         </div>
+         <div class="chatbox">
+            <div class="chat-mg bx">
+               <a href="#" title=""><img src="images/chat.png" alt=""></a>
+               <span>2</span>
+            </div>
+            <div class="conversation-box">
+               <div class="con-title">
+                  <h3>Messages</h3>
+                  <a href="#" title="" class="close-chat"><i class="la la-minus-square"></i></a>
+               </div>
+               <div class="chat-list">
+                  <div class="conv-list active">
+                     <div class="usrr-pic">
+                        <img src="images/Coach_Silvere.jpg" width="40" alt="">
+                        <span class="active-status activee"></span>
+                     </div>
+                     <div class="usy-info">
+                        <h3>Sylvere Boussamba</h3>
+                        <span>Je serais à Tokio d'ici quelques jours.<img src="images/smley.png" alt=""></span>
+                     </div>
+                     <div class="ct-time">
+                        <span>1:55 PM</span>
+                     </div>
+                     <span class="msg-numbers">2</span>
+                  </div>
+               </div>
+               <!--chat-list end-->
+            </div>
+            <!--conversation-box end-->
+         </div>
+      </div>
+      <!--chatbox-list end-->
+
+   </div>
+   <!--theme-layout end-->
+
+
+
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/popper.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+   <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+   <script type="text/javascript" src="js/scrollbar.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+   <script>
+      function derouler() {
+         var element = document.getElementById("comment");
+         element.classList.toggle("hide");
+      }
+   </script>
+</body>
+
+<!-- Mirrored from gambolthemes.net/workwise_demo/HTML/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Feb 2019 16:16:43 GMT -->
+
+</html>
