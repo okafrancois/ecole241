@@ -18,4 +18,3 @@ let liens = html.querySelectorAll('.liens a');
 for (let lien of liens) {
   lien.addEventListener('click', change)
 }
-let divActive = html.querySelector('.contenu.actif');
