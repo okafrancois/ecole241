@@ -97,7 +97,6 @@ a{
   .container{
     width: 100vw;
     height: auto;
-    border: 1px solid red;
     display: initial;
     position: absolute;
     top: 50%;

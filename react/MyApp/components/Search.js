@@ -1,35 +1,56 @@
 import React from 'react'
 import {View, Button, TextInput, StyleSheet, FlatList, Text} from 'react-native'
-import Films from 'Films'
-class Search extends React.Component
-{
+import FilmItem from './FilmItem'
+import {getFilms} from '../API/TMDB'
+import films from '../Helpers/filmsData'
+class Search extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.textToSearch = ""
+    this.state = { films : [] }
+  }
+  _searchFilm(){
+    if(this.textToSearch.length > 0){
+      getFilms(this.textToSearch).then(data => {
+        this.setState({films: data.results})
+      })
+    }
+
+  }
+  _changeSearch(text){
+    this.textToSearch = text
+  }
+
   render(){
+    console.log('render')
     return(
       <View style={style.container}>
-        <TextInput style={style.input} placeholder="Nom du film" />
-        <Button style={style.button} title="Rechercher" onPress={() => alert("Click sur le bouton")}/>
-        <FlatList
-          data={films}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({item}) => <Films film={item} />}
+        <TextInput
+          style = {style.input}
+          placeholder = "Nom du film"
+          onChangeText = {(text) => this._changeSearch(text)}
           />
+        <Button style={style.button} title="Rechercher un film" onPress={() => this._searchFilm()}/>
+        <FlatList
+          data={this.state.films}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={({item}) =>   <FilmItem film={item}/>}
+        />
       </View>
     )
   }
 }
 const style = StyleSheet.create({
     container: {
-      marginTop: 20,
+      paddingTop: 30,
+      padding: 5,
       flex: 1,
-      backgroundColor: '#077e7b',
-      flexDirection: 'row',
-      alignItems: 'flex-start',
-      justifyContent: 'center'
+      flexDirection: 'column',
     },
     input: {
       borderWidth: 1,
-      borderColor: '#fff',
-      padding: 5,
+      backgroundColor: '#fff',
     },
     button: {
 
