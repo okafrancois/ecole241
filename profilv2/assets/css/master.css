@@ -3,43 +3,14 @@
 }
 
 html {
-  scroll-behavior: smooth;
   overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 input:focus, textarea:focus {
   outline: none;
 }
-
-.rotate-center {
-  -webkit-animation: rotate-center 30s linear infinite both;
-  animation: rotate-center 30s linear infinite both;
-}
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,20 +18,14 @@ input:focus, textarea:focus {
 main{
   width: 500vw;
   display: flex;
-  height: 100vh;
 }
 section {
-  width: 100vw;
   background-color: #2A2A2B;
-  padding-left: 40px;
-  height: 100vh;
+  padding-left: 70px;
+  width: 100vw;
+  overflow: hidden;
 }
-section:not(#portfolio){
-  display: flex;
-}
-section:not(#portfolio)>*{
- width: 50%;
-}
+
 
 nav #blocliens li.normal a i {
   color: gray;
@@ -101,14 +66,8 @@ ul {
   margin: 0;
 }
 
-
-h1+.h1 {
-  display: inline;
-  padding-left: 0;
-}
-
 .deco {
-  display: block;
+  display: none;
   font-size: 20px;
   color: #4e4e50;
   font-family: 'La Belle Aurore';
@@ -121,16 +80,17 @@ h1+.h1 {
   user-select: none;
   /* Standard */
 }
+
 h1 {
   color: var(--main-color);
-  font-family: 'Acme', monospace;
+  font-family: 'Open Sans', sans-serif;
   font-size: 3.5em;
-  font-weight: normal;
   display: inline-block;
 }
+
 /* titre animation */
 h1>span{
-  transition: color 1s 0.5s;
+  transition: color 0.5s 0.5s;
 }
 h1>span:hover{
   color: var(--main-color);
@@ -168,6 +128,7 @@ nav {
   width: 60px;
   background-color: #101010;
   height: 100%;
+  z-index: 1;
 }
 
 .linkcontainer {
@@ -228,7 +189,7 @@ nav ul li a i {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2;
 }
 
 #lkext li {
@@ -311,73 +272,40 @@ nav ul li a i {
 
 /* fin du logo */
 /* mise en forme des deco */
-.html {
-  padding-left: 20px;
-  margin-bottom:
-}
-
-.html:first-child {
-  margin-bottom: 40px;
-}
-
-.html+.body {
-  margin-bottom: 40px;
-}
-
-.body {
-  padding-left: 35px;
-}
-
-.h1 {
-  padding-left: 60px;
-}
-
-.h1+h1 {
-  padding-left: 60px;
-}
-
-.h1+p, .h1+p+p {
-  padding-left: 60px;
-}
-
-.body2 {
-  margin-top: 50px;
-}
 
 /* fin des deco */
-#acceuil {
-  overflow: hidden;
+/* section accueil */
+#acceuil{
+  display: flex;
+  align-items: center;
 }
-
+#acceuil .content{
+  flex-grow: 2;
+}
+#acceuil .image{
+  flex-grow: 1;
+}
 #acceuil h1 {
   font-size: 3.2em;
   color: white;
+  font-weight: bold;
+  transition: 0.5s;
 }
 
 /* section acceuil */
-.image {
-  text-align: center;
-}
 
-#acceuil>div.image {
-  padding-top: 180px;
-}
-
-#acceuil>div:last-child div img {
-  width: 400px;
-  display: inline-block;
+#acceuil>div:last-child img {
+  width: 350px;
   border-radius: 50%;
   border-top: 5px solid gray;
   border-right: 5px solid var(--main-color);
   border-bottom: 5px solid gray;
   border-left: 5px solid var(--main-color);
+  transition: 0.5s;
 }
 
-#acceuil>div:last-child div img {}
 
 #acceuil .btn {
-  margin-left: 60px;
-  text-align: center;
   margin-top: 20px;
 }
 
@@ -388,20 +316,10 @@ nav ul li a i {
   color: #6c6c6b;
 }
 
-.body2+.html {
-  margin-top: 80px;
-}
-
 /* fin de section acceuil... Enfin!!! */
 /* section a propos */
 #apropos {
   overflow: hidden;
-}
-
-#apropos>div:first-child {}
-
-.image {
-  text-align: center;
 }
 
 #apropos>div.image {
@@ -427,114 +345,6 @@ nav ul li a i {
 
 /* fin de apropos...pour l'instant */
 /* section skills */
-#skills>div:last-child {
-  text-align: center;
-  position: relative;
-}
-
-.skills {
-  display: block;
-  font-size: 3em;
-  background-color: white;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  padding: 5px;
-  line-height: 60px;
-  transition: all 0.5s 0.1s;
-  position: absolute;
-}
-
-/* animations skills */
-div.cercle1 {
-  position: relative;
-  max-width: 400px;
-  height: 400px;
-  min-width: 200px;
-  min-height: 200px;
-  border-radius: 50%;
-  border: 1px solid gray;
-  margin: auto;
-  margin-top: 20%;
-}
-
-div.cercle2 {
-  position: relative;
-  max-width: 250px;
-  height: 250px;
-  min-width: 100px;
-  min-height: 100px;
-  border: 1px dashed gray;
-  border-radius: 50%;
-  text-align: center;
-  margin: auto;
-  margin-top: 20%;
-}
-
-.skills[class*="slack"] {
-    top: 15%;
-    left: -5%;
-}
-
-.skills[class*="html5"] {
-  bottom: 15%;
-  left: -5%;
-}
-
-.skills[class*="css"] {
-  bottom: 15%;
-  right: -5%;
-}
-
-.skills[class*="ubuntu"] {
-  top: 15%;
-  right: -5%;
-}
-
-#skills .cercle2>i[class*="code"] {
-  border: 1px solid var(--main-color);
-  background-color: initial;
-  color: var(--main-color);
-  width: 100px;
-  height: 100px;
-  line-height: 90px;
-  top: 30%;
-  right: 30%;
-}
-
-.skills[class*="drive"] {
-  right: 10%;
-}
-
-.skills[class*="trello"] {
-  bottom: 45%;
-  left: -8%;
-}
-
-.skills[class*="google"] {
-  bottom: 45%;
-  left: 90%;
-}
-
-.skills[class*="github"] {
-  left: 20%;
-  top: -5%;
-}
-
-.skills[class*="terminal"] {
-  right: 25%;
-  bottom: 90%;
-}
-
-.skills[class*="branch"] {
-  left: 25%;
-  bottom: -8%;
-}
-
-.skills[class*="atom"] {
-  right: 25%;
-  bottom: -8%;
-}
 
 /* fin des skills... enfin! */
 #portfolio .html {
@@ -778,4 +588,52 @@ footer {
 
 footer a {
   color: inherit;
+}
+@media(max-width:1024px) {
+
+  #acceuil>div:last-child img {
+    width: 270px;
+  }
+  #acceuil h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+@media(max-width: 768px) {
+
+  #acceuil{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  #acceuil .content{
+    display: flex;
+    flex-direction: column;
+  }
+  #acceuil .image{
+    padding-top: 40px;
+    padding-left: 100px;
+  }
+  #acceuil>div:last-child img {
+    width: 220px;
+  }
+  #acceuil h1 {
+    font-size: 2.2em;
+  }
+}
+@media (max-width: 480px) {
+
+  #acceuil{
+    flex-direction: column-reverse;
+  }
+
+  #acceuil .image{
+    padding-top: 40px;
+    padding-left: 50px;
+  }
+  #acceuil>div:last-child img {
+    width: 170px;
+  }
+  #acceuil h1 {
+    font-size: 2em;
+  }
 }
