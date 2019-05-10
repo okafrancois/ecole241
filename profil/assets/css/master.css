@@ -3,6 +3,7 @@
 }
 
 html {
+  font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
   overflow: hidden;
 }
@@ -10,63 +11,28 @@ html {
 input:focus, textarea:focus {
   outline: none;
 }
-
-.rotate-center {
-  -webkit-animation: rotate-center 30s linear infinite both;
-  animation: rotate-center 30s linear infinite both;
-}
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
 main{
-  width: 500vw;
-  display: flex;
-  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  height: 500vh;
 }
 section {
-  width: 100vw;
   background-color: #2A2A2B;
-  padding-left: 40px;
+  padding-left: 80px;
+  width: 100%;
+  overflow: hidden;
   height: 100vh;
 }
-section:not(#portfolio){
-  display: flex;
-}
-section:not(#portfolio)>*{
- width: 50%;
-}
 
-nav #blocliens li.normal a i {
+nav .liens li.normal a i {
   color: gray;
 }
 
-nav #blocliens li.active a>* {
+nav .liens li.active a>* {
   color: var(--main-color);
 }
 
@@ -87,7 +53,7 @@ nav #blocliens li.active a>* {
   color: #413e3e;
 }
 section a {
-  color: white;
+  color: #fff;
 }
 a {
   text-decoration: none;
@@ -101,14 +67,8 @@ ul {
   margin: 0;
 }
 
-
-h1+.h1 {
-  display: inline;
-  padding-left: 0;
-}
-
 .deco {
-  display: block;
+  display: none;
   font-size: 20px;
   color: #4e4e50;
   font-family: 'La Belle Aurore';
@@ -121,16 +81,17 @@ h1+.h1 {
   user-select: none;
   /* Standard */
 }
+
 h1 {
   color: var(--main-color);
-  font-family: 'Acme', monospace;
+  font-family: 'Open Sans', sans-serif;
   font-size: 3.5em;
-  font-weight: normal;
   display: inline-block;
 }
+
 /* titre animation */
 h1>span{
-  transition: color 1s 0.5s;
+  transition: color 0.5s;
 }
 h1>span:hover{
   color: var(--main-color);
@@ -139,7 +100,7 @@ h1>span:hover{
 /* fin */
 
 p {
-  color: white;
+  color: #fff;
   font-size: 1.1em;
   font-weight: 150;
   font-family: 'Lato'
@@ -149,9 +110,6 @@ p+p {
   margin-top: 10px;
 }
 
-#apropos p:last-of-type {
-  margin-left: 60px;
-}
 
 a i {
   color: #4e4e50;
@@ -162,15 +120,16 @@ a:hover, a:hover i {
 }
 
 /*  liens de navigation*/
-nav {
+.nav-desktop {
   position: fixed;
   left: 0;
   width: 60px;
   background-color: #101010;
-  height: 100%;
+  height: 100vh;
+  z-index: 1;
 }
 
-.linkcontainer {
+.nav-desktop .linkcontainer {
   display: inline-block;
 }
 
@@ -182,24 +141,26 @@ nav li i, nav li span {
   transition: all 0.4s 0.2s ease;
 }
 
-nav span {
+.nav-desktop span {
   color: var(--main-color);
   display: block;
   opacity: 0;
   position: absolute;
   top: 0;
+  left: -2px;
   width: 100%;
+  font-size: 14px;
 }
 
-nav li:hover i {
+.nav-desktop li:hover i {
   opacity: 0;
 }
 
-nav li:hover span {
+.nav-desktop li:hover span {
   opacity: 1;
 }
 
-nav ul {
+.nav-desktop ul {
   position: absolute;
   left: 0;
   top: 30%;
@@ -207,7 +168,7 @@ nav ul {
   text-align: center;
 }
 
-nav ul li {
+.nav-desktop ul li {
   width: 60px;
   height: 60px;
 }
@@ -216,19 +177,54 @@ nav ul li>a {
   display: block;
   width: 100%;
   height: 100%;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 nav ul li a i {
-  font-size: 140%;
+  font-size: 180%;
 }
-
+/* menu sur mobile */
+.nav-mobile{
+  z-index: 1;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  padding-left: 50px;
+  background-color: #101010;
+}
+.nav-mobile .linkcontainer{
+  display: flex;
+  justify-content: center;
+}
+.nav-mobile .linkcontainer a{
+  width: 55px;
+  text-align: center;
+}
+nav ul li>a {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: column;
+  font-size: 13px;
+  padding: 6px 2px;
+}
+nav ul li a span{
+  line-height: normal;
+  color: #413e3e;
+  margin-top: 3px;
+}
+nav ul li a:hover span{
+  color: var(--main-color);
+}
 /* liens reseaux sociaux */
 #lkext {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2;
 }
 
 #lkext li {
@@ -255,129 +251,63 @@ nav ul li a i {
   color: var(--main-color);
 }
 
-/* fleches */
-#fleches {
-  position: fixed;
-  right: 30px;
-  bottom: 20px;
-  z-index: 1001;
-}
-
-#fleches li {
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-#fleches li+li {
-  margin-top: 30px;
-}
-
-#fleches li a {
-  display: block;
-  font-size: 25px;
-  text-align: center;
-  line-height: 25px;
-  border-radius: 50%;
-  background-color: var(--main-color);
-}
-
-#fleches li a:hover i {
-  color: var(--main-color);
-}
-
-#fleches a:hover {
-  background-color: #2A2A2B;
-}
-
 /* fin de fleches */
 /* fin des liens de navigation */
 /* logo */
 #logo {
   position: fixed;
   width: 60px;
-  height: 70px;
-  background-color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
   text-align: center;
-  line-height: 70px;
-  z-index: 1000;
+  line-height: 40px;
+  z-index: 2;
 }
 
 #logo i {
-  font-size: 2em;
+  font-size: 1.8em;
   color: var(--main-color);
 }
 
 /* fin du logo */
 /* mise en forme des deco */
-.html {
-  padding-left: 20px;
-  margin-bottom:
-}
-
-.html:first-child {
-  margin-bottom: 40px;
-}
-
-.html+.body {
-  margin-bottom: 40px;
-}
-
-.body {
-  padding-left: 35px;
-}
-
-.h1 {
-  padding-left: 60px;
-}
-
-.h1+h1 {
-  padding-left: 60px;
-}
-
-.h1+p, .h1+p+p {
-  padding-left: 60px;
-}
-
-.body2 {
-  margin-top: 50px;
-}
 
 /* fin des deco */
-#acceuil {
-  overflow: hidden;
+/* section accueil */
+#acceuil{
+  display: flex;
+  align-items: center;
 }
-
+#acceuil .content{
+  flex-grow: 2;
+}
+#acceuil .image{
+  flex-grow: 1;
+}
 #acceuil h1 {
   font-size: 3.2em;
-  color: white;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
 }
 
 /* section acceuil */
-.image {
-  text-align: center;
-}
 
-#acceuil>div.image {
-  padding-top: 180px;
-}
-
-#acceuil>div:last-child div img {
-  width: 400px;
-  display: inline-block;
+#acceuil>div:last-child img {
+  width: 350px;
   border-radius: 50%;
   border-top: 5px solid gray;
   border-right: 5px solid var(--main-color);
   border-bottom: 5px solid gray;
   border-left: 5px solid var(--main-color);
+  transition: 0.5s;
 }
 
-#acceuil>div:last-child div img {}
 
 #acceuil .btn {
-  margin-left: 60px;
-  text-align: center;
   margin-top: 20px;
 }
 
@@ -388,154 +318,105 @@ nav ul li a i {
   color: #6c6c6b;
 }
 
-.body2+.html {
-  margin-top: 80px;
-}
-
 /* fin de section acceuil... Enfin!!! */
 /* section a propos */
-#apropos {
-  overflow: hidden;
+#apropos{
+  display: flex;
 }
-
-#apropos>div:first-child {}
-
-.image {
-  text-align: center;
+#apropos > *{
+  width: 50%;
 }
-
-#apropos>div.image {
-  padding-top: 80px;
+#apropos .content{
+  margin-top: 50px;
 }
-
-#apropos>div.image div {
-  display: inline-block;
-  height: 450px;
-  width: 450px;
-}
-
-#apropos>div:last-child div img {
-  width: 410px;
+#apropos .image{
+  width: 250px;
   padding: 10px;
-  display: inline-block;
-  border-radius: 50%;
-  border-top: 5px solid gray;
-  border-right: 5px solid var(--main-color);
-  border-bottom: 5px solid gray;
-  border-left: 5px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
 }
 
+#apropos .image img {
+  width: 300px;
+  height: auto;
+  display:block;
+  border-bottom: 3px solid var(--main-color);
+}
+#apropos  h1{
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+#apropos  p{
+  font-size: 1.1em;
+  line-height: 1.1em;
+  transition: 0.5s;
+  text-align: justify;
+}
 /* fin de apropos...pour l'instant */
 /* section skills */
-#skills>div:last-child {
-  text-align: center;
-  position: relative;
-}
+  #skills .skills{
+    font-size: 2.5em;
+    padding-top: 0.5em;
+  }
+  #skills .content{
+    color: #fff;
+    width: 100%;
+  }
+  #skills .content{
+    display: flex;
+    justify-content: space-around;
+  }
+  #skills .content> *{
+    width: 40%;
+    padding: 10px;
+    box-shadow: 0 0 60px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 1px;
+    transform: translateY(15%);
+  }
+  #skills h2{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  #skills .skill-box{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .skill-box{
+    margin-top: 10px;
+    position: relative;
+  }
+  .skill-box .skill-bar{
+    margin-top: 5px;
+  }
+  .skill-box span:last-of-type{
+    color: #fff;
+    position: absolute;
+    right: 0;
+  }
+  .skill-box .skill-bar{
+    height:11px;
+    border-radius: 10px;
+    /* padding: 1px 4px; */
+    width: 100%;
+    border: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  #skills .skill-bar .skill-level{
+    background-color: var(--main-color);
+    height: 100%;
+    width: 5%;
+    border-radius: 10px;
+    transition: 0.5s;
 
-.skills {
-  display: block;
-  font-size: 3em;
-  background-color: white;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  padding: 5px;
-  line-height: 60px;
-  transition: all 0.5s 0.1s;
-  position: absolute;
-}
-
-/* animations skills */
-div.cercle1 {
-  position: relative;
-  max-width: 400px;
-  height: 400px;
-  min-width: 200px;
-  min-height: 200px;
-  border-radius: 50%;
-  border: 1px solid gray;
-  margin: auto;
-  margin-top: 20%;
-}
-
-div.cercle2 {
-  position: relative;
-  max-width: 250px;
-  height: 250px;
-  min-width: 100px;
-  min-height: 100px;
-  border: 1px dashed gray;
-  border-radius: 50%;
-  text-align: center;
-  margin: auto;
-  margin-top: 20%;
-}
-
-.skills[class*="slack"] {
-    top: 15%;
-    left: -5%;
-}
-
-.skills[class*="html5"] {
-  bottom: 15%;
-  left: -5%;
-}
-
-.skills[class*="css"] {
-  bottom: 15%;
-  right: -5%;
-}
-
-.skills[class*="ubuntu"] {
-  top: 15%;
-  right: -5%;
-}
-
-#skills .cercle2>i[class*="code"] {
-  border: 1px solid var(--main-color);
-  background-color: initial;
-  color: var(--main-color);
-  width: 100px;
-  height: 100px;
-  line-height: 90px;
-  top: 30%;
-  right: 30%;
-}
-
-.skills[class*="drive"] {
-  right: 10%;
-}
-
-.skills[class*="trello"] {
-  bottom: 45%;
-  left: -8%;
-}
-
-.skills[class*="google"] {
-  bottom: 45%;
-  left: 90%;
-}
-
-.skills[class*="github"] {
-  left: 20%;
-  top: -5%;
-}
-
-.skills[class*="terminal"] {
-  right: 25%;
-  bottom: 90%;
-}
-
-.skills[class*="branch"] {
-  left: 25%;
-  bottom: -8%;
-}
-
-.skills[class*="atom"] {
-  right: 25%;
-  bottom: -8%;
-}
-
+  }
 /* fin des skills... enfin! */
 #portfolio .html {
   margin-bottom: 0;
@@ -544,41 +425,56 @@ div.cercle2 {
 #portfolio .body {
   margin-bottom: 0;
 }
-
-#portfolio .content {
+#portfolio{
+  padding-left: 60px;
+  display: flex;
+}
+#portfolio .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+#portfolio .title h1{
   text-align: center;
+  color: #2a2a2a;
+  background-color: var(--main-color);
+  font-size: 2em;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 70px 10px;
+}
+#portfolio .content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .reali {
   overflow: hidden;
-  border-radius: 15px;
-  border: 1px solid white;
-  width: 30%;
-  min-height: 200px;
-  display: inline-block;
-  margin-left: 10px;
-  margin-top: 10px;
-  min-width: 200px;
-  min-height: 150px;
+  width: 260px;
+  height: 210px;
 }
 
 .reali .infos {
-  height: 200px;
-  color: white;
-  padding-top: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
   position: relative;
+  font-size: 0.7em;
+  text-align: center;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
 }
-
-.reali:nth-child(n+4) .infos {
-  bottom: -300px;
-  transition: all 0.5s 0.1s;
+.reali:hover .infos{
+  opacity: 1;
 }
-
-.reali .infos {
-  bottom: 300px;
-  transition: all 0.5s 0.1s;
-}
-
 .reali .infos h2 {
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -595,7 +491,7 @@ div.cercle2 {
 }
 
 .reali:nth-child(3) {
-  background: url('../img/githun.png') no-repeat;
+  background: url('../img/olatano.png') no-repeat;
   background-size: cover;
 }
 
@@ -605,11 +501,23 @@ div.cercle2 {
 }
 
 .reali:nth-child(5) {
-  background: url('../img/qcm.png') no-repeat;
+  background: url('../img/dimosi.png') no-repeat;
   background-size: cover;
 }
 
 .reali:nth-child(6) {
+  background: url('../img/ccaimag.png') no-repeat;
+  background-size: cover;
+}
+.reali:nth-child(7) {
+  background: url('../img/donapenimg.png') no-repeat;
+  background-size: cover;
+}
+.reali:nth-child(8) {
+  background: url('../img/connectimg.png') no-repeat;
+  background-size: cover;
+}
+.reali:nth-child(9) {
   background: url('../img/lettre.png') no-repeat;
   background-size: cover;
 }
@@ -637,6 +545,16 @@ div.cercle2 {
 .reali:nth-child(6) .infos {
   background-color: #743030;
 }
+.reali:nth-child(7) .infos {
+  background-color: #bf5304;
+}
+.reali:nth-child(8) .infos {
+  background-color: #900101;
+}
+.reali:nth-child(9) .infos {
+  background-color: #743030;
+}
+
 
 .reali:hover .infos {
   bottom: 0;
@@ -648,121 +566,67 @@ div.cercle2 {
 }
 
 #portfolio .btn a {
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #fff;
+  color: #fff;
   border-radius: 5px;
 }
 
 #portfolio .btn a:hover {
-  background-color: white;
-  border: 1px solid white;
-  color: black;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
 }
 
 /* fin des realisations */
 /* section contact */
-#contact div.map {
-  position: relative;
+
+#contact{
+  display: flex;
+  justify-content: center;
+  padding-left: 70px;
 }
 
-#map { position:absolute; top:0; bottom:0; width:100%;}
-.map .texte {
-  position: absolute;
-  z-index: 2;
-  background: rgba(51, 46, 46, 0.9);
-  width: 220px;
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px;
-  top: 50px;
-  left: 50px;
+#contact > *{
+  width: 50%;
 }
 
-#contact .map .texte a {
-  text-decoration: underline;
+#contact .bloc-contact{
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#contact form {
-  margin-left: 60px;
-}
-
-input[required] {
-  border: none;
-  border-bottom: 2px solid red;
-}
-
-#contact input {
-  height: 40px;
-  width: 300px;
-  background: initial;
-  border: initial;
-  display: block;
-  margin-top: 5px;
-  background-color: rgba(139, 140, 143, 0.3);
-  font-size: 1.2em;
-  padding-left: 10px;
-  border-radius: 2px;
-  transition: all 0.5s 0.1s ease;
-}
-
-#contact textarea {
-  color: white;
-  background: initial;
-  border: initial;
-  display: inline-block;
-  margin-top: 5px;
-  background-color: rgba(139, 140, 143, 0.3);
-  transition: all 0.5s 0.1s;
-  font-size: 1.2em;
-  padding-left: 10px;
-  border-radius: 2px;
-}
-
-#contact textarea::placeholder {
-  font-family: sans-serif;
-}
-
-#contact input:focus, #contact textarea:focus {
-  background: none;
-  color: white;
-  border-bottom: 2px solid var(--main-color);
-  width: 350px;
-}
-
-#contact input:last-child {
-  display: none;
-}
-
-#contact label {
-  display: inline-block;
-  margin-top: 5px;
-  height: 60px;
-  width: 70px;
+#contact .content{
+  font-size: 1.3em;
+  padding-top: 0;
   overflow: hidden;
-  margin-bottom: 19%;
-  margin-left: 1%;
+  background: #000;
+  padding: 20px;
+  max-height: 450px;
+  max-width: 450px;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.5);
 }
-
-#contact label i {
-  display: inline-block;
-  color: var(--main-color);
-  font-size: 2em;
-  transition: all 0.5s 0.5s;
-  transform: rotate(90deg);
-  cursor: pointer;
+#contact .content ul{
+  margin-top: 20px;
 }
-
-#contact label span {
-  color: var(--main-color);
-  position: relative;
-  right: -70px;
-  transition: all 0.7s 0.1s;
-  display: block;
-  margin-top: 5px;
+#contact .content ul li{
+  height: 50px;
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
 }
-
-#contact label:hover span {
-  right: 0;
+#contact .content ul li a i{
+  background-color: var(--main-color);
+  color: #000;
+  padding: 12px 0;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#map{
+  background-color: gray;
 }
 
 /* fin de la section contact */
@@ -771,11 +635,108 @@ footer {
   position: fixed;
   bottom: 5px;
   left: 45%;
-  z-index: 1000;
+  z-index: 2;
   color: gray;
   font-size: 1.1em;
 }
 
 footer a {
   color: inherit;
+}
+
+/* gestion du responsive */
+
+@media(max-width:1024px) {
+  #acceuil>div:last-child img {
+    width: 270px;
+  }
+  #acceuil h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  #apropos .image{
+    width: 250px;
+  }
+
+  #apropos>div:last-child img {
+    width: 230px;
+    height: 230px'
+  }
+  #apropos  h1{
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  #apropos  p{
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+  /* section reas */
+  #portfolio{
+    padding-left: 60px;
+    display: flex;
+  }
+  #portfolio .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4vw;
+  }
+  #portfolio .title h1{
+    text-align: center;
+    color: #2a2a2a;
+    background-color: var(--main-color);
+    font-size: 1em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 50px 10px;
+  }
+  #portfolio .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60vw;
+  }
+
+  .reali {
+    overflow: hidden;
+    width: 180px;
+    height: 160px;
+    font-size: 0.8em;
+  }
+}
+@media(max-width: 768px) {
+
+  #acceuil{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  #acceuil .content{
+    display: flex;
+    flex-direction: column;
+  }
+  #acceuil .image{
+    padding-top: 40px;
+    padding-left: 100px;
+  }
+  #acceuil>div:last-child img {
+    width: 220px;
+  }
+  #acceuil h1 {
+    font-size: 2.2em;
+  }
+  /* section apropos */
+
+  #apropos>div:last-child img {
+    width: 200px;
+    height: 200px'
+  }
+  #apropos  h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  #apropos  p{
+    font-size: 0.8em;
+    line-height: 1.1em;
+  }
 }
