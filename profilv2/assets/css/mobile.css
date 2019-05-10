@@ -1,0 +1,231 @@
+/* responsive sur mobile */
+@media (max-width: 1024px) {
+  /* section apropos */
+  #apropos .content{
+    width: 100%;
+    padding-left: 60px;
+  }
+  #apropos{
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  #apropos{
+    padding-top: 10px;
+  }
+
+    #apropos .content{
+      margin-top: 0;
+    }
+    #apropos .image{
+      width: 250px;
+    }
+
+  #apropos .image img {
+    display: block;
+    overflow: hidden;
+  }
+  #apropos  h1{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  #apropos  p{
+    font-size: 1em;
+    line-height: 1.1em;
+  }
+}
+@media (max-width: 480px) {
+ /* menu */
+ section {
+   padding-top: 50px;
+   padding-left: 15px;
+ }
+ #portfolio{
+   padding-left: 0;
+ }
+ /* liens ext */
+ #lkext {
+   display: none;
+ }
+ /* section accueil */
+ #acceuil{
+   flex-direction: column-reverse;
+ }
+
+ #acceuil .image{
+   padding-top: 40px;
+   padding-left: 50px;
+ }
+ #acceuil>div:last-child img {
+   width: 170px;
+ }
+ #acceuil h1 {
+   font-size: 2em;
+ }
+ #logo {
+   width: 50px;
+   height: 50px;
+ }
+
+ #logo i {
+   font-size: 1.8em;
+ }
+
+ footer{
+   left: 30%;
+ }
+ footer small{
+   font-size: 0.6em;
+ }
+ #blocliens span{
+   font-size: 0.8em;
+ }
+ /* section apropos */
+ #apropos .content{
+   width: 100%;
+   padding-left: 0;
+ }
+ #apropos{
+   flex-direction: column;
+   padding: 0 10px;
+ }
+ #apropos{
+   padding-top: 50px;
+ }
+   #apropos .image{
+     d
+   }
+   #apropos .content{
+     margin-top: 0;
+   }
+   #apropos .image{
+     width: 120px;
+   }
+
+ #apropos .image img {
+   width: 120px;
+   display: block;
+   overflow: hidden;
+ }
+ #apropos  h1{
+   font-size: 1.5em;
+   margin-bottom: 0.5em;
+ }
+ #apropos  p{
+   font-size: 1em;
+   line-height: 1.1em;
+ }
+ #apropos  .content p:nth-last-of-type(3){
+   display: none;
+ }
+ /* section skills */
+ #skills h1.skills{
+   font-size: 1.5em;
+ }
+ #skills .content{
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 0 20px 0 0;
+ }
+ #skills .content> *{
+   width: 100%;
+   transform: translateY(5%);
+ }
+ #skills .content .soft{
+   display: none;
+   padding-left: 40px;
+ }
+
+  /* section realisations */
+  #portfolio{
+    flex-direction: column;
+  }
+  #portfolio .title {
+    display: block;
+    padding-left: 0vw;
+    width: 100%;
+    height: 100px;
+    padding: 0px 10px;
+  }
+  #portfolio .title h1{
+    text-align: center;
+    color: var(--main-color);
+    background-color: initial;
+    font-size: 1.5em;
+    border-radius: 0%;
+    width: 100%;
+  }
+ #portfolio {
+   height: 100vh;
+   width: 100vw;
+   overflow: hidden;
+   position: relative;
+   align-items: flex-end;
+ }
+ #portfolio .content{
+   height: auto;
+   width: 100vw;
+   overflow: scroll;
+   align-self: flex-end;
+ }
+ #portfolio .content > *{
+   width: 49%;
+   height: 120px;
+ }
+ #portfolio .content p{
+   display: none;
+ }
+
+ #contact .content{
+   font-size: 1.3em;
+   padding-top: 0;
+   overflow: hidden;
+   background: #000;
+   padding: 20px;
+ }
+ /* menu */
+ .nav-desktop{
+   display: none;
+ }
+ .nav-mobile{
+   display: block;
+ }
+ #lkext{
+   display: none;
+ }
+ #contact{
+    flex-direction: column;
+   display: block;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 0px 10px;
+   padding-top: 60px;
+ }
+ #contact > *{
+   width: 100%;
+ }
+ #contact .content{
+   font-size: 0.9em;
+   padding-top: 0;
+   padding: 10px;
+ }
+ #contact .content ul{
+   margin-top: 0px;
+ }
+ #contact .content ul{
+   margin-top: 10px;
+ }
+ #contact .content ul li{
+   display: flex;
+   padding: 10px 5px;
+ }
+ #contact .content ul li a i{
+   font-size: 1.5em;
+   padding: 5px 0;
+   width: 30px;
+   height: 30px;
+ }
+  #map{
+    width: 100%;
+    height: 150px;
+  }
+}
