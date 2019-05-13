@@ -32,6 +32,9 @@
     font-size: 1em;
     line-height: 1.1em;
   }
+  .timeline-container{
+    display: none;
+  }
 }
 @media (max-width: 480px) {
  /* menu */
@@ -227,5 +230,8 @@
   #map{
     width: 100%;
     height: 150px;
+  }
+  .timeline-container{
+    display: none;
   }
 }
