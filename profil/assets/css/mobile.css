@@ -150,12 +150,7 @@
     padding: 0px 10px;
   }
   #portfolio .title h1{
-    text-align: center;
-    color: var(--main-color);
-    background-color: initial;
     font-size: 1.5em;
-    border-radius: 0%;
-    width: 100%;
   }
  #portfolio {
    height: 100vh;
