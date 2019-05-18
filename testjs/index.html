@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8">
+   <title>bloc</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+   <div>
+      <!-- parent des liens de navigation -->
+      <div>
+         <ul class="liens">
+            <li class="actif"><a href="#accueil">Accueil</a></li>
+            <li><a href="#mentions">Mentions</a></li>
+            <li><a href="#apropos">A propos</a></li>
+         </ul>
+      </div>
+      <!-- parent des contenus -->
+      <div class="contenus">
+         <div id="accueil" class="contenu actif">Nous sommes dans l'accueil Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+         </div>
+         <div id="mentions" class="contenu">Nous sommes dans mentions Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ulladsdsbernymco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</div>
+         <div id="apropos" class="contenu">Nous sommes dans a propos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</div>
+      </div>
+   </div>
+   <div class="oka">
+      <h1>OKA le monde !</h1>
+      <button id="btn">Appuyer</button>
+   </div>
+   <div class="graph"><canvas id="radar" width="400" height="400"></canvas></div>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+   <script type="text/javascript" src="app.js"></script>
+   <script type="text/javascript" src="tuto.js"></script>
+</body>
+
+</html>

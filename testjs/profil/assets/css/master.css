@@ -1,0 +1,639 @@
+:root{
+  --main-color:#6eeada;
+}
+
+html {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+main{
+  width: 500vw;
+  display: flex;
+}
+section {
+  background-color: #2A2A2B;
+  padding-left: 70px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+nav #blocliens li.normal a i {
+  color: gray;
+}
+
+nav #blocliens li.active a>* {
+  color: var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn a {
+  display: inline-block;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn:hover a {
+  background-color: var(--main-color);
+  color: #413e3e;
+}
+section a {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: initial;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deco {
+  display: none;
+  font-size: 20px;
+  color: #4e4e50;
+  font-family: 'La Belle Aurore';
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+h1 {
+  color: var(--main-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5em;
+  display: inline-block;
+}
+
+/* titre animation */
+h1>span{
+  transition: color 0.5s 0.5s;
+}
+h1>span:hover{
+  color: var(--main-color);
+}
+
+/* fin */
+
+p {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 150;
+  font-family: 'Lato'
+}
+
+p+p {
+  margin-top: 10px;
+}
+
+#apropos p:last-of-type {
+  margin-left: 60px;
+}
+
+a i {
+  color: #4e4e50;
+}
+
+a:hover, a:hover i {
+  color: var(--main-color);
+}
+
+/*  liens de navigation*/
+nav {
+  position: fixed;
+  left: 0;
+  width: 60px;
+  background-color: #101010;
+  height: 100%;
+  z-index: 1;
+}
+
+.linkcontainer {
+  display: inline-block;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li i, nav li span {
+  transition: all 0.4s 0.2s ease;
+}
+
+nav span {
+  color: var(--main-color);
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+nav li:hover i {
+  opacity: 0;
+}
+
+nav li:hover span {
+  opacity: 1;
+}
+
+nav ul {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul li>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+}
+
+nav ul li a i {
+  font-size: 140%;
+}
+
+/* liens reseaux sociaux */
+#lkext {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#lkext li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+#lkext li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+
+#lkext li a i {
+  font-size: 110%;
+  color: #9a9094;
+}
+
+#lkext li a:hover i {
+  color: var(--main-color);
+}
+
+/* fleches */
+#fleches {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 1001;
+}
+
+#fleches li {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#fleches li+li {
+  margin-top: 30px;
+}
+
+#fleches li a {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+#fleches li a:hover i {
+  color: var(--main-color);
+}
+
+#fleches a:hover {
+  background-color: #2A2A2B;
+}
+
+/* fin de fleches */
+/* fin des liens de navigation */
+/* logo */
+#logo {
+  position: fixed;
+  width: 60px;
+  height: 70px;
+  background-color: black;
+  text-align: center;
+  line-height: 70px;
+  z-index: 1000;
+}
+
+#logo i {
+  font-size: 2em;
+  color: var(--main-color);
+}
+
+/* fin du logo */
+/* mise en forme des deco */
+
+/* fin des deco */
+/* section accueil */
+#acceuil{
+  display: flex;
+  align-items: center;
+}
+#acceuil .content{
+  flex-grow: 2;
+}
+#acceuil .image{
+  flex-grow: 1;
+}
+#acceuil h1 {
+  font-size: 3.2em;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/* section acceuil */
+
+#acceuil>div:last-child img {
+  width: 350px;
+  border-radius: 50%;
+  border-top: 5px solid gray;
+  border-right: 5px solid var(--main-color);
+  border-bottom: 5px solid gray;
+  border-left: 5px solid var(--main-color);
+  transition: 0.5s;
+}
+
+
+#acceuil .btn {
+  margin-top: 20px;
+}
+
+#acceuil small {
+  font-size: 15px;
+  font-family: 'Inconsolata';
+  font-weight: lighter;
+  color: #6c6c6b;
+}
+
+/* fin de section acceuil... Enfin!!! */
+/* section a propos */
+#apropos {
+  overflow: hidden;
+}
+
+#apropos>div.image {
+  padding-top: 80px;
+}
+
+#apropos>div.image div {
+  display: inline-block;
+  height: 450px;
+  width: 450px;
+}
+
+#apropos>div:last-child div img {
+  width: 410px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border-top: 5px solid gray;
+  border-right: 5px solid var(--main-color);
+  border-bottom: 5px solid gray;
+  border-left: 5px solid var(--main-color);
+}
+
+/* fin de apropos...pour l'instant */
+/* section skills */
+
+/* fin des skills... enfin! */
+#portfolio .html {
+  margin-bottom: 0;
+}
+
+#portfolio .body {
+  margin-bottom: 0;
+}
+
+#portfolio .content {
+  text-align: center;
+}
+
+.reali {
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid white;
+  width: 30%;
+  min-height: 200px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  min-width: 200px;
+  min-height: 150px;
+}
+
+.reali .infos {
+  height: 200px;
+  color: white;
+  padding-top: 30px;
+  position: relative;
+}
+
+.reali:nth-child(n+4) .infos {
+  bottom: -300px;
+  transition: all 0.5s 0.1s;
+}
+
+.reali .infos {
+  bottom: 300px;
+  transition: all 0.5s 0.1s;
+}
+
+.reali .infos h2 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.reali:nth-child(1) {
+  background: url('../img/proxima.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(2) {
+  background: url('../img/deshi.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(3) {
+  background: url('../img/githun.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(4) {
+  background: url('../img/myga.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(5) {
+  background: url('../img/qcm.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:nth-child(6) {
+  background: url('../img/lettre.png') no-repeat;
+  background-size: cover;
+}
+
+.reali:first-child .infos {
+  background-color: #4e0357;
+}
+
+.reali:nth-child(2) .infos {
+  background-color: #0a7969;
+}
+
+.reali:nth-child(3) .infos {
+  background-color: #025912;
+}
+
+.reali:nth-child(4) .infos {
+  background-color: #024259;
+}
+
+.reali:nth-child(5) .infos {
+  background-color: #4a4d2f;
+}
+
+.reali:nth-child(6) .infos {
+  background-color: #743030;
+}
+
+.reali:hover .infos {
+  bottom: 0;
+}
+
+#portfolio .btn {
+  width: 180px;
+  margin-top: 10px;
+}
+
+#portfolio .btn a {
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
+#portfolio .btn a:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+
+/* fin des realisations */
+/* section contact */
+#contact div.map {
+  position: relative;
+}
+
+#map { position:absolute; top:0; bottom:0; width:100%;}
+.map .texte {
+  position: absolute;
+  z-index: 2;
+  background: rgba(51, 46, 46, 0.9);
+  width: 220px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  top: 50px;
+  left: 50px;
+}
+
+#contact .map .texte a {
+  text-decoration: underline;
+}
+
+#contact form {
+  margin-left: 60px;
+}
+
+input[required] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+#contact input {
+  height: 40px;
+  width: 300px;
+  background: initial;
+  border: initial;
+  display: block;
+  margin-top: 5px;
+  background-color: rgba(139, 140, 143, 0.3);
+  font-size: 1.2em;
+  padding-left: 10px;
+  border-radius: 2px;
+  transition: all 0.5s 0.1s ease;
+}
+
+#contact textarea {
+  color: white;
+  background: initial;
+  border: initial;
+  display: inline-block;
+  margin-top: 5px;
+  background-color: rgba(139, 140, 143, 0.3);
+  transition: all 0.5s 0.1s;
+  font-size: 1.2em;
+  padding-left: 10px;
+  border-radius: 2px;
+}
+
+#contact textarea::placeholder {
+  font-family: sans-serif;
+}
+
+#contact input:focus, #contact textarea:focus {
+  background: none;
+  color: white;
+  border-bottom: 2px solid var(--main-color);
+  width: 350px;
+}
+
+#contact input:last-child {
+  display: none;
+}
+
+#contact label {
+  display: inline-block;
+  margin-top: 5px;
+  height: 60px;
+  width: 70px;
+  overflow: hidden;
+  margin-bottom: 19%;
+  margin-left: 1%;
+}
+
+#contact label i {
+  display: inline-block;
+  color: var(--main-color);
+  font-size: 2em;
+  transition: all 0.5s 0.5s;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+#contact label span {
+  color: var(--main-color);
+  position: relative;
+  right: -70px;
+  transition: all 0.7s 0.1s;
+  display: block;
+  margin-top: 5px;
+}
+
+#contact label:hover span {
+  right: 0;
+}
+
+/* fin de la section contact */
+/* pied de page */
+footer {
+  position: fixed;
+  bottom: 5px;
+  left: 45%;
+  z-index: 1000;
+  color: gray;
+  font-size: 1.1em;
+}
+
+footer a {
+  color: inherit;
+}
+@media(max-width:1024px) {
+
+  #acceuil>div:last-child img {
+    width: 270px;
+  }
+  #acceuil h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+@media(max-width: 768px) {
+
+  #acceuil{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  #acceuil .content{
+    display: flex;
+    flex-direction: column;
+  }
+  #acceuil .image{
+    padding-top: 40px;
+    padding-left: 100px;
+  }
+  #acceuil>div:last-child img {
+    width: 220px;
+  }
+  #acceuil h1 {
+    font-size: 2.2em;
+  }
+}
+@media (max-width: 480px) {
+
+  #acceuil{
+    flex-direction: column-reverse;
+  }
+
+  #acceuil .image{
+    padding-top: 40px;
+    padding-left: 50px;
+  }
+  #acceuil>div:last-child img {
+    width: 170px;
+  }
+  #acceuil h1 {
+    font-size: 2em;
+  }
+}

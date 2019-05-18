@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>La guerre des codeurs</title>
+    <style media="screen">
+    body>div{
+      text-align: center;
+    }
+    div div{
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.5s 0.1s ease-in; 
+    }
+      #bloc1{
+        background-color: red;
+      }
+      #bloc2{
+        background-color: green;
+      }
+      #bloc3{
+        background-color: gold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Test des ecouteurs d'evenements</h1>
+      <div id="bloc1">Bloc 1 Normal</div>
+      <div id="bloc2">Bloc 2 Normal</div>
+      <div id="bloc3">Bloc 3 Normal</div>
+    </div>
+    <!-- <script type="text/javascript" src="war.js"></script> -->
+    <script type="text/javascript">
+      let bloc1 = document.querySelector('#bloc1');
+      let bloc2 = document.querySelector('#bloc2');
+      let bloc3 = document.querySelector('#bloc3');
+      let blocs = [bloc1, bloc2, bloc3];
+      bloc1.addEventListener('mousedown', changeColor);
+      bloc1.addEventListener('mouseup', resetColor);
+      function changeColor(){
+        this.style.color = '#fff'
+        this.style.fontSize = '1.2em'
+      }
+      function resetColor(){
+        this.style.color = '';
+        this.style.fontSize = ''
+      }
+      bloc2.addEventListener('mousedown', zoom);
+      bloc2.addEventListener('mouseup', reset);
+      function zoom(){
+        this.style.width = '300px';
+      }
+      function reset(){
+        this.style.width = '';
+      }
+      for(bloc of blocs){
+        bloc.addEventListener('mouseover', changebg);
+        bloc.addEventListener('mouseout', resetbg);
+      }
+    function changebg(){
+      this.style.backgroundColor = '#450b46';
+    }
+    function resetbg(){
+      this.style.backgroundColor = '';
+    }
+
+    </script>
+  </body>
+</html>

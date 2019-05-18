@@ -1,0 +1,352 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/*---------------------------------------------*/
+a {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+	color: linear-gradient(left, #ec0000, #000);
+	color: -webkit-linear-gradient(left, #ec0000, #000);
+  color: #f05d5d;
+}
+
+/*---------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #282727;
+  margin: 0px;
+}
+
+ul, li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+/*---------------------------------------------*/
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+/*---------------------------------------------*/
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+iframe {
+  border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+.txt1 {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.txt2 {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url('../img/e241.jpg');
+  background-size: cover;
+  ;
+}
+
+/* parent du formualire */
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(24, 23, 23, 0.6);
+}
+
+/* formulaire */
+.wrap-login100 {
+  width: 390px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 95vh;
+  padding: 77px 45px 33px 45px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*------------------------------------------------------------------
+[ Form ]*/
+.login100-form {
+  width: 100%;
+}
+
+.login100-form-title {
+  display: block;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.login100-form-title i {
+  font-size: 60px;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #535151;
+  margin-bottom: 7%;
+}
+
+.input100 {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #222121;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+}
+
+/*---------------------------------------------*/
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #6a7dfe;
+  background: -webkit-linear-gradient(left, #ec5555, #1a1919, #e83131);
+  background: linear-gradient(left, #ec5555, #1a1919, #e83131);
+}
+
+.focus-input100::after {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #7c7c7c;
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  padding-left: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus+.focus-input100::after {
+  top: -15px;
+}
+
+.input100:focus+.focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100+.focus-input100::after {
+  top: -15px;
+}
+
+.has-val.input100+.focus-input100::before {
+  width: 100%;
+}
+
+/*---------------------------------------------*/
+.btn-show-pass {
+  font-size: 15px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn-show-pass:hover {
+  color: #ec0000;
+  color: -webkit-linear-gradient(left, #ec0000, #000);
+  color: linear-gradient(left, #ec0000, #000);
+}
+
+.btn-show-pass.active {
+  color: #ec0000;
+  color: -webkit-linear-gradient(left, #ec0000, #000);
+  color: linear-gradient(left, #ec0000, #000);
+  lor: linear-gradient(left, #21d4fd, #b721ff);
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.wrap-login100-form-btn {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.login100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #f44a4a;
+  top: 0;
+  left: -100%;
+  transition: all 0.4s;
+}
+
+.login100-form-btn {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+  height: 50px;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 60px 15px 33px 15px;
+  }
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.save {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.option {
+  margin-bottom: 10%;
+}
+
+.errorbloc {
+  margin-top: 5px;
+  height: 20px;
+}
+
+.errortext {
+  color: orange;
+  font-size: 13px;
+  /* display: none; */
+}
+
+.forgetpass {
+  font-size: 13px;
+}

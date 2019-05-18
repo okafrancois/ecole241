@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+   <meta charset="utf-8">
+   <link rel="icon" href="assets/img/logof.png" type="image/x-icon">
+   <title>François |Portfolio</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+   <link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Cabin|La+Belle+Aurore" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Acme|Lato" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+   <header>
+      <!-- logo de la oage -->
+      <div id="logo">
+         <a href="#acceuil"><i class="fas fa-fingerprint"></i></a>
+      </div>
+      <!-- liens de navigation -->
+      <nav>
+         <!-- liens internes -->
+         <ul>
+            <div class="linkcontainer" id="blocliens">
+               <li class="active" onclick="toggleClass(this)"><a href="#acceuil"><i class="fas fa-home"></i><span class="hiden">Accueil</span> </a></li>
+               <li class="normal" onclick="toggleClass(this)"><a href="#apropos"><i class="far fa-user"></i><span class="hiden">Infos</span> </a></li>
+               <li class="normal" onclick="toggleClass(this)"><a href="#skills"><i class="fas fa-cog"></i><span class="hiden">Skills</span> </a></li>
+               <li class="normal" onclick="toggleClass(this)"><a href="#portfolio"><i class="far fa-eye"></i><span class="hiden">Travaux</span> </a></li>
+               <li class="normal" onclick="toggleClass(this)"><a href="#contact"><i class="far fa-envelope"></i><span class="hiden">Contact</span> </a></li>
+            </div>
+         </ul>
+      </nav>
+      <!-- liens externes -->
+      <ul id="lkext">
+         <li><a href="#"><i class="fab fa-github"></i></a></li>
+         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+         <!-- <li><a href="#"><i class="fas fa-code-branch"></i></a></li> -->
+      </ul>
+      <!-- liens fleches -->
+      <ul id="fleches">
+         <li><a href="#acceuil"><i class="fas fa-angle-left"></i></a></li>
+         <li><a href="#contact"><i class="fas fa-angle-right"></i></a></li>
+      </ul>
+   </header>
+   <main>
+      <section id="acceuil">
+         <div class="content">
+            <span class="deco html">&lt;html&gt;</span>
+            <span class="deco body">&lt;body&gt;</span>
+            <span class="deco h1">&lt;h1&gt;</span>
+            <h1><span>B</span><span>o</span><span>n</span><span>j</span><span>o</span><span>u</span><span>r</span><span>,</span> <br><span>J</span><span>e</span>
+               <span>s</span><span>u</span><span>i</span><span>s</span> <span>F</span><span>r</span><span>a</span><span>n</span><span>ç</span><span>o</span><span>i</span><span>s</span><span>,</span><br>
+               <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>p</span><span>e</span><span>u</span><span>r</span> <span>W</span><span>e</span><span>b</span>.
+            </h1>
+            <span class="deco h1">&lt;/h1&gt;</span>
+            <p><small>Developpeur Front-end / Bootstrap / Atom</small></p>
+            <div class="btn">
+               <span><a href="#contact">Me contacter</a></span>
+            </div>
+            <span class="deco body body2">&lt;/body&gt;</span>
+            <span class="deco html">&lt;/html&gt;</span>
+         </div>
+         <div class="image">
+            <div>
+               <img src="assets/img/visage.png" alt="visage d'une personne">
+            </div>
+         </div>
+      </section>
+      <section id="apropos">
+         <div class="content">
+            <span class="deco html">&lt;html&gt;</span>
+            <span class="deco body">&lt;body&gt;</span>
+            <span class="deco h1">&lt;h1&gt;</span>
+            <h1>A propos de Moi</h1>
+            <span class="deco h1">&lt;/h1&gt;</span>
+            <p>Je m'appelle Itoutou François, je suis un passioné du code.<br>Tout commence par ma passion pour le monde de technologie; passion qui m'a conduit à suivre une formation en developpement Web à l'ecole241. </p>
+            <p>Je suis destiné à devenir un developpeur complet autant dans les compétences que dans le caractère.</p>
+            <p>Mais pour l'instant je suis en phase apprentissage, en tant qu'apprenant de la premiere promotion de developpeur de OkaCode.</p>
+            <span class="deco body body2">&lt;/body&gt;</span>
+            <span class="deco html">&lt;/html&gt;</span>
+         </div>
+         <div class="image">
+            <div>
+               <img src="assets/img/apropos.png" alt="">
+            </div>
+         </div>
+      </section>
+      <section id="skills">
+         <div class="content">
+            <span class="deco html">&lt;html&gt;</span>
+            <span class="deco body">&lt;body&gt;</span>
+            <span class="deco h1">&lt;h1&gt;</span>
+            <h1>Skills et expériences</h1>
+            <span class="deco h1">&lt;/h1&gt;</span>
+            <p>Ma principale zone de compétence c'est le développement Front-End.<br>Je code du HTML et du CSS et bientot du JavaScript.</p>
+            <p>J'utilise des Outils de collaboratifs tel que Trello, Git et Github, Slack et Google drive. Et j'utilise le systeme Linux Ubuntu pour mes trvaux et en génerale je code avec l'éditeur de texte Atom.</p>
+            <span class="deco body body2">&lt;/body&gt;</span>
+            <span class="deco html">&lt;/html&gt;</span>
+         </div>
+         <div class="rotate-center">
+            <div class="image cercle1">
+               <i class="fab fa-github-alt skills"></i>
+               <i class="fas fa-atom skills"></i>
+               <i class="fas fa-code-branch skills"></i>
+               <i class="fas fa-terminal skills"></i>
+               <i class="fab fa-trello skills"></i>
+               <i class="fab fa-google-drive skills"></i>
+               <div class="cercle2">
+                  <i class="fab fa-css3-alt skills"></i>
+                  <i class="fab fa-ubuntu skills"></i>
+                  <i class="fab fa-html5 skills"></i>
+                  <i class="fas fa-code skills" id="center"></i>
+                  <i class="fab fa-slack-hash skills"></i>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="portfolio">
+         <span class="deco body">&lt;body&gt;</span>
+         <span class="deco h1">&lt;h1&gt;</span>
+         <h1>Mes realisations</h1>
+         <span class="deco h1">&lt;/h1&gt;</span>
+         <div class="content">
+            <div class="reali">
+               <div class="infos">
+                  <h2>Proxima</h2>
+                  <p>L'application Web proposée à l'entreprise Proxima lors de 24h chrono du vendredi 11 au samedi 12 janvier 2019.</p>
+                  <div class="btn">
+                     <span><a href="https://bernyfrancois.github.io/ecole241/chrono24/proxima"> Aperçu du site</a></span>
+                  </div>
+               </div>
+            </div>
+            <div class="reali">
+               <div class="infos">
+                  <h2>Deshi Mag</h2>
+                  <p>Mon premier travail d'intégration Web. Je suis parti d'une maquette graphique(une image) que j'ai matérialisé en maquette html.</p>
+                  <div class="btn">
+                     <span><a href="https://bernyfrancois.github.io/ecole241/magazine"> Aperçu du site</a></span>
+                  </div>
+               </div>
+            </div>
+            <div class="reali">
+               <div class="infos">
+                  <h2>Agri collect</h2>
+                  <p>L'application Web proposée à l'ong Keva Inititive lors de 24h chrono, c'est un outil de collectede données.</p>
+                  <div class="btn">
+                     <span><a href="https://bernyfrancois.github.io/ecole241/"> Aperçu du site</a></span>
+                  </div>
+               </div>
+            </div>
+            <div class="reali">
+               <div class="infos">
+                  <h2>My GA</h2>
+                  <p>Mon premier travail de refonte. J'ai été mis au défi de proposer une meilleur version d'un site Web existant.</p>
+                  <div class="btn">
+                     <span><a href="https://bernyfrancois.github.io/ecole241/myga"> Aperçu du site</a></span>
+                  </div>
+               </div>
+            </div>
+            <div class="reali">
+               <div class="infos">
+                  <h2>QCM</h2>
+                  <p>J'ai due coder un qcm en assez peu de temps, il n'y a que du html.</p>
+                  <div class="btn">
+                     <span><a href="https://bernyfrancois.github.io/ecole241/qcm"> Aperçu du site</a></span>
+                  </div>
+               </div>
+            </div>
+            <div class="reali">
+               <div class="infos">
+                  <h2>Lettre</h2>
+                  <p>J'ai utilisé le html et le css pour coder une lettre de motivation. C'est l'un de mes tout premier travaux à l'école241</p>
+                  <div class="btn">
+                     <span><a href="https://bernyfrancois.github.io/ecole241/lettre"> Aperçu du site</a></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <span class="deco body">&lt;/body&gt;</span>
+         <span class="deco html">&lt;/html&gt;</span>
+      </section>
+      <section id="contact">
+         <div class="content">
+            <span class="deco">&lt;html&gt;</span>
+            <span class="deco">&lt;body&gt;</span>
+            <span class="deco h1">&lt;h1&gt;</span>
+            <h1>Me contacter</h1>
+            <span class="deco h1">&lt;/h1&gt;</span>
+            <p>Si vous avez une question ou une proposition, n'hésitez pas à m'écrire.</p>
+            <form class="message" action="/" method="post">
+               <input type="text" name="nom" placeholder="Nom">
+               <input type="email" name="email" placeholder="Email" required>
+               <input type="text" name="subject" placeholder="L'objet">
+               <textarea name="message" rows="10" cols="37" placeholder="Saisissez votre message"></textarea>
+               <label for="send"><i class="fab fa-atlassian"></i> <span>Envoyer</span></label>
+               <input id="send" type="button" value="Envoyer" name="send">
+            </form>
+            <span class="deco">&lt;/body&gt;</span>
+            <span class="deco">&lt;/html&gt;</span>
+         </div>
+         <div class="map">
+            <div class="texte">
+               <p>ITOUTOU Berny François<br>Libreville/Gabon<br><a href="mailto:bernystone2k@gmail.com">bernystone2k@gmail.com</a><br><a href="tel:+24104994130">+24104994130</a></p>
+            </div>
+            <div class="foot"></div>
+            <div id='map'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8518124178345!2d9.44460505152366!3d0.43444551105906265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f24adbf1740a3%3A0x25c7c1ada0b81a2d!2sCharbonnages%2C+Libreville!5e0!3m2!1sfr!2sga!4v1550280327128" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+         </div>
+      </section>
+   </main>
+   <footer>
+      <small>&copy;Copyright by François, <a href="https://lacastafiore.github.io/ecole241/okacode/">OkaCode</a> 2019</small>
+   </footer>
+    <script>
+       function toggleClass(el) {
+              var kids = document.getElementById('blocliens').children;
+              for (var i = 0; i < kids.length; i++) {
+                 kids[i].className = "normal";
+              }
+              el.className = "active";
+           }
+     </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test css</title>
+    <link rel="stylesheet" href="tuto.css">
+  </head>
+  <body class="test1">
+      <h1 data-text="[Oka_Code]">[Oka_Code]</h1>
+      <input type="file" id="file">
+    <script type="text/javascript" src="tuto.js"></script>
+    <script type="text/javascript">
+      let file = document.querySelector('#file');
+      file.addEventListener('change', function(){
+        alert(this.files[0].name);
+      });
+    </script>
+  </body>
+</html>
