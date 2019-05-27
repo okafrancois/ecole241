@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-Language" content="fr">
+  <meta http-equiv="Content-Language" content="en">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Asso Gabon || Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
@@ -43,15 +43,15 @@
         </span>
       </div>
       <div class="app-header__content">
-        <div class="app-header-left">
-          <div class="search-wrapper active">
-            <div class="input-holder">
-              <input type="text" class="search-input" placeholder="Rechercher un...">
-              <button class="search-icon"><span></span></button>
-            </div>
-            <!-- <button class="close"></button> -->
-          </div>
-
+    <div class="app-header-left">
+      <div class="search-wrapper active">
+        <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Rechercher un...">
+          <button class="search-icon"><span></span></button>
+        </div>
+        <!-- <button class="close"></button> -->
+      </div>
+      
         </div>
         <div class="app-header-right">
           <div class="header-btn-lg pr-0">
@@ -446,35 +446,21 @@
                       <!-- le nom de l'utilisateur s'affiche a la place de Antonin -->
 
                       <h1>Bonjour Monsieur Antonin. <br> Que souhaitez-vous faire ?</h1>
-
-                      <!-- boutons d'interactions -->
                       <div class="row appelAction justify-content-center mb-5">
                         <div class="d-inline-block dropdown action-boutons">
-
-                          <!-- boutons de consultation -->
-                          <!-- bouton -->
-                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-outline-secondary">
+                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-info">
                             <span class="btn-icon-wrapper opacity-7">
-                              <i class="pe-7s-note2"></i>
+                              <i class="fa fa-business-time fa-w-20"></i>
                             </span>
-                            CONSULTER
+                            Consulter
                           </button>
-                          <!-- contenu du bouton consulter -->
                           <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
                             <ul class="nav flex-column">
                               <li class="nav-item">
                                 <a href="utilisateurs.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-users"></i>
+                                  <i class="nav-link-icon lnr-book"></i>
                                   <span>
-                                    Membres
-                                  </span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="utilisateurs.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-apartment"></i>
-                                  <span>
-                                    Structures
+                                    Acteurs
                                   </span>
                                 </a>
                               </li>
@@ -495,31 +481,21 @@
                                   </span>
                                 </a>
                               </li>
-                              <li class="nav-item">
-                                <a href="projets.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
-                                    Bibliothèque
-                                  </span>
-                                </a>
-                              </li>
                             </ul>
                           </div>
                         </div>
-                        <!-- boutons de publication -->
+
                         <div class="d-inline-block dropdown action-boutons">
-                          <!-- bouton -->
-                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-outline-success">
+                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-success">
                             <span class="btn-icon-wrapper opacity-7">
-                              <i class="pe-7s-back-2"></i>
+                              <i class="fa fa-business-time fa-w-20"></i>
                             </span>
-                            PUBLIER
+                            Publier
                           </button>
-                          <!-- contenu du bouton publication -->
                           <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
                             <ul class="nav flex-column">
                               <li class="nav-item">
-                                <a href="projets.html" class="nav-link" data-toggle="modal" data-target="#editorial">
+                                <a href="projets.html" class="nav-link">
                                   <i class="nav-link-icon lnr-book"></i>
                                   <span>
                                     Edito
@@ -546,15 +522,7 @@
                                 <a href="avalider.html" class="nav-link">
                                   <i class="nav-link-icon lnr-book"></i>
                                   <span>
-                                    Evènement
-                                  </span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="#" data-toggle="modal" data-target="#ressource" class="nav-link">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
-                                    Ressource
+                                    Evènements
                                   </span>
                                 </a>
                               </li>
@@ -562,92 +530,66 @@
                           </div>
                         </div>
                       </div>
-                      <!-- section des donnees affichees sur la page d'accueil -->
-
-                      <div class="tabs-animation">
-                        <div class="mb-3">
-                          <div class="no-gutters row home-info">
-                            <!-- bloc 1 -->
-                            <div class="col-sm-4 col-md-3 col-xl-3">
-                              <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
-                                <div class="icon-wrapper rounded-circle">
-                                  <div class="icon-wrapper-bg opacity-10 bg-warning"></div>
-                                  <i class="pe-7s-user text-dark opacity-8"></i>
-                                </div>
-                                <div class="widget-chart-content">
-                                  <div class="widget-subheading">Membres</div>
-                                  <div class="widget-numbers">50</div>
-                                  <div class="widget-description opacity-8 text-focus">
-                                    <div class="d-inline pr-1">
-                                      Evolution :
-                                      <span class="pl-1 text-success">
-                                        <i class="fa fa-angle-up"></i>
-                                        <span class="pl-1">30%</span>
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="divider m-0 d-md-none d-sm-block"></div>
+                      <hr>
+                      <div class="no-gutters row home-info">
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                          <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
+                            <div class="icon-wrapper rounded-circle">
+                              <div class="icon-wrapper-bg opacity-10 bg-warning"></div>
+                              <i class="pe-7s-user text-dark opacity-8"></i>
                             </div>
-                            <!-- bloc 2 -->
-                            <div class="col-sm-4 col-md-3 col-xl-3">
-                              <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
-                                <div class="icon-wrapper rounded-circle">
-                                  <div class="icon-wrapper-bg opacity-9 bg-danger"></div>
-                                  <i class="lnr-graduation-hat text-white"></i>
-                                </div>
-                                <div class="widget-chart-content">
-                                  <div class="widget-subheading">Structures enregistrées</div>
-                                  <div class="widget-numbers"><span>10</span></div>
-                                  <div class="widget-description opacity-8">
-                                    Evolution :
-                                    <span class="pl-1 text-danger">
-                                      <i class="fa fa-angle-down"></i>
-                                      <span class="pl-1">10%</span>
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="divider m-0 d-md-none d-sm-block"></div>
-                            </div>
-                            <!-- bloc 3 -->
-                            <div class="col-sm-4 col-md-3 col-xl-3">
-                              <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
-                                <div class="icon-wrapper rounded-circle">
-                                  <div class="icon-wrapper-bg opacity-9 bg-success"></div>
-                                  <i class="lnr-calendar-full text-white"></i>
-                                </div>
-                                <div class="widget-chart-content">
-                                  <div class="widget-subheading">Projets </div>
-                                  <div class="widget-numbers text-success"><span>5</span></div>
-                                  <div class="widget-description text-focus">
-                                    En attente :
-                                    <span class="text-warning pl-1">
-                                      <span class="pl-1">8</span>
-                                    </span>
-                                  </div>
+                            <div class="widget-chart-content">
+                              <div class="widget-subheading">Utilisateurs</div>
+                              <div class="widget-numbers">15</div>
+                              <div class="widget-description opacity-8 text-focus">
+                                <div class="d-inline pr-1">
+                                  Evolution :
+                                  <span class="pl-1 text-success">
+                                    <i class="fa fa-angle-up"></i>
+                                    <span class="pl-1">90%</span>
+                                  </span>
                                 </div>
                               </div>
                             </div>
-                            <!-- bloc 4 -->
-                            <div class="col-sm-4 col-md-3 col-xl-3">
-                              <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
-                                <div class="icon-wrapper rounded-circle">
-                                  <div class="icon-wrapper-bg opacity-9 bg-success"></div>
-                                  <i class="pe-7s-mouse text-white"></i>
-                                </div>
-                                <div class="widget-chart-content">
-                                  <div class="widget-subheading">Taux d'Interactions</div>
-                                  <div class="widget-numbers text-success"><span>60%</span></div>
-                                  <div class="widget-description text-focus">
-                                    Evolution :
-                                    <span class="text-success pl-1">
-                                      <i class="fa fa-angle-up"></i>
-                                      <span class="pl-1">4</span> points
-                                    </span>
-                                  </div>
-                                </div>
+                          </div>
+                          <div class="divider m-0 d-md-none d-sm-block"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                          <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
+                            <div class="icon-wrapper rounded-circle">
+                              <div class="icon-wrapper-bg opacity-9 bg-danger"></div>
+                              <i class="lnr-graduation-hat text-white"></i>
+                            </div>
+                            <div class="widget-chart-content">
+                              <div class="widget-subheading">Structures enregistrées</div>
+                              <div class="widget-numbers"><span>30</span></div>
+                              <div class="widget-description opacity-8">
+                                Evolution :
+                                <span class="pl-1 text-danger">
+                                  <i class="fa fa-angle-down"></i>
+                                  <span class="pl-1">10%</span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="divider m-0 d-md-none d-sm-block"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                          <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
+                            <div class="icon-wrapper rounded-circle">
+                              <div class="icon-wrapper-bg opacity-9 bg-success"></div>
+                              <i class="lnr-apartment text-white"></i>
+                            </div>
+                            <div class="widget-chart-content">
+                              <div class="widget-subheading">Appels à projets</div>
+                              <div class="widget-numbers text-success"><span>5</span></div>
+                              <div class="widget-description text-focus">
+                                Interaction avec :
+                                <span class="text-warning pl-1">
+                                  <i class="fa fa-angle-up"></i>
+                                  <span class="pl-1">8</span>
+                                  Structures
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -660,80 +602,6 @@
             </div>
             <!-- icones menus  -->
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- section de tous les contenus de popup -->
-  <div class="all-popup-container">
-    <!-- code du pop editorial -->
-
-    <!-- popup Edito -->
-    <div class="modal fade" id="editorial" tabindex="-1" role="dialog" aria-labelledby="editorialLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div style="width: 150%" class="modal-content">
-          <div class="modal-header">
-            <img src="assets/images/edito.png" width="100" heigh="100">
-            <h5 class="modal-title" id="editorialLabel" style="font-size: 30px; font-weight:bold;margin-top: 30px;
-        ">EDITO</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="">
-              <div class="position-relative form-group"><label for="exampleEmail" style="font-size: 20px;">Titre</label><input style="padding: 30px;" name="title" id="title" placeholder="Entrer un titre" type="text" class="form-control">
-              </div>
-              <div class="position-relative form-group"><label style="font-size: 20px;" for="exampleText">Contenu</label>
-                <textarea name="text" id="exampleText" placeholder="Saisir votre contenu" class="form-control" rows="9"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button style="margin-top: 5px;" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-            <button type="submit" class="mt-1 btn btn-primary">Publier</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Ressources  -->
-
-    <div class="modal fade " id="ressource" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <img src="assets/images/livre.png" width="50" height="50">
-            <h5 class="modal-title" id="exampleModalLabel" style="font-size: 30px; font-weight:bold;margin-top: 30px;
-        ">RESSOURCES</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="">
-              <div class="position-relative form-group"><label for="exampleEmail" style="font-size: 20px;">Titre du document</label><input name="title" id="title" placeholder="Saisir le titre du document" type="text" class="form-control">
-              </div>
-              <div class="position-relative form-group"><label for="exampleSelect" style="font-size: 20px;">Catégorie</label>
-                <select name="select" id="exampleSelect" class="form-control">
-                  <option>Education</option>
-                  <option>Société</option>
-                  <option>Environnement</option>
-                  <option>Santé</option>
-                  <option>Technologie</option>
-                </select>
-              </div>
-              <div class="position-relative form-group"><label for="exampleText" style="font-size: 20px;">Description</label><textarea name="text" id="exampleText" class="form-control" rows="10"></textarea>
-              </div>
-              <div class="position-relative form-group"><label for="exampleFile">Choisir un fichier</label><input name="file" id="exampleFile" type="file" class="form-control-file">
-
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button style="margin-top: 5px;" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-            <button type="submit" class="mt-1 btn btn-primary">Publier</button>
           </div>
         </div>
       </div>

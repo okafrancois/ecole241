@@ -1,6 +1,15 @@
 <div class="app-header header-shadow">
   <div class="app-header__logo">
     <div class="logo-src"></div>
+    <div class="header__pane ml-auto">
+      <div>
+        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
   </div>
   <div class="app-header__mobile-menu">
     <div>
@@ -22,98 +31,13 @@
   </div>
   <div class="app-header__content">
     <div class="app-header-left">
-      <div class="search-wrapper active">
+      <div class="search-wrapper">
         <div class="input-holder">
           <input type="text" class="search-input" placeholder="Rechercher un...">
           <button class="search-icon"><span></span></button>
         </div>
-        <!-- <button class="close"></button> -->
+        <button class="close"></button>
       </div>
-      <div class="row justify-content-centers">
-        <div class="d-inline-block dropdown action-boutons">
-          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
-            <span class="btn-icon-wrapper opacity-7">
-              <i class="fa fa-business-time fa-w-20"></i>
-            </span>
-            Consulter
-          </button>
-          <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a href="utilisateurs.html" class="nav-link">
-                  <i class="nav-link-icon lnr-book"></i>
-                  <span>
-                    Acteurs
-                  </span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="evenements.html" class="nav-link">
-                  <i class="nav-link-icon lnr-inbox"></i>
-                  <span>
-                    Evènements
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="projets.html" class="nav-link">
-                  <i class="nav-link-icon lnr-book"></i>
-                  <span>
-                    Projets
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="d-inline-block dropdown action-boutons">
-          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  class="btn-shadow dropdown-toggle btn btn-info">
-            <span class="btn-icon-wrapper opacity-7">
-              <i class="fa fa-business-time fa-w-20"></i>
-            </span>
-            Publier
-          </button>
-          <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a href="projets.html" class="nav-link">
-                  <i class="nav-link-icon lnr-book"></i>
-                  <span>
-                    Edito
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="valider.html" class="nav-link">
-                  <i class="nav-link-icon lnr-inbox"></i>
-                  <span>
-                    Article
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="avalider.html" class="nav-link">
-                  <i class="nav-link-icon lnr-book"></i>
-                  <span>
-                    Appel à projet
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="avalider.html" class="nav-link">
-                  <i class="nav-link-icon lnr-book"></i>
-                  <span>
-                    Evènement
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
     </div>
     <div class="app-header-right">
       <div class="header-btn-lg pr-0">
@@ -122,7 +46,7 @@
             <div class="widget-content-left">
               <div class="btn-group">
                 <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                  <img width="42" class="rounded-circle" src="assets/images/avatars/1.PNG" alt="">
+                  <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
                   <i class="fa fa-angle-down ml-2 opacity-8"></i>
                 </a>
                 <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
@@ -133,10 +57,10 @@
                         <div class="widget-content p-0">
                           <div class="widget-content-wrapper">
                             <div class="widget-content-left mr-3">
-                              <img width="42" class="rounded-circle" src="assets/images/avatars/1.PNG" alt="">
+                              <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
                             </div>
                             <div class="widget-content-left">
-                              <div class="widget-heading">Antonin
+                              <div class="widget-heading">Utilisateur test
                               </div>
                             </div>
                             <div class="widget-content-right mr-2">
