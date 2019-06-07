@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Statistiques</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="description" content="Huge selection of charts created with the React ChartJS Plugin">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link href="./main.cba69814a806ecc7945a.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <style type="text/css">
+    .stat {
+      font-size: 15px;
+    }
+
+    .texte {
+      font-size: 15px;
+    }
+
+    .age-info span {
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-header header-shadow">
+    <a href="index.html">
+      <div class="app-header__logo">
+        <div class="logo-src" style="background: url(assets/images/logo-inverse.png)"></div>
+      </div>
+    </a>
+    <div class="app-header__mobile-menu">
+      <div>
+        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="app-header__menu">
+      <span>
+        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+          <span class="btn-icon-wrapper">
+            <i class="fa fa-ellipsis-v fa-w-6"></i>
+          </span>
+        </button>
+      </span>
+    </div>
+    <div class="app-header__content">
+      <div class="app-header-left">
+        <div class="row justify-content-centers" style="margin-left:300px;">
+          <div class="d-inline-block dropdown action-boutons">
+            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-primary btn-pill" style="font-size:1.1em;">
+              <span class="btn-icon-wrapper opacity-7">
+                <i class="pe-7s-note2 mr-2"></i>
+              </span>
+              Consulter
+            </button>
+            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="membres.html" class="nav-link">
+                    <i class="nav-link-icon lnr-users font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Membres
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="structures.html" class="nav-link">
+                    <i class="nav-link-icon lnr-apartment font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Structures
+                    </span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="evenements.html" class="nav-link">
+                    <i class="nav-link-icon lnr-inbox font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Evènements
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="projets.html" class="nav-link">
+                    <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Projets
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="bibliotheque.html" class="nav-link">
+                    <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Bibliothèque
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="statistiques.html" class="nav-link">
+                    <i class="nav-link-icon lnr-pie-chart font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Statistiques
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-inline-block dropdown action-boutons">
+            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-secondary btn-pill" style="font-size:1.1em;">
+              <span class="btn-icon-wrapper opacity-7">
+                <i class="pe-7s-back-2 mr-2"></i>
+              </span>
+              Publier
+            </button>
+            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-toggle="modal" data-target="#editorial">
+                    <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Edito
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-toggle="modal" data-target="#article">
+                    <i class="nav-link-icon lnr-inbox font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Article
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-toggle="modal" data-target="#appel-projet">
+                    <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Appel à projet
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-toggle="modal" data-target="#evenement">
+                    <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Evènement
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" data-toggle="modal" data-target="#ressource" class="nav-link">
+                    <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                    <span style="font-size: 1.1em;">
+                      Ressource
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="app-header-right">
+        <div class="header-btn-lg pr-0">
+          <div class="widget-content p-0">
+            <div class="widget-content-wrapper">
+              <div class="widget-content-left">
+                <div class="btn-group">
+                  <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                    <img width="42" class="rounded-circle" src="assets/images/a.jpeg" alt="">
+                    <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                  </a>
+                  <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-menu-header">
+                      <div class="dropdown-menu-header-inner bg-info">
+                        <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                        </div>
+                        <div class="menu-header-content text-left">
+                          <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                              <div class="widget-content-left mr-3">
+                                <img width="42" class="rounded-circle" src="assets/images/a.jpeg" alt="">
+                              </div>
+                              <div class="widget-content-left">
+                                <div class="widget-heading">Antonin
+                                </div>
+                              </div>
+                              <div class="widget-content-right mr-2">
+                                <button class="btn-pill btn-shadow btn-shine btn btn-focus">Déconnexion
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="scroll-area-xs" style="height: 150px;">
+                      <div class="scrollbar-container ps">
+                        <ul class="nav flex-column">
+
+
+                          <li class="nav-item-header nav-item">
+                            <a href="http://" style="text-decoration: none; color:black">
+                              <p style="display: inline">
+                                <i class="fas fa-bell text-info" style="font-size: 1.5em;"></i> &nbsp;
+                                Notifications &nbsp;
+                              </p>
+                              <div class="ml-auto badge badge-pill badge-warning" style="display:inline;">8
+                              </div>
+                            </a>
+                          </li>
+                          <li class="nav-item-header nav-item" style="margin-top: 15px;">
+                            <a href="http://" style="text-decoration: none; color:black">
+                              <i class="fas fa-chess-pawn text-info" style="font-size: 1.7em;"></i> &nbsp;
+                              Gestion d'admins
+                            </a>
+                          </li>
+                          <li class="nav-item-header nav-item" style="margin-top: 15px;">
+                            <a href="http://" style="text-decoration: none; color:black">
+                              <i class="fas fa-user-cog text-info" style="font-size: 1.5em;"></i> &nbsp;
+                              Paramètres de Profil
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <ul class="nav flex-column">
+                      <li class="nav-item-divider mb-0 nav-item"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="widget-content-left  ml-3 header-user-info">
+                <div class="widget-heading">
+                  Admin
+                </div>
+                <div class="widget-subheading">
+                  Manager
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-main__outer">
+    <div class="app-main__inner">
+      <div class="app-page-title">
+        <div style="margin-top: 10px; margin-left: 20px" class="page-title-wrapper">
+          <div class="page-title-heading">
+            <div class="page-title-icon">
+              <i class="pe-7s-bandaid icon-gradient bg-amy-crisp">
+              </i>
+            </div>
+            <div>Statistiques du site
+              <div class="page-title-subheading">Toutes les données de la plateforme sont affichés ici.
+              </div>
+            </div>
+          </div>
+          <div class="page-title-actions">
+
+            <div class="d-inline-block dropdown">
+
+              <div tabindex="-1" role="menu" aria-hidden="true" style="margin-right: 100px; margin-top: 40px">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="nav-link-icon lnr-inbox"></i>
+                      <span class="texte">
+                        Taux de retention :
+                      </span>
+                      <div class="ml-auto badge badge-pill bagde-danger stat">85%</div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="nav-link-icon lnr-book"></i>
+                      <span class="texte">
+                        Taux de rebond :
+                      </span>
+                      <div class="ml-auto badge badge-pill stat">5%</div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <i class="nav-link-icon lnr-picture"></i>
+
+                      <span class="texte">
+                        Utisateurs actifs :
+                      </span>
+                      <div class="ml-auto badge badge-pill  stat">45</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
+        <li class="nav-item">
+          <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
+            <span>Traffic du site</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a role="tab" class="nav-link" id="tab-1" data-toggle="tab" href="#tab-content-1">
+            <span>Utilisateurs
+          </a>
+        </li>
+        <li class="nav-item">
+          <a role="tab" class="nav-link" id="tab-2" data-toggle="tab" href="#tab-content-2">
+            <span>Actions</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
+          <div class="row">
+            <div class="col-md-6 col-md-6 col-md-6" style="margin-top: 20px">
+              <div class="mb-3 card">
+                <div class="card-header-tab card-header">
+                  <div class="card-header-title font-size-lg text-capitalize font-weight-normal">Traffic du site</div>
+                  <div class="btn-actions-pane-right text-capitalize">
+                    <button class="btn btn-warning">Interactions</button>
+                  </div>
+                </div>
+                <div class="pt-0 card-body">
+                  <div id="chart-combined"></div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="col-md-6 col-md-6 col-md-6" style="margin-top: 20px">
+              <div class="mb-3 card">
+                <div class="card-header-tab card-header">
+                  <div class="card-header-title font-size-lg text-capitalize font-weight-normal">Membres</div>
+                  <div class="btn-actions-pane-right text-capitalize">
+                    <button class="btn btn-warning">Inscrits</button>
+                  </div>
+                </div>
+                <div class="row" style="margin-left: 10px;">
+                  <div class="col-md-4">
+                    <div class="card mb-3 widget-chart">
+                      <div class="widget-numbers">3000</div>
+                      <div class="widget-subheading">TOTAL</div>
+                      <div class="widget-description text-primary"><span class="pr-1">54.1%</span>
+                        <i class="fa fa-angle-up ">
+
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card mb-3 widget-chart">
+                      <div class="widget-numbers">1000</div>
+                      <div class="widget-subheading">Hommes</div>
+                      <div class="widget-description text-primary"><span class="pr-1">54.1%</span>
+                        <i class="fa fa-angle-up ">
+
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card mb-3 widget-chart">
+                      <div class="widget-numbers">2000</div>
+                      <div class="widget-subheading">Femmes</div>
+                      <div class="widget-description text-primary"><span class="pr-1">54.1%</span>
+                        <i class="fa fa-angle-up ">
+
+                        </i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="col-md-12">
+                <div class="col-md-12">
+                  <div id="accordion" class="accordion-wrapper mb-3">
+                    <div class="card">
+                      <div id="headingOne" class="card-header">
+                        <button type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne" class="text-left m-0 p-0 btn btn-link btn-block">
+                          <h5 class="m-0 p-0">Par Age</h5>
+                        </button>
+                      </div>
+                      <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne" class="collapse show">
+                        <div class="card-body age-info">
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Entre 18 ans - 35 ans : 1300</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Entre 35 ans - 50 ans : 800</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Entre 50 ans - 60 ans : 600</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Entre 65 ans - 80 ans : 300</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div id="headingTwo" class="b-radius-0 card-header">
+                        <button type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseTwo" class="text-left m-0 p-0 btn btn-link btn-block">
+                          <h5 class="m-0 p-0">Par domaine d'activité
+                          </h5>
+                        </button>
+                      </div>
+                      <div data-parent="#accordion" id="collapseOne2" class="collapse">
+                        <div class="card-body age-info">
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Environnement : 252</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Santé : 123</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Education : 809</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Agriculture : 900</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Finance : 400</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Etudiant : 516</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div id="headingThree" class="card-header">
+                        <button type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseThree" class="text-left m-0 p-0 btn btn-link btn-block">
+                          <h5 class="m-0 p-0">Par secteur
+                          </h5>
+                        </button>
+                      </div>
+                      <div data-parent="#accordion" id="collapseOne3" class="collapse">
+                        <div class="card-body"> <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> ONG : 385</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Association : 280</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Privé : 809</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Parapublic : 103</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Etudiant : 516</span>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card">
+                      <div id="headingThree" class="card-header">
+                        <button type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseThree" class="text-left m-0 p-0 btn btn-link btn-block">
+                          <h5 class="m-0 p-0">Par position
+                          </h5>
+                        </button>
+                      </div>
+                      <div data-parent="#accordion" id="collapseOne3" class="collapse">
+                        <div class="card-body"> <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Internes : 102</span> <br>
+                          <span><i class="fa fa-fw" aria-hidden="true" title="Copy to use arrow-right"></i> Externes : 165</span> <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <div class="app-drawer-overlay d-none animated fadeIn"></div>
+          <script type="text/javascript" src="./assets/scripts/main.cba69814a806ecc7945a.js"></script>
+</body>
+
+</html>

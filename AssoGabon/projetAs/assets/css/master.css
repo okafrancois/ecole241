@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora&display=swap');
+
+/* font-family: 'Lora', serif;
+font-family: 'Lato', sans-serif; */
+
+.app-main__outer{
+  padding-left: 0!important;
+  margin-top: 10px;
+}
+h1{
+  font-size: 2.5em;
+  color: #000;
+}
+.line{
+  background-color: #000;
+  height: 5px;
+  border: 1px solid red;
+}
+.home.main-card{
+  padding-top: 80px;
+  min-height: 85vh;
+  margin: auto;
+}
+.app-header__logo {
+  width: 150px!important;
+}
+.action-boutons{
+  margin-left: 20px;
+}
+.action-boutons button{
+  width: 160px;
+}
+.appelAction{
+  margin-top: 30px!important;
+}
+.pagination{
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+.app-page-title{
+  margin-bottom: 0;
+}
+
+.modal-title{
+  width: 100%;
+  text-align: center;
+}
+.btn{
+  font-size: 1.1em;
+}
+.btn i{
+  font-size: 1.1em;
+}
+.form-group input, select{
+  padding: 10px;
+}
+.modal-header{
+  background-color: #007bff;
+  color: white;
+}

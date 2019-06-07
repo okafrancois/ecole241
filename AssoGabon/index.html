@@ -7,12 +7,14 @@
   <meta http-equiv="Content-Language" content="fr">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Asso Gabon || Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
   <meta name="description" content="This is an example dashboard created using build-in elements and components.">
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
 
+  <link rel="stylesheet" href="assets/css/main.cba69814a806ecc7945a.css">
   <link href="main.cba69814a806ecc7945a.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/master.css">
 </head>
@@ -21,9 +23,11 @@
   <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
 
     <div class="app-header header-shadow">
-      <div class="app-header__logo">
-        <div class="logo-src"></div>
-      </div>
+        <a href="index.html">
+            <div class="app-header__logo">
+              <div class="logo-src"></div>
+            </div>
+          </a>
       <div class="app-header__mobile-menu">
         <div>
           <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
@@ -44,13 +48,9 @@
       </div>
       <div class="app-header__content">
         <div class="app-header-left">
-          <div class="search-wrapper active">
-            <div class="input-holder">
-              <input type="text" class="search-input" placeholder="Rechercher un...">
-              <button class="search-icon"><span></span></button>
-            </div>
-            <!-- <button class="close"></button> -->
-          </div>
+
+
+
 
         </div>
         <div class="app-header-right">
@@ -60,25 +60,28 @@
                 <div class="widget-content-left">
                   <div class="btn-group">
                     <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                      <img width="42" class="rounded-circle" src="assets/images/avatars/1.PNG" alt="">
+                      <img width="42" class="rounded-circle" src="assets/images/a.jpeg" alt="">
                       <i class="fa fa-angle-down ml-2 opacity-8"></i>
                     </a>
-                    <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                    <div tabindex="-1" role="menu" aria-hidden="true"
+                      class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                       <div class="dropdown-menu-header">
                         <div class="dropdown-menu-header-inner bg-info">
-                          <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                          <div class="menu-header-image opacity-2"
+                            style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                          </div>
                           <div class="menu-header-content text-left">
                             <div class="widget-content p-0">
                               <div class="widget-content-wrapper">
                                 <div class="widget-content-left mr-3">
-                                  <img width="42" class="rounded-circle" src="assets/images/avatars/1.PNG" alt="">
+                                  <img width="42" class="rounded-circle" src="assets/images/a.jpeg" alt="">
                                 </div>
                                 <div class="widget-content-left">
                                   <div class="widget-heading">Antonin
                                   </div>
                                 </div>
                                 <div class="widget-content-right mr-2">
-                                  <button class="btn-pill btn-shadow btn-shine btn btn-focus">Se déconnecter
+                                  <button class="btn-pill btn-shadow btn-shine btn btn-focus">Déconnexion
                                   </button>
                                 </div>
                               </div>
@@ -89,26 +92,31 @@
                       <div class="scroll-area-xs" style="height: 150px;">
                         <div class="scrollbar-container ps">
                           <ul class="nav flex-column">
-                            <li class="nav-item-header nav-item">Activité
-                            </li>
-                            <li class="nav-item">
-                              <a href="javascript:void(0);" class="nav-link">Méssagerie
-                                <div class="ml-auto badge badge-pill badge-info">8
+
+
+                            <li class="nav-item-header nav-item">
+                              <a href="#" style="text-decoration: none; color:black">
+                                <p style="display: inline">
+                                  <i class="fas fa-bell text-info" style="font-size: 1.5em;"></i> &nbsp;
+                                  Notifications &nbsp;
+                                </p>
+                                <div class="ml-auto badge badge-pill badge-warning" style="display:inline;">8
                                 </div>
                               </a>
                             </li>
-                            <li class="nav-item-header nav-item">Mon compte
-                            </li>
-                            <li class="nav-item">
-                              <a href="javascript:void(0);" class="nav-link">Paramètres
+                            <li class="nav-item-header nav-item" style="margin-top: 15px;">
+                              <a href="admin.html" style="text-decoration: none; color:black">
+                                <i class="fas fa-chess-pawn text-info" style="font-size: 1.7em;"></i> &nbsp;
+                                Gestion d'admins
                               </a>
                             </li>
-                            <li class="nav-item">
-                              <a href="javascript:void(0);" class="nav-link">Messages
-                                <div class="ml-auto badge badge-warning">512
-                                </div>
+                            <li class="nav-item-header nav-item" style="margin-top: 15px;">
+                              <a href="#" style="text-decoration: none; color:black">
+                                <i class="fas fa-user-cog text-info" style="font-size: 1.5em;"></i> &nbsp;
+                                Paramètres de Profil
                               </a>
                             </li>
+
                           </ul>
                         </div>
                       </div>
@@ -132,300 +140,6 @@
         </div>
       </div>
     </div>
-    <div class="ui-theme-settings">
-
-      <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
-        <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
-      </button>
-      <div class="theme-settings__inner">
-        <div class="scrollbar-container">
-          <div class="theme-settings__options-wrapper">
-            <h3 class="themeoptions-heading">Layout Options
-            </h3>
-            <div class="p-3">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <div class="widget-content p-0">
-                    <div class="widget-content-wrapper">
-                      <div class="widget-content-left mr-3">
-                        <div class="switch has-switch switch-container-class" data-class="fixed-header">
-                          <div class="switch-animate switch-on">
-                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="widget-content-left">
-                        <div class="widget-heading">Fixed Header
-                        </div>
-                        <div class="widget-subheading">Makes the header top fixed, always visible!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="widget-content p-0">
-                    <div class="widget-content-wrapper">
-                      <div class="widget-content-left mr-3">
-                        <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
-                          <div class="switch-animate switch-on">
-                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="widget-content-left">
-                        <div class="widget-heading">Fixed Sidebar
-                        </div>
-                        <div class="widget-subheading">Makes the sidebar left fixed, always visible!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="widget-content p-0">
-                    <div class="widget-content-wrapper">
-                      <div class="widget-content-left mr-3">
-                        <div class="switch has-switch switch-container-class" data-class="fixed-footer">
-                          <div class="switch-animate switch-off">
-                            <input type="checkbox" data-toggle="toggle" data-onstyle="success">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="widget-content-left">
-                        <div class="widget-heading">Fixed Footer
-                        </div>
-                        <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <h3 class="themeoptions-heading">
-              <div>
-                Header Options
-              </div>
-              <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
-                Restore Default
-              </button>
-            </h3>
-            <div class="p-3">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <h5 class="pb-2">Choose Color Scheme
-                  </h5>
-                  <div class="theme-settings-swatches">
-                    <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
-                    </div>
-                    <div class="divider">
-                    </div>
-                    <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
-                    </div>
-                    <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <h3 class="themeoptions-heading">
-              <div>Sidebar Options</div>
-              <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
-                Restore Default
-              </button>
-            </h3>
-            <div class="p-3">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <h5 class="pb-2">Choose Color Scheme
-                  </h5>
-                  <div class="theme-settings-swatches">
-                    <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
-                    </div>
-                    <div class="divider">
-                    </div>
-                    <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
-                    </div>
-                    <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
-                    </div>
-                    <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <h3 class="themeoptions-heading">
-              <div>Main Content Options</div>
-              <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
-              </button>
-            </h3>
-            <div class="p-3">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <h5 class="pb-2">Page Section Tabs
-                  </h5>
-                  <div class="theme-settings-swatches">
-                    <div role="group" class="mt-2 btn-group">
-                      <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
-                        Line
-                      </button>
-                      <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
-                        Shadow
-                      </button>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <h5 class="pb-2">Light Color Schemes
-                  </h5>
-                  <div class="theme-settings-swatches">
-                    <div role="group" class="mt-2 btn-group">
-                      <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="app-theme-white">
-                        White Theme
-                      </button>
-                      <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="app-theme-gray">
-                        Gray Theme
-                      </button>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Contenu principal  -->
     <div class="app-main">
@@ -437,7 +151,7 @@
           <div class="tabs-animation">
 
             <!-- menu card  -->
-            <div class="home main-card mb-3 card">
+            <div class="home main-card card">
               <div class="card-body">
                 <div class="container">
                   <div class="row justify-content-center">
@@ -453,7 +167,8 @@
 
                           <!-- boutons de consultation -->
                           <!-- bouton -->
-                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-outline-secondary">
+                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-primary">
                             <span class="btn-icon-wrapper opacity-7">
                               <i class="pe-7s-note2"></i>
                             </span>
@@ -463,17 +178,17 @@
                           <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
                             <ul class="nav flex-column">
                               <li class="nav-item">
-                                <a href="utilisateurs.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-users"></i>
-                                  <span>
+                                <a href="membres.html" class="nav-link">
+                                  <i class="nav-link-icon lnr-users font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Membres
                                   </span>
                                 </a>
                               </li>
                               <li class="nav-item">
-                                <a href="utilisateurs.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-apartment"></i>
-                                  <span>
+                                <a href="structures.html" class="nav-link">
+                                  <i class="nav-link-icon lnr-apartment font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Structures
                                   </span>
                                 </a>
@@ -481,25 +196,33 @@
 
                               <li class="nav-item">
                                 <a href="evenements.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-inbox"></i>
-                                  <span>
-                                    Evènements
+                                  <i class="nav-link-icon lnr-inbox font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
+                                    Evénements
                                   </span>
                                 </a>
                               </li>
                               <li class="nav-item">
                                 <a href="projets.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
+                                  <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Projets
                                   </span>
                                 </a>
                               </li>
                               <li class="nav-item">
-                                <a href="projets.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
+                                <a href="bibliotheque.html" class="nav-link">
+                                  <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Bibliothèque
+                                  </span>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="statistiques.html" class="nav-link">
+                                  <i class="nav-link-icon lnr-pie-chart font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
+                                    Statistiques
                                   </span>
                                 </a>
                               </li>
@@ -509,51 +232,52 @@
                         <!-- boutons de publication -->
                         <div class="d-inline-block dropdown action-boutons">
                           <!-- bouton -->
-                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-outline-success">
+                          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            class="dropdown-toggle mb-2 mr-2 btn-icon btn-pill btn btn-secondary">
                             <span class="btn-icon-wrapper opacity-7">
-                              <i class="pe-7s-back-2"></i>
+                              <i class="pe-7s-back-2 icones"></i>
                             </span>
                             PUBLIER
                           </button>
                           <!-- contenu du bouton publication -->
-                          <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                          <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-center">
                             <ul class="nav flex-column">
                               <li class="nav-item">
-                                <a href="projets.html" class="nav-link" data-toggle="modal" data-target="#editorial">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
+                                <a href="#" class="nav-link" data-toggle="modal" data-target="#editorial">
+                                  <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Edito
                                   </span>
                                 </a>
                               </li>
                               <li class="nav-item">
-                                <a href="valider.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-inbox"></i>
-                                  <span>
+                                <a href="#" class="nav-link" data-toggle="modal" data-target="#article">
+                                  <i class="nav-link-icon lnr-inbox font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Article
                                   </span>
                                 </a>
                               </li>
                               <li class="nav-item">
-                                <a href="avalider.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
+                                <a href="#" class="nav-link" data-toggle="modal" data-target="#appel-projet">
+                                  <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Appel à projet
                                   </span>
                                 </a>
                               </li>
                               <li class="nav-item">
-                                <a href="avalider.html" class="nav-link">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
+                                <a href="#" class="nav-link" data-toggle="modal" data-target="#evenement">
+                                  <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Evènement
                                   </span>
                                 </a>
                               </li>
                               <li class="nav-item">
                                 <a href="#" data-toggle="modal" data-target="#ressource" class="nav-link">
-                                  <i class="nav-link-icon lnr-book"></i>
-                                  <span>
+                                  <i class="nav-link-icon lnr-book font-weight-bold"></i>
+                                  <span style="font-size: 1.1em;">
                                     Ressource
                                   </span>
                                 </a>
@@ -576,11 +300,11 @@
                                 </div>
                                 <div class="widget-chart-content">
                                   <div class="widget-subheading">Membres</div>
-                                  <div class="widget-numbers">50</div>
+                                  <div class="widget-numbers">3000</div>
                                   <div class="widget-description opacity-8 text-focus">
                                     <div class="d-inline pr-1">
                                       Evolution :
-                                      <span class="pl-1 text-success">
+                                      <span class="pl-1 text-warning">
                                         <i class="fa fa-angle-up"></i>
                                         <span class="pl-1">30%</span>
                                       </span>
@@ -599,11 +323,11 @@
                                 </div>
                                 <div class="widget-chart-content">
                                   <div class="widget-subheading">Structures enregistrées</div>
-                                  <div class="widget-numbers"><span>10</span></div>
+                                  <div class="widget-numbers"><span>627</span></div>
                                   <div class="widget-description opacity-8">
                                     Evolution :
                                     <span class="pl-1 text-danger">
-                                      <i class="fa fa-angle-down"></i>
+                                      <i class="fa fa-angle-up"></i>
                                       <span class="pl-1">10%</span>
                                     </span>
                                   </div>
@@ -619,12 +343,13 @@
                                   <i class="lnr-calendar-full text-white"></i>
                                 </div>
                                 <div class="widget-chart-content">
-                                  <div class="widget-subheading">Projets </div>
-                                  <div class="widget-numbers text-success"><span>5</span></div>
+                                  <div class="widget-subheading">Soumissions en attente</div>
+                                  <div class="widget-numbers"><span>267</span></div>
                                   <div class="widget-description text-focus">
-                                    En attente :
-                                    <span class="text-warning pl-1">
-                                      <span class="pl-1">8</span>
+                                    Evolution :
+                                    <span class="text-success pl-1">
+                                      <i class="fa fa-angle-up"></i>
+                                      <span class="pl-1">10%</span>
                                     </span>
                                   </div>
                                 </div>
@@ -634,17 +359,17 @@
                             <div class="col-sm-4 col-md-3 col-xl-3">
                               <div class="card no-shadow rm-border bg-transparent widget-chart text-left">
                                 <div class="icon-wrapper rounded-circle">
-                                  <div class="icon-wrapper-bg opacity-9 bg-success"></div>
+                                  <div class="icon-wrapper-bg opacity-9 bg-primary"></div>
                                   <i class="pe-7s-mouse text-white"></i>
                                 </div>
                                 <div class="widget-chart-content">
                                   <div class="widget-subheading">Taux d'Interactions</div>
-                                  <div class="widget-numbers text-success"><span>60%</span></div>
+                                  <div class="widget-numbers"><span>60%</span></div>
                                   <div class="widget-description text-focus">
                                     Evolution :
-                                    <span class="text-success pl-1">
+                                    <span class="text-primary pl-1">
                                       <i class="fa fa-angle-up"></i>
-                                      <span class="pl-1">4</span> points
+                                      <span class="pl-1">4%</span>
                                     </span>
                                   </div>
                                 </div>
@@ -670,28 +395,66 @@
     <!-- code du pop editorial -->
 
     <!-- popup Edito -->
-    <div class="modal fade" id="editorial" tabindex="-1" role="dialog" aria-labelledby="editorialLabel" aria-hidden="true">
+    <div class="modal fade" id="editorial" tabindex="-1" role="dialog" aria-labelledby="editorialLabel"
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div style="width: 150%" class="modal-content">
+        <div class="modal-content">
           <div class="modal-header">
-            <img src="assets/images/edito.png" width="100" heigh="100">
-            <h5 class="modal-title" id="editorialLabel" style="font-size: 30px; font-weight:bold;margin-top: 30px;
-        ">EDITO</h5>
+            <h5 class="modal-title" id="editorialLabel" style="font-size: 30px; font-weight:bold;
+        ">PUBLIER UN EDITO</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <form class="">
-              <div class="position-relative form-group"><label for="exampleEmail" style="font-size: 20px;">Titre</label><input style="padding: 30px;" name="title" id="title" placeholder="Entrer un titre" type="text" class="form-control">
+              <div class="position-relative form-group"><label for="exampleEmail"
+                  style="font-size: 20px;">Titre</label><input name="title" id="title" placeholder="Entrer un titre"
+                  type="text" class="form-control">
               </div>
-              <div class="position-relative form-group"><label style="font-size: 20px;" for="exampleText">Contenu</label>
-                <textarea name="text" id="exampleText" placeholder="Saisir votre contenu" class="form-control" rows="9"></textarea>
+              <div class="position-relative form-group"><label style="font-size: 20px;"
+                  for="exampleText">Contenu</label>
+                <textarea name="text" id="exampleText" placeholder="Saisir votre contenu" class="form-control"
+                  rows="5"></textarea>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button style="margin-top: 5px;" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button style="margin-top: 5px;" type="button" class="btn btn-secondary"
+              data-dismiss="modal">Fermer</button>
+            <button type="submit" class="mt-1 btn btn-primary">Publier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup Edito -->
+    <div class="modal fade" id="article" tabindex="-1" role="dialog" aria-labelledby="editorialLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editorialLabel" style="font-size: 30px; font-weight:bold;
+        ">PUBLIER UN ARTICLE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="position-relative form-group"><label for="exampleEmail"
+                  style="font-size: 20px;">Titre</label><input name="title" id="title" placeholder="Entrer un titre"
+                  type="text" class="form-control">
+              </div>
+              <div class="position-relative form-group"><label style="font-size: 20px;"
+                  for="exampleText">Contenu</label>
+                <textarea name="text" id="exampleText" placeholder="Saisir votre contenu" class="form-control"
+                  rows="5"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button style="margin-top: 5px;" type="button" class="btn btn-secondary"
+              data-dismiss="modal">Fermer</button>
             <button type="submit" class="mt-1 btn btn-primary">Publier</button>
           </div>
         </div>
@@ -700,22 +463,25 @@
 
     <!--Ressources  -->
 
-    <div class="modal fade " id="ressource" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+    <div class="modal fade " id="ressource" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-md">
         <div class="modal-content">
           <div class="modal-header">
-            <img src="assets/images/livre.png" width="50" height="50">
-            <h5 class="modal-title" id="exampleModalLabel" style="font-size: 30px; font-weight:bold;margin-top: 30px;
-        ">RESSOURCES</h5>
+            <h5 class="modal-title" id="exampleModalLabel" style="font-size: 30px; font-weight:bold;
+        ">PUBLIER UNE RESSOURCE</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <form class="">
-              <div class="position-relative form-group"><label for="exampleEmail" style="font-size: 20px;">Titre du document</label><input name="title" id="title" placeholder="Saisir le titre du document" type="text" class="form-control">
+              <div class="position-relative form-group"><label for="exampleEmail" style="font-size: 20px;">Titre du
+                  document</label><input name="title" id="title" placeholder="Saisir le titre du document" type="text"
+                  class="form-control">
               </div>
-              <div class="position-relative form-group"><label for="exampleSelect" style="font-size: 20px;">Catégorie</label>
+              <div class="position-relative form-group"><label for="exampleSelect"
+                  style="font-size: 20px;">Catégorie</label>
                 <select name="select" id="exampleSelect" class="form-control">
                   <option>Education</option>
                   <option>Société</option>
@@ -724,17 +490,114 @@
                   <option>Technologie</option>
                 </select>
               </div>
-              <div class="position-relative form-group"><label for="exampleText" style="font-size: 20px;">Description</label><textarea name="text" id="exampleText" class="form-control" rows="10"></textarea>
+              <div class="position-relative form-group"><label for="exampleText"
+                  style="font-size: 20px;">Description</label><textarea name="text" id="exampleText"
+                  class="form-control"></textarea>
               </div>
-              <div class="position-relative form-group"><label for="exampleFile">Choisir un fichier</label><input name="file" id="exampleFile" type="file" class="form-control-file">
+              <div class="position-relative form-group"><label for="exampleFile">Inserer une documentation</label><input
+                  name="file" id="exampleFile" type="file" class="form-control-file">
 
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button style="margin-top: 5px;" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button style="margin-top: 5px;" type="button" class="btn btn-secondary"
+              data-dismiss="modal">Fermer</button>
             <button type="submit" class="mt-1 btn btn-primary">Publier</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- appel projet-->
+    <!-- Appel à projet-->
+    <div class="modal fade" id="appel-projet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="font-size: 30px; font-weight:bold;
+        ">PUBLIER UN PROJET</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="position-relative form-group"><label for="exampleEmail"
+                  style="font-size: 20px;">Titre</label><input name="title" id="title" placeholder="Entrer un titre"
+                  type="text" class="form-control">
+              </div>
+              <div class="position-relative form-group"><label for="exampleText"
+                  style="font-size: 20px;">Description</label><textarea name="text" id="exampleText"
+                  class="form-control"></textarea>
+              </div>
+              <div class="position-relative form-group"><label for="exampleEmail"
+                  style="font-size: 20px;">Lien</label><input name="title" id="title"
+                  placeholder="Saisir le lien du document" type="text" class="form-control">
+              </div>
+              <div class="position-relative form-group"><label for="exampleFile" class="marg">Inserer une
+                  documentation</label><input name="file" id="exampleFile" type="file" class="form-control-file">
+
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button type="submit" class="mt-1 btn btn-primary">Publier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- événements -->
+  <!-- publier un événement -->
+
+  <div style="margin: auto;" class="modal fade " id="evenement" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-size: 30px; font-weight:bold;
+        ">PUBLIER UN EVENEMENT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="">
+            <div class="position-relative form-group"><label for="exampleEmail" style="font-size: 20px;">Nom de
+                l'événement</label><input name="title" id="title" type="text" class="form-control">
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="position-relative form-group"><label for="exampleEmail55">Date de l'événement</label><input
+                    name="date" id="eventDate" type="email" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="position-relative form-group"><label for="examplePassword22">Heure</label><input name="hour"
+                    id="eventHour" type="time" class="form-control"></div>
+              </div>
+            </div>
+            <div class="position-relative form-group"><label for="exampleEmail"
+                style="font-size: 20px;">Lieu</label><input name="title" id="title" type="text" class="form-control">
+            </div>
+
+            <div class="position-relative form-group"><label for="exampleText"
+                style="font-size: 20px;">Description</label><textarea name="text" id="exampleText"
+                class="form-control"></textarea>
+            </div>
+            <div class="position-relative form-group"><label for="exampleFile">Inserer une documentation</label><input
+                name="file" id="exampleFile" type="file" class="form-control-file">
+
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="submit" class="mt-1 btn btn-primary">Publier</button>
         </div>
       </div>
     </div>
