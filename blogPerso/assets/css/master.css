@@ -1,0 +1,290 @@
+/* reglages de base */
+* {
+  box-sizing: border-box;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #70686F;
+}
+
+h2 {
+  color: initial;
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  list-style-type: none;
+}
+
+/* fin des reglages de base */
+/* tete de page */
+nav {
+  height: 28px;
+}
+
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #CCCCCD;
+  font-weight: 200px;
+  font-size: 12px;
+}
+
+nav li.active a {
+  color: #605E5E;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  height: 5px;
+}
+
+nav ul li+li {
+  margin-left: 30px;
+}
+
+header .banner {
+  height: 300px;
+  background: url(../img/banner-mybermudes.png);
+  background-position: center;
+}
+
+.banner h1 {
+  font-family: "roboto";
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+/* contenu principal de la page */
+body>section {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: hidden;
+}
+
+/* main sextion */
+body>section main {
+  flex-grow: 2;
+  margin-right: 40px;
+}
+
+/* stylke des articles */
+/* style des categories */
+.categorie {
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: -2px;
+  padding: 2px 10px;
+  border: 1px solid #000;
+  color: #706F6F;
+  font-size: 0.9em;
+}
+
+/* titre  */
+.art-heading h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.art-date {
+  display: block;
+  margin-bottom: 15px;
+  color: initial;
+}
+
+main article+article {
+  margin-top: 60px;
+}
+
+.art-extrat {
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.rd-more {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 0.8em;
+  display: block;
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.pagination {
+  margin-top: 25px;
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul li {
+  border: 1px solid;
+  padding: 8px 12px;
+}
+
+.pagination ul li+li {
+  margin-left: 10px;
+}
+
+/* aside section */
+body>section aside {
+  flex-grow: 1;
+  min-width: 320px;
+}
+
+aside section {
+  padding-right: 10px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  font-size: 1rem;
+}
+
+.logo+p {
+  margin-bottom: 20px;
+}
+
+.logo+p+p {
+  margin-bottom: 35px;
+}
+
+.author-details p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.author-details p+p {
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.social-network p {
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  color: #000;
+}
+
+.social-network ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social-network ul li {
+  height: 25px;
+  width: 25px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.social-network ul li+li {
+  margin-left: 15px;
+}
+
+.author-details {
+  border-bottom: 1px solid lightgray;
+}
+
+.last-news {
+  padding: 5px 0;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.last-news h2, .archive h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.art-banner-mini {
+  width: 70px;
+  height: 47px;
+  overflow: hidden;
+}
+
+.art-banner-mini img {
+  height: 100%;
+  width: 100%;
+}
+
+.last-news article {
+  display: flex;
+  margin: 15px 0;
+}
+
+.last-news .art-det {
+  padding-left: 20px;
+}
+
+.last-news .art-det h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* archive part */
+.archive a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.archive ul {
+  padding-top: 15px;
+  line-height: 30px;
+}
+
+/* footer */
+footer{
+  background: #000;
+  min-height: 260px;
+  padding: 15px;
+}
+.foot-text{
+  text-align: center;
+  color: white;
+}
+.foot-text  p .logo-text{
+  font-size: 1em;
+  letter-spacing: 12px;
+}
+footer small{
+  font-size: 0.8em;
+}
+footer small .logo-text{
+  font-size: 0.9em;
+}
