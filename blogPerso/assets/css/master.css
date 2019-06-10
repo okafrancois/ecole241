@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Futura light";
-  src: url('../fonts/futura-light.ttf');
+  src: url('../fonts/futura.ttf');
 }
 
 /* reglages de base */
@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Futura light', sans-serif;
-  color: #70686F;
+  color: #2F2E2E;
 }
 a{
   text-decoration: none;
@@ -22,15 +22,15 @@ a{
 }
 
 h2 {
-  color: initial;
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 ul {
   padding-inline-start: 0px;
-  margin-block-start: 0em !important;
-  margin-block-end: 0em !important;
   list-style-type: none;
+}
+p,.rd-more{
+  color: #837C75;
 }
 
 /* fin des reglages de base */
@@ -42,7 +42,7 @@ nav {
 nav ul a {
   text-transform: uppercase;
   color: #CCCCCD;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 nav li.active a {
@@ -70,16 +70,15 @@ header .banner {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 20px;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   padding-top: 20px;
+  color: #2F2E2E;
   font-weight: 100;
-  color: #000;
 }
 
 .banner h1 span{
-  font-weight: 400;
+  font-weight: 600;
 }
-
 /* contenu principal de la page */
 main {
   max-width: 1000px;
@@ -90,7 +89,7 @@ main {
 }
 
 /* main sextion */
-main section {
+main > section {
   flex-grow: 2;
   margin-right: 40px;
 }
@@ -100,7 +99,6 @@ main section {
 .categorie {
   text-transform: uppercase;
   font-weight: lighter;
-  letter-spacing: -1px;
   padding: 2px 10px;
   border: 1px solid #000;
   color: #706F6F;
@@ -110,7 +108,7 @@ main section {
 /* titre  */
 .art-heading h2 {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-top: 20px;
 }
 
@@ -125,7 +123,6 @@ main article+article {
 }
 
 .art-extrat {
-  font-size: 0.9rem;
   text-align: justify;
   line-height: 20px;
 }
@@ -133,8 +130,6 @@ main article+article {
 .rd-more {
   color: inherit;
   text-transform: uppercase;
-  letter-spacing: -1px;
-  font-size: 0.8em;
   display: block;
   border: 1px solid;
   text-align: center;
@@ -168,8 +163,7 @@ main article+article {
 }
 
 /* aside section */
-body>section aside {
-  flex-grow: 1;
+ aside {
   min-width: 320px;
 }
 
@@ -182,17 +176,13 @@ aside section {
   margin-bottom: 20px;
 }
 
-.logo-text {
-  font-size: 1rem;
-  font-weight: 300;
+aside .logo+h2{
+  font-weight: 100;
+  margin-bottom: 20px;
 }
 
 .logo-text span{
-  font-weight: 400;
-}
-
-.logo+h2 {
-  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .logo+h2+p {
@@ -201,19 +191,19 @@ aside section {
 
 .author-details h2 {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
-.author-details>p {
-  font-size: 0.9rem;
+.author-details > p {
   text-align: justify;
-  line-height: 20px;
+  line-height: 17px;
 }
-
-.social-network p {
-  font-size: 1.2rem;
-  letter-spacing: -1px;
+aside h2{
+  font-weight: 600;
   color: #000;
+  font-size: 1.3rem;
+}
+.social-network h2 {
   text-align: center;
 }
 
@@ -263,8 +253,7 @@ aside section {
 }
 
 .last-news h2, .archive h2 {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
 }
 
 .art-banner-mini {
@@ -287,12 +276,13 @@ aside section {
 
 .last-news .art-det {
   padding-left: 20px;
+  margin-top: 0;
 }
 
 .last-news .art-det h3{
   margin: 0 0 10px 0;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
 }
 /* archive part */
 
@@ -303,7 +293,7 @@ aside section {
 
 .archive ul li{
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* footer */
