@@ -306,12 +306,13 @@ footer {
 
 .foot-text {
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 .foot-text  p > .logo-text {
   font-size: 1.4em;
   letter-spacing: 10px;
+  color: #fff;
 }
 
 footer small {
