@@ -295,6 +295,16 @@ aside h2{
   color: #000;
   font-size: 14px;
 }
+aside form{
+  margin-bottom: 5px;
+}
+aside form input, aside form button{
+  display: block;
+  width: 100%;
+  border: 1px solid;
+  background: none;
+  padding: 5px;
+}
 
 /* footer */
 footer {
