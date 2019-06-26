@@ -25,6 +25,10 @@ ul {
   padding: 0;
 }
 
+.main {
+  max-width: 1000px;
+}
+
 /* fin des reglages de base */
 /* tete de page */
 
@@ -59,10 +63,15 @@ nav li.active a {
   font-size: 0.9em;
 }
 
+h1 {
+  letter-spacing: 18px;
+}
+
+
 /* titre  */
 .art-heading h2 {
   text-transform: uppercase;
-  font-size: 1.9rem;
+  font-size: 150% !important;
   margin-top: 20px;
 }
 
@@ -253,13 +262,7 @@ aside h2 {
 
 
 /* aside section */
-aside {
-  min-width: 320px;
-}
 
-aside section {
-  padding-right: 10px;
-}
 
 .logo {
   text-align: center;
@@ -287,6 +290,10 @@ aside .logo+h2 {
 .author-details>p {
   text-align: justify;
   line-height: 17px;
+}
+
+h1 {
+  font-size: 150%;
 }
 
 aside h2 {
@@ -391,7 +398,7 @@ aside h2 {
 }
 
 .pr-responsive-0 {
-  padding-right: 10px !important ;
+  padding-right: 10px !important;
 }
 
 .pl-responsive-0 {
@@ -403,10 +410,6 @@ aside h2 {
     padding-left: 10px !important;
   }
 
-  div.description {
-    padding: 10px !important;
-  }
-
   .pl-sm-1 {
     padding-left: 10px !important;
     font-size: 1.3rem;
@@ -414,6 +417,10 @@ aside h2 {
 
   .pr-responsive-0 {
     padding-right: 0px !important;
+  }
+
+  .pr-responsive-10 {
+    padding-right: 10px !important;
   }
 
   .pl-responsive-0 {
