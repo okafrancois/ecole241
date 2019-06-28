@@ -36,8 +36,9 @@ ul {
 
 h2,
 .logo-footer {
-    letter-spacing: 8px;
+  letter-spacing: 8px;
 }
+
 /* fin des reglages de base */
 /* tete de page */
 
@@ -81,32 +82,39 @@ h1 {
 
 h2+hr,
 .social-network hr {
-    border: solid 2px #405166;
-    width: 70px;
+  border: solid 2px #405166;
+  width: 70px;
 }
+
 input {
   border: none;
   border-bottom: 1px solid;
 }
+
 textarea {
   border: none;
   outline: none;
   resize: none;
   overflow: auto;
 }
+
 form button {
   padding: 5px;
 }
+
 .border-black {
   border: 1px solid #000;
 }
+
 .color-white {
   color: #fff;
 }
+
 p {
   text-indent: 30px;
 }
- 
+
+
 button {
   background: #405166 !important;
   color: #fff !important;
@@ -118,6 +126,12 @@ button:hover {
   border: 1px solid #000 !important;
   color: #000 !important;
   background: none !important;
+}
+
+nav button {
+  background: #fff !important;
+  color: #000 !important;
+  border: 1px solid #405166;
 }
 
 /* titre  */
@@ -437,10 +451,54 @@ aside h2 {
   font-size: 13px;
 }
 
-.galerie img{
+#newsletter {
+  min-height: 103px !important;
+}
+
+#newsletter form {
+  position: relative !important;
+}
+
+#newsletter form input {
+  display: block;
+  border: 1px solid;
+  width: 100%;
+}
+
+#newsletter form .onvalide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+  display: none;
+}
+
+#newsletter button {
+  border: 1px solid #405166;
+  width: 100%;
+  display: block;
+  color: #fff;
+  background: #405166;
+  padding: 7px 5px;
+  cursor: pointer;
+}
+
+#newsletter button:hover {
+  border: 1px solid #000;
+  color: #000;
+  background: none;
+}
+
+.galerie img {
   max-height: 160px;
   min-width: 160px;
 }
+
 /* archive part */
 
 .archive ul {
@@ -466,18 +524,23 @@ aside h2 {
     padding-left: 10px !important;
   }
 
-  .galerie img{
+  aside {
+    margin-top: 10px;
+  }
+
+  .galerie img {
     min-width: 100px;
     min-height: 100px;
     max-height: 100px;
     max-height: 100px;
     margin-top: 5px;
   }
+
   .pl-sm-1 {
     padding-left: 10px !important;
     font-size: 1.1rem;
   }
- 
+
   .pr-responsive-0 {
     padding-right: 0px !important;
   }
