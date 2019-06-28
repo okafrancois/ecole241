@@ -1,21 +1,16 @@
 // script de validation de la newsletter
 
-// ntlr pour newsletter
-// on stock les element du formulaire dans des variables
+// modules
 
-var ntlrForm = document.querySelector("#newsletter-form");
-var emailInput = document.querySelector('#newsletter-form input[type="email"]');
-var nameInput = document.querySelector('#newsletter-form input[type="text"]');
-var nltrContent = document.querySelector('#newsletter-content');
-var nltrTitle = document.querySelector('#newsletter-title');
+const validateContent = function(){
+    let name = nameInput.value;
+    let nameReg = /[^A-Z]/;
+    let emailReg  = /^[a-z]+[@][a-z]+\.[a-z]{2,4}/;
+    let testResult = nameReg.test(name);
+    return testResult;
 
-// lorsqu'on soumet le formulaire 
-
-ntlrForm.addEventListener('submit', function (e) {
-    // on arrete le deroulement de l'evenement submit
-    e.preventDefault();
-
-    // on fait disparaitre les champs du formulaire
+}
+const confirmValidation = function(event){
     let content = nltrContent.querySelectorAll('*')
     content.forEach(element => {
         element.classList.remove('show');
@@ -49,6 +44,37 @@ ntlrForm.addEventListener('submit', function (e) {
     }, 2000);
 
     clearTimeout();
+    event.preventDefault();
+
+}
+// ntlr pour newsletter
+// on stock les element du formulaire dans des variables
 
 
+
+var ntlrForm = document.forms['newsletter'];
+var nameInput = ntlrForm['user-name'];
+var emailInput = ntlrForm['email-letter'];
+var nltrContent = document.querySelector('#newsletter-content');
+var nltrTitle = document.querySelector('#newsletter-title');
+
+
+// lorsqu'on soumet le formulaire 
+
+ntlrForm.addEventListener('submit', function(e) {
+
+    if(nameInput.value){
+        e.preventDefault();
+        let result = validateContent();
+
+        if(result = false){
+            alert('Test concluant')
+        } else{
+            alert('Le nom doit etre écris tout en majuscules')
+        }
+        break
+    } else{
+        alert('Veuillez entrez votre nom svp.');
+        e.preventDefault();
+    }
 })
