@@ -29,6 +29,15 @@ ul {
   max-width: 1000px;
 }
 
+.pl-sm-1 {
+  padding-left: 50px;
+}
+
+
+h2,
+.logo-footer {
+    letter-spacing: 8px;
+}
 /* fin des reglages de base */
 /* tete de page */
 
@@ -44,8 +53,11 @@ nav li.active a {
 
 .banner {
   height: 100px;
+  background: #ccc;
   background-position: center;
+  color: #000
 }
+
 
 /* contenu principal de la page */
 
@@ -67,6 +79,46 @@ h1 {
   letter-spacing: 18px;
 }
 
+h2+hr,
+.social-network hr {
+    border: solid 2px #405166;
+    width: 70px;
+}
+input {
+  border: none;
+  border-bottom: 1px solid;
+}
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+form button {
+  padding: 5px;
+}
+.border-black {
+  border: 1px solid #000;
+}
+.color-white {
+  color: #fff;
+}
+p {
+  text-indent: 30px;
+}
+ 
+button {
+  background: #405166 !important;
+  color: #fff !important;
+  border: 1px solid #405166;
+  transition: 0.5s !important;
+}
+
+button:hover {
+  border: 1px solid #000 !important;
+  color: #000 !important;
+  background: none !important;
+}
 
 /* titre  */
 .art-heading h2 {
@@ -385,6 +437,10 @@ aside h2 {
   font-size: 13px;
 }
 
+.galerie img{
+  max-height: 160px;
+  min-width: 160px;
+}
 /* archive part */
 
 .archive ul {
@@ -410,11 +466,18 @@ aside h2 {
     padding-left: 10px !important;
   }
 
+  .galerie img{
+    min-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    max-height: 100px;
+    margin-top: 5px;
+  }
   .pl-sm-1 {
     padding-left: 10px !important;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
-
+ 
   .pr-responsive-0 {
     padding-right: 0px !important;
   }
