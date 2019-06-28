@@ -34,7 +34,6 @@ ul {
 }
 
 
-h2,
 .logo-footer {
   letter-spacing: 8px;
 }
@@ -451,10 +450,6 @@ aside h2 {
   font-size: 13px;
 }
 
-#newsletter {
-  min-height: 103px !important;
-}
-
 #newsletter form {
   position: relative !important;
 }
@@ -522,6 +517,11 @@ aside h2 {
 @media (max-width: 576px) {
   #content {
     padding-left: 10px !important;
+  }
+  /* form content */
+  #newsletter-content{
+    background: #405166;
+    padding: 10px;
   }
 
   aside {

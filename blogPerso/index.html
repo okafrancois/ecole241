@@ -30,9 +30,34 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    p{
+    p {
       text-indent: 0;
     }
+    .hide{
+      display: none!important;
+    }
+    .show{
+      display: block;
+    }
+    /* form content */
+    #newsletter-title{
+      font-size: 17px;
+    }
+    #newsletter-content {
+      height: 170px;
+      transition: 1s;
+    }
+    #newsletter-content.minified {
+      height: 5px;
+    }
+    #newsletter-content #loading{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #newsletter-content #loading img{
+      height: 100px;
+    } 
   </style>
 </head>
 
@@ -177,20 +202,19 @@
                 <li><a href="http://www.instagram.com/francoistone2k/"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li><a href="http://www.twitter.com/StoneBerny"><img src="assets/img/hellocoton.svg"
-                  aria-hidden="true"></a></li>
+                      aria-hidden="true"></a></li>
               </ul>
             </div>
             <div id="newsletter">
-              <form action="index.html" data-response="Merci d'avoir souscrit à ma newsletter">
-                <h2>
+              <form id="newsletter-form" action="" data-valide="Merci d'avoir souscris à notre newsletter">
+                <h2 id="newsletter-title">
                   Abonnez-vous à ma newsletter pour recevoir mes nouveaux articles
                 </h2>
-                <input type="text" name="user-name" placeholder="Entrez votre nom" class="my-2 p-2">
-                <input type="email" name="email-letter" placeholder="Adresse Email" class="my-2 p-2">
-                <button type="submit" class="my-2">S'INSCRIRE</button>
-                <p class="onvalide">
-
-                </p>
+                <div id="newsletter-content">
+                  <input type="text" id="user-name" name="user-name" placeholder="Entrez votre nom" class="my-2 p-2 show">
+                  <input type="email" id="user-email" name="email-letter" placeholder="Adresse Email" class="my-2 p-2 show">
+                  <button type="submit" class="my-2 show">S'INSCRIRE</button>
+                </div>
               </form>
             </div>
           </section>
@@ -269,6 +293,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="assets/js/form.js"></script>
 </body>
 
 </html>
