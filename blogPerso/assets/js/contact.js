@@ -53,8 +53,8 @@ const confirmValidation = function () {
 }
 // validateurs(regexp)
 
-let nameReg = /[^A-Z]/;
-let emailReg = /^[a-z]+[@][a-z]+\.[a-z{2,4}]+/;
+let nameReg = /^[A-Z][^a-z]/;
+let emailReg = /[a-z0-9]+[@][a-z]+[\.][a-z]+/;
 
 
 
@@ -84,7 +84,7 @@ contactForm.addEventListener('submit', function (e) {
                     if (message.value) {
                         alert('Message valide, Merci !')
                     } else {
-                        alert("Vous n'avez écris de méssage");
+                        alert("Vous n'avez écris de message");
                     }
                 } else {
                     // sinon on indique se rentrer un message

@@ -494,6 +494,39 @@ aside h2 {
   min-width: 160px;
 }
 
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}
+
+/* form content */
+#newsletter-title {
+  font-size: 17px;
+}
+
+#newsletter-content {
+  height: 170px;
+  transition: 1s;
+}
+
+#newsletter-content.minified {
+  height: 5px;
+}
+
+#newsletter-content #loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newsletter-content #loading img {
+  height: 100px;
+}
+
 /* archive part */
 
 .archive ul {
@@ -518,11 +551,8 @@ aside h2 {
   #content {
     padding-left: 10px !important;
   }
+
   /* form content */
-  #newsletter-content{
-    background: #405166;
-    padding: 10px;
-  }
 
   aside {
     margin-top: 10px;

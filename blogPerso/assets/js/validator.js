@@ -67,8 +67,8 @@ const confirmValidation = function () {
 
 // validateurs(regexp)
 
-let nameReg = /[^A-Z]/;
-let emailReg = /^[a-z]+[@][a-z]+\.[a-z{2,4}]+/;
+let nameReg = /^[A-Z][^a-z]/;
+let emailReg = /[a-z0-9]+[@][a-z]+[\.][a-z]+/;
 
 // lorsqu'on soumet le formulaire 
 
