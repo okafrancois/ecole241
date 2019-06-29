@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://francois241.alwaysdata.net/okabermudes/sitemap.xml
